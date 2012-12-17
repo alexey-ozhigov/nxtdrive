@@ -1,0 +1,1904 @@
+[rospy.client][INFO] 2012-12-14 19:54:12,697: init_node, name[/depth_detection], pid[12975]
+[xmlrpc][INFO] 2012-12-14 19:54:12,697: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-14 19:54:12,697: Started XML-RPC server [http://pc:42731/]
+[rospy.init][INFO] 2012-12-14 19:54:12,698: ROS Slave URI: [http://pc:42731/]
+[rospy.impl.masterslave][INFO] 2012-12-14 19:54:12,698: _ready: http://pc:42731/
+[rospy.registration][INFO] 2012-12-14 19:54:12,699: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2012-12-14 19:54:12,699: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2012-12-14 19:54:12,798: registered with master
+[rospy.rosout][INFO] 2012-12-14 19:54:12,826: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-14 19:54:12,829: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-14 19:54:12,831: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][ERROR] 2012-12-14 19:54:24,924: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:24,928: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:24,948: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:24,984: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,022: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,058: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,088: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,121: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,153: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,181: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,224: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,249: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,285: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,326: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,361: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,381: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,419: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,456: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,486: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,521: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,557: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,589: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,625: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,654: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,685: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,722: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,756: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,791: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,821: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,854: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,884: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,927: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,962: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:25,987: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,025: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,058: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,092: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,119: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,151: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,197: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,229: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,255: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,289: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,323: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,356: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,391: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,421: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,455: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,492: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,526: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,561: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,591: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,625: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,656: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,691: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,724: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,751: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,790: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,820: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,861: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,887: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,924: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,952: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:26,985: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,022: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,057: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,087: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,125: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,156: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,195: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,229: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,253: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,288: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,325: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,365: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,389: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,422: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,463: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,491: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,526: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,562: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,594: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,626: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,662: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,692: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,728: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,756: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,791: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,825: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,863: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,896: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,920: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,959: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:27,989: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,016: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,060: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,095: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,123: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,158: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,197: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,227: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,262: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,292: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,323: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,361: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,389: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,429: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,463: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,495: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,528: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,559: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,585: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,617: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,661: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,686: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,728: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,762: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,795: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,827: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,859: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,892: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,930: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,956: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:28,990: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,029: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,062: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,092: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,134: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,165: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,188: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,228: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,262: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,293: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,329: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,361: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,392: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,427: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,454: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,492: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,527: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,555: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,594: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,629: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,663: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,696: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,728: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,757: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,797: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,830: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,861: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,892: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,927: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,957: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:29,987: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,023: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,058: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,100: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,121: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,156: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,189: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,230: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,255: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,298: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,331: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,352: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,394: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,428: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,462: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,489: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,528: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,561: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,594: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,630: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,656: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,692: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,727: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,763: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,800: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,833: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,868: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,890: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,928: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,966: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:30,999: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:31,028: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:31,062: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:31,092: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:31,126: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rosout][ERROR] 2012-12-14 19:54:31,166: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2ce8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 216, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 178, in filter_edge_depth
+    cv2.imwrite('old_img_%03d.png' % str(self.depth_frame_cnt), self.img_filter_buf)
+TypeError: %d format: a number is required, not str
+
+[rospy.core][INFO] 2012-12-14 19:54:31,180: signal_shutdown [signal-2]
+[rospy.impl.masterslave][INFO] 2012-12-14 19:54:31,188: signal-2
+[rospy.core][INFO] 2012-12-14 19:54:31,353: signal_shutdown [atexit]

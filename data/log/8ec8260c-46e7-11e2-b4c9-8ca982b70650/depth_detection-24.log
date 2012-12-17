@@ -1,0 +1,146 @@
+[rospy.client][INFO] 2012-12-15 19:45:13,437: init_node, name[/depth_detection], pid[6780]
+[xmlrpc][INFO] 2012-12-15 19:45:13,437: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-15 19:45:13,438: Started XML-RPC server [http://pc:35392/]
+[rospy.init][INFO] 2012-12-15 19:45:13,438: ROS Slave URI: [http://pc:35392/]
+[rospy.impl.masterslave][INFO] 2012-12-15 19:45:13,438: _ready: http://pc:35392/
+[rospy.registration][INFO] 2012-12-15 19:45:13,439: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2012-12-15 19:45:13,439: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2012-12-15 19:45:13,538: registered with master
+[rospy.rosout][INFO] 2012-12-15 19:45:13,572: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-15 19:45:13,575: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-15 19:45:13,576: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][ERROR] 2012-12-15 19:45:25,806: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e849e0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 290, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 116, in get_contours
+    brect = cv2.boundingRect(c)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1664: error: (-215) points.checkVector(2) >= 0 && (points.depth() == CV_32F || points.depth() == CV_32S) in function boundingRect
+
+
+[rosout][ERROR] 2012-12-15 19:45:26,608: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e849e0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 290, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 116, in get_contours
+    brect = cv2.boundingRect(c)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1664: error: (-215) points.checkVector(2) >= 0 && (points.depth() == CV_32F || points.depth() == CV_32S) in function boundingRect
+
+
+[rosout][ERROR] 2012-12-15 19:45:28,163: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e849e0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 290, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 116, in get_contours
+    brect = cv2.boundingRect(c)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1664: error: (-215) points.checkVector(2) >= 0 && (points.depth() == CV_32F || points.depth() == CV_32S) in function boundingRect
+
+
+[rosout][ERROR] 2012-12-15 19:45:28,444: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e849e0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 290, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 116, in get_contours
+    brect = cv2.boundingRect(c)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1664: error: (-215) points.checkVector(2) >= 0 && (points.depth() == CV_32F || points.depth() == CV_32S) in function boundingRect
+
+
+[rosout][ERROR] 2012-12-15 19:45:28,735: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e849e0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 290, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 116, in get_contours
+    brect = cv2.boundingRect(c)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1664: error: (-215) points.checkVector(2) >= 0 && (points.depth() == CV_32F || points.depth() == CV_32S) in function boundingRect
+
+
+[rosout][ERROR] 2012-12-15 19:45:29,008: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e849e0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 290, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 116, in get_contours
+    brect = cv2.boundingRect(c)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1664: error: (-215) points.checkVector(2) >= 0 && (points.depth() == CV_32F || points.depth() == CV_32S) in function boundingRect
+
+
+[rosout][ERROR] 2012-12-15 19:45:29,152: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e849e0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 290, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 116, in get_contours
+    brect = cv2.boundingRect(c)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1664: error: (-215) points.checkVector(2) >= 0 && (points.depth() == CV_32F || points.depth() == CV_32S) in function boundingRect
+
+
+[rosout][ERROR] 2012-12-15 19:45:29,600: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e849e0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 290, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 116, in get_contours
+    brect = cv2.boundingRect(c)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1664: error: (-215) points.checkVector(2) >= 0 && (points.depth() == CV_32F || points.depth() == CV_32S) in function boundingRect
+
+
+[rosout][ERROR] 2012-12-15 19:45:29,732: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e849e0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 290, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 116, in get_contours
+    brect = cv2.boundingRect(c)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1664: error: (-215) points.checkVector(2) >= 0 && (points.depth() == CV_32F || points.depth() == CV_32S) in function boundingRect
+
+
+[rosout][ERROR] 2012-12-15 19:45:29,934: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e849e0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 290, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 116, in get_contours
+    brect = cv2.boundingRect(c)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1664: error: (-215) points.checkVector(2) >= 0 && (points.depth() == CV_32F || points.depth() == CV_32S) in function boundingRect
+
+
+[rosout][ERROR] 2012-12-15 19:45:30,415: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e849e0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 290, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 116, in get_contours
+    brect = cv2.boundingRect(c)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1664: error: (-215) points.checkVector(2) >= 0 && (points.depth() == CV_32F || points.depth() == CV_32S) in function boundingRect
+
+
+[rosout][ERROR] 2012-12-15 19:45:30,551: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e849e0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 290, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 116, in get_contours
+    brect = cv2.boundingRect(c)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1664: error: (-215) points.checkVector(2) >= 0 && (points.depth() == CV_32F || points.depth() == CV_32S) in function boundingRect
+
+
+[rospy.core][INFO] 2012-12-15 19:45:30,911: signal_shutdown [signal-2]
+[rospy.impl.masterslave][INFO] 2012-12-15 19:45:30,918: signal-2
+[rospy.core][INFO] 2012-12-15 19:45:31,083: signal_shutdown [atexit]

@@ -1,0 +1,1779 @@
+
+
+1355591589.910087913  Node Startup
+
+1355591589.983311598 INFO [/tmp/buildd/ros-electric-ros-comm-1.6.7/debian/ros-electric-ros-comm/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/src/libros/service.cpp:80(service::exists) [topics: /rosout] waitForService: Service [/camera_nodelet_manager/load_nodelet] has not been advertised, waiting...
+1355591590.092533797 INFO [/tmp/buildd/ros-electric-ros-comm-1.6.7/debian/ros-electric-ros-comm/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/src/libros/service.cpp:80(service::exists) [topics: /rosout] waitForService: Service [/camera_nodelet_manager/load_nodelet] has not been advertised, waiting...
+1355591590.269953293 INFO [/tmp/buildd/ros-electric-ros-comm-1.6.7/debian/ros-electric-ros-comm/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/src/libros/service.cpp:80(service::exists) [topics: /rosout] waitForService: Service [/camera_nodelet_manager/load_nodelet] has not been advertised, waiting...
+1355591590.105682599 INFO [/tmp/buildd/ros-electric-ros-comm-1.6.7/debian/ros-electric-ros-comm/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/src/libros/service.cpp:80(service::exists) [topics: /rosout] waitForService: Service [/camera_nodelet_manager/load_nodelet] has not been advertised, waiting...
+1355591590.065833554 INFO [/tmp/buildd/ros-electric-ros-comm-1.6.7/debian/ros-electric-ros-comm/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/src/libros/service.cpp:80(service::exists) [topics: /rosout] waitForService: Service [/camera_nodelet_manager/load_nodelet] has not been advertised, waiting...
+1355591590.089849379 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:203(loadNodelet) [topics: /rosout] /camera/depth/image_rect -> /camera/depth/image_rect_raw
+1355591590.227261852 INFO [/tmp/buildd/ros-electric-ros-comm-1.6.7/debian/ros-electric-ros-comm/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/src/libros/service.cpp:80(service::exists) [topics: /rosout] waitForService: Service [/camera_nodelet_manager/load_nodelet] has not been advertised, waiting...
+1355591590.314868051 INFO [/tmp/buildd/ros-electric-ros-comm-1.6.7/debian/ros-electric-ros-comm/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/src/libros/service.cpp:122(service::waitForService) [topics: /rosout] waitForService: Service [/camera_nodelet_manager/load_nodelet] is now available.
+1355591590.316590371 INFO [/tmp/buildd/ros-electric-ros-comm-1.6.7/debian/ros-electric-ros-comm/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/src/libros/service.cpp:122(service::waitForService) [topics: /rosout] waitForService: Service [/camera_nodelet_manager/load_nodelet] is now available.
+1355591590.342728722 INFO [/tmp/buildd/ros-electric-ros-comm-1.6.7/debian/ros-electric-ros-comm/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/src/libros/service.cpp:122(service::waitForService) [topics: /rosout] waitForService: Service [/camera_nodelet_manager/load_nodelet] is now available.
+1355591590.172764153 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:197(loadNodelet) [topics: /rosout] Loading nodelet /camera/depth_registered/metric of type depth_image_proc/convert_metric to manager /camera_nodelet_manager with the following remappings:
+1355591590.311106967 INFO [/tmp/buildd/ros-electric-ros-comm-1.6.7/debian/ros-electric-ros-comm/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/src/libros/service.cpp:122(service::waitForService) [topics: /rosout] waitForService: Service [/camera_nodelet_manager/load_nodelet] is now available.
+1355591590.310406162 INFO [/tmp/buildd/ros-electric-ros-comm-1.6.7/debian/ros-electric-ros-comm/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/src/libros/service.cpp:122(service::waitForService) [topics: /rosout] waitForService: Service [/camera_nodelet_manager/load_nodelet] is now available.
+1355591590.343514545 INFO [/tmp/buildd/ros-electric-ros-comm-1.6.7/debian/ros-electric-ros-comm/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/src/libros/service.cpp:122(service::waitForService) [topics: /rosout] waitForService: Service [/camera_nodelet_manager/load_nodelet] is now available.
+1355591593.052238268 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:197(loadNodelet) [topics: /rosout] Loading nodelet /camera/depth/metric_rect of type depth_image_proc/convert_metric to manager /camera_nodelet_manager with the following remappings:
+1355591593.089296690 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:197(loadNodelet) [topics: /rosout] Loading nodelet /camera/register_depth_rgb of type depth_image_proc/register to manager /camera_nodelet_manager with the following remappings:
+1355591593.096369789 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:197(loadNodelet) [topics: /rosout] Loading nodelet /camera/depth/metric of type depth_image_proc/convert_metric to manager /camera_nodelet_manager with the following remappings:
+1355591593.127538371 INFO [/tmp/buildd/ros-electric-ros-comm-1.6.7/debian/ros-electric-ros-comm/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/src/libros/service.cpp:122(service::waitForService) [topics: /rosout] waitForService: Service [/camera_nodelet_manager/load_nodelet] is now available.
+1355591593.128369749 INFO [/tmp/buildd/ros-electric-ros-comm-1.6.7/debian/ros-electric-ros-comm/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/src/libros/service.cpp:122(service::waitForService) [topics: /rosout] waitForService: Service [/camera_nodelet_manager/load_nodelet] is now available.
+1355591593.167665129 INFO [/tmp/buildd/ros-electric-ros-comm-1.6.7/debian/ros-electric-ros-comm/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/src/libros/service.cpp:122(service::waitForService) [topics: /rosout] waitForService: Service [/camera_nodelet_manager/load_nodelet] is now available.
+1355591593.168553079 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:197(loadNodelet) [topics: /rosout] Loading nodelet /camera/points_xyzrgb_depth_rgb of type depth_image_proc/point_cloud_xyzrgb to manager /camera_nodelet_manager with the following remappings:
+1355591593.168621804 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:203(loadNodelet) [topics: /rosout] /camera/depth_registered/image_rect -> /camera/depth_registered/image_rect_raw
+1355591593.168659033 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:203(loadNodelet) [topics: /rosout] /camera/depth_registered/points -> /camera/depth_registered/points
+1355591593.168686242 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:203(loadNodelet) [topics: /rosout] /camera/rgb/camera_info -> /camera/rgb/camera_info
+1355591593.168729061 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:203(loadNodelet) [topics: /rosout] /camera/rgb/image_rect_color -> /camera/rgb/image_rect_color
+1355591593.073763221 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:203(loadNodelet) [topics: /rosout] /camera/depth_registered/image_rect -> /camera/depth_registered/image_rect_raw
+1355591594.254909674 ERROR [/tmp/buildd/ros-electric-ros-comm-1.6.7/debian/ros-electric-ros-comm/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/src/libros/service_manager.cpp:147(ServiceManager::advertiseService) [topics: /rosout, /camera/rgb/rectify_color/parameter_descriptions, /camera/rgb/rectify_color/parameter_updates, /camera/rgb/image_rect_color/compressed, /camera/rgb/image_rect_color/compressed/parameter_descriptions, /camera/rgb/image_rect_color/compressed/parameter_updates, /camera/rgb/image_rect_color, /camera/rgb/image_rect_color/theora, /camera/rgb/image_rect_color/theora/parameter_descriptions, /camera/rgb/image_rect_color/theora/parameter_updates, /camera/ir/rectify_ir/parameter_descriptions, /camera/ir/rectify_ir/parameter_updates, /camera/ir/image_rect/compressed, /camera/ir/image_rect/compressed/parameter_descriptions, /camera/ir/image_rect/compressed/parameter_updates, /camera/ir/image_rect, /camera/ir/image_rect/theora, /camera/ir/image_rect/theora/parameter_descriptions, /camera/ir/image_rect/theora/parameter_updates, /camera/depth_registered/disparity, /camera/depth_registered/image_rect/compressed, /camera/depth_registered/image_rect/compressed/parameter_descriptions, /camera/depth_registered/image_rect/compressed/parameter_updates, /camera/depth_registered/image_rect, /camera/depth_registered/image_rect/theora, /camera/depth_registered/image_rect/theora/parameter_descriptions, /camera/depth_registered/image_rect/theora/parameter_updates, /camera/depth/disparity, /camera/depth/points, /camera/depth/image_rect/compressed, /camera/depth/image_rect/compressed/parameter_descriptions, /camera/depth/image_rect/compressed/parameter_updates, /camera/depth/image_rect, /camera/depth/image_rect/theora, /camera/depth/image_rect/theora/parameter_descriptions, /camera/depth/image_rect/theora/parameter_updates, /camera/depth_registered/rectify_depth/parameter_descriptions, /camera/depth_registered/rectify_depth/parameter_updates, /camera/depth_registered/image_rect_raw/compressed, /camera/depth_registered/image_rect_raw/compressed/parameter_descriptions, /camera/depth_registered/image_rect_raw/compressed/parameter_updates, /camera/depth_registered/image_rect_raw, /camera/depth_registered/image_rect_raw/theora, /camera/depth_registered/image_rect_raw/theora/parameter_descriptions, /camera/depth_registered/image_rect_raw/theora/parameter_updates] Tried to advertise a service that is already advertised in this node [/camera/depth_registered/image_rect_raw/compressed/set_parameters]
+1355591594.266579243 ERROR [/tmp/buildd/ros-electric-ros-comm-1.6.7/debian/ros-electric-ros-comm/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/src/libros/service_manager.cpp:147(ServiceManager::advertiseService) [topics: /rosout, /camera/rgb/rectify_color/parameter_descriptions, /camera/rgb/rectify_color/parameter_updates, /camera/rgb/image_rect_color/compressed, /camera/rgb/image_rect_color/compressed/parameter_descriptions, /camera/rgb/image_rect_color/compressed/parameter_updates, /camera/rgb/image_rect_color, /camera/rgb/image_rect_color/theora, /camera/rgb/image_rect_color/theora/parameter_descriptions, /camera/rgb/image_rect_color/theora/parameter_updates, /camera/ir/rectify_ir/parameter_descriptions, /camera/ir/rectify_ir/parameter_updates, /camera/ir/image_rect/compressed, /camera/ir/image_rect/compressed/parameter_descriptions, /camera/ir/image_rect/compressed/parameter_updates, /camera/ir/image_rect, /camera/ir/image_rect/theora, /camera/ir/image_rect/theora/parameter_descriptions, /camera/ir/image_rect/theora/parameter_updates, /camera/depth_registered/disparity, /camera/depth_registered/image_rect/compressed, /camera/depth_registered/image_rect/compressed/parameter_descriptions, /camera/depth_registered/image_rect/compressed/parameter_updates, /camera/depth_registered/image_rect, /camera/depth_registered/image_rect/theora, /camera/depth_registered/image_rect/theora/parameter_descriptions, /camera/depth_registered/image_rect/theora/parameter_updates, /camera/depth/disparity, /camera/depth/points, /camera/depth/image_rect/compressed, /camera/depth/image_rect/compressed/parameter_descriptions, /camera/depth/image_rect/compressed/parameter_updates, /camera/depth/image_rect, /camera/depth/image_rect/theora, /camera/depth/image_rect/theora/parameter_descriptions, /camera/depth/image_rect/theora/parameter_updates, /camera/depth_registered/rectify_depth/parameter_descriptions, /camera/depth_registered/rectify_depth/parameter_updates, /camera/depth_registered/image_rect_raw/compressed, /camera/depth_registered/image_rect_raw/compressed/parameter_descriptions, /camera/depth_registered/image_rect_raw/compressed/parameter_updates, /camera/depth_registered/image_rect_raw, /camera/depth_registered/image_rect_raw/theora, /camera/depth_registered/image_rect_raw/theora/parameter_descriptions, /camera/depth_registered/image_rect_raw/theora/parameter_updates] Tried to advertise a service that is already advertised in this node [/camera/depth_registered/image_rect_raw/theora/set_parameters]
+1355591599.854522734 INFO [/tmp/buildd/ros-electric-openni-kinect-0.3.4/debian/ros-electric-openni-kinect/opt/ros/electric/stacks/openni_kinect/openni_camera/src/nodelets/driver.cpp:222(DriverNodelet::setupDevice) [topics: /rosout, /camera/rgb/rectify_color/parameter_descriptions, /camera/rgb/rectify_color/parameter_updates, /camera/rgb/image_rect_color/compressed, /camera/rgb/image_rect_color/compressed/parameter_descriptions, /camera/rgb/image_rect_color/compressed/parameter_updates, /camera/rgb/image_rect_color, /camera/rgb/image_rect_color/theora, /camera/rgb/image_rect_color/theora/parameter_descriptions, /camera/rgb/image_rect_color/theora/parameter_updates, /camera/ir/rectify_ir/parameter_descriptions, /camera/ir/rectify_ir/parameter_updates, /camera/ir/image_rect/compressed, /camera/ir/image_rect/compressed/parameter_descriptions, /camera/ir/image_rect/compressed/parameter_updates, /camera/ir/image_rect, /camera/ir/image_rect/theora, /camera/ir/image_rect/theora/parameter_descriptions, /camera/ir/image_rect/theora/parameter_updates, /camera/depth_registered/disparity, /camera/depth_registered/image_rect/compressed, /camera/depth_registered/image_rect/compressed/parameter_descriptions, /camera/depth_registered/image_rect/compressed/parameter_updates, /camera/depth_registered/image_rect, /camera/depth_registered/image_rect/theora, /camera/depth_registered/image_rect/theora/parameter_descriptions, /camera/depth_registered/image_rect/theora/parameter_updates, /camera/depth/disparity, /camera/depth/points, /camera/depth/image_rect/compressed, /camera/depth/image_rect/compressed/parameter_descriptions, /camera/depth/image_rect/compressed/parameter_updates, /camera/depth/image_rect, /camera/depth/image_rect/theora, /camera/depth/image_rect/theora/parameter_descriptions, /camera/depth/image_rect/theora/parameter_updates, /camera/depth_registered/rectify_depth/parameter_descriptions, /camera/depth_registered/rectify_depth/parameter_updates, /camera/depth_registered/image_rect_raw/compressed, /camera/depth_registered/image_rect_raw/compressed/parameter_descriptions, /camera/depth_registered/image_rect_raw/compressed/parameter_updates, /camera/depth_registered/image_rect_raw, /camera/depth_registered/image_rect_raw/theora, /camera/depth_registered/image_rect_raw/theora/parameter_descriptions, /camera/depth_registered/image_rect_raw/theora/parameter_updates, /camera/depth_registered/camera_info, /camera/depth/image/compressed, /camera/depth/image/compressed/parameter_descriptions, /camera/depth/image/compressed/parameter_updates, /camera/depth/image, /camera/depth/image/theora, /camera/depth/image/theora/parameter_descriptions, /camera/depth/image/theora/parameter_updates, /camera/rgb/rectify_mono/parameter_descriptions, /camera/rgb/rectify_mono/parameter_updates, /camera/rgb/image_rect/compressed, /camera/rgb/image_rect/compressed/parameter_descriptions, /camera/rgb/image_rect/compressed/parameter_updates, /camera/rgb/image_rect, /camera/rgb/image_rect/theora, /camera/rgb/image_rect/theora/parameter_descriptions, /camera/rgb/image_rect/theora/parameter_updates, /camera/rgb/debayer/parameter_descriptions, /camera/rgb/debayer/parameter_updates, /camera/rgb/image_mono/compressed, /camera/rgb/image_mono/compressed/parameter_descriptions, /camera/rgb/image_mono/compressed/parameter_updates, /camera/rgb/image_mono, /camera/rgb/image_mono/theora, /camera/rgb/image_mono/theora/parameter_descriptions, /camera/rgb/image_mono/theora/parameter_updates, /camera/rgb/image_color/compressed, /camera/rgb/image_color/compressed/parameter_descriptions, /camera/rgb/image_color/compressed/parameter_updates, /camera/rgb/image_color, /camera/rgb/image_color/theora, /camera/rgb/image_color/theora/parameter_descriptions, /camera/rgb/image_color/theora/parameter_updates, /camera/depth/rectify_depth/parameter_descriptions, /camera/depth/rectify_depth/parameter_updates, /camera/depth/image_rect_raw/compressed, /camera/depth/image_rect_raw/compressed/parameter_descriptions, /camera/depth/image_rect_raw/compressed/parameter_updates, /camera/depth/image_rect_raw, /camera/depth/image_rect_raw/theora, /camera/depth/image_rect_raw/theora/parameter_descriptions, /camera/depth/image_rect_raw/theora/parameter_updates, /camera/depth_registered/points, /camera/depth_registered/image/compressed, /camera/depth_registered/image/compressed/parameter_descriptions, /camera/depth_registered/image/compressed/parameter_updates, /camera/depth_registered/image, /camera/depth_registered/image/theora, /camera/depth_registered/image/theora/parameter_descriptions, /camera/depth_registered/image/theora/parameter_updates] Number devices connected: 1
+1355591599.854726957 INFO [/tmp/buildd/ros-electric-openni-kinect-0.3.4/debian/ros-electric-openni-kinect/opt/ros/electric/stacks/openni_kinect/openni_camera/src/nodelets/driver.cpp:229(DriverNodelet::setupDevice) [topics: /rosout, /camera/rgb/rectify_color/parameter_descriptions, /camera/rgb/rectify_color/parameter_updates, /camera/rgb/image_rect_color/compressed, /camera/rgb/image_rect_color/compressed/parameter_descriptions, /camera/rgb/image_rect_color/compressed/parameter_updates, /camera/rgb/image_rect_color, /camera/rgb/image_rect_color/theora, /camera/rgb/image_rect_color/theora/parameter_descriptions, /camera/rgb/image_rect_color/theora/parameter_updates, /camera/ir/rectify_ir/parameter_descriptions, /camera/ir/rectify_ir/parameter_updates, /camera/ir/image_rect/compressed, /camera/ir/image_rect/compressed/parameter_descriptions, /camera/ir/image_rect/compressed/parameter_updates, /camera/ir/image_rect, /camera/ir/image_rect/theora, /camera/ir/image_rect/theora/parameter_descriptions, /camera/ir/image_rect/theora/parameter_updates, /camera/depth_registered/disparity, /camera/depth_registered/image_rect/compressed, /camera/depth_registered/image_rect/compressed/parameter_descriptions, /camera/depth_registered/image_rect/compressed/parameter_updates, /camera/depth_registered/image_rect, /camera/depth_registered/image_rect/theora, /camera/depth_registered/image_rect/theora/parameter_descriptions, /camera/depth_registered/image_rect/theora/parameter_updates, /camera/depth/disparity, /camera/depth/points, /camera/depth/image_rect/compressed, /camera/depth/image_rect/compressed/parameter_descriptions, /camera/depth/image_rect/compressed/parameter_updates, /camera/depth/image_rect, /camera/depth/image_rect/theora, /camera/depth/image_rect/theora/parameter_descriptions, /camera/depth/image_rect/theora/parameter_updates, /camera/depth_registered/rectify_depth/parameter_descriptions, /camera/depth_registered/rectify_depth/parameter_updates, /camera/depth_registered/image_rect_raw/compressed, /camera/depth_registered/image_rect_raw/compressed/parameter_descriptions, /camera/depth_registered/image_rect_raw/compressed/parameter_updates, /camera/depth_registered/image_rect_raw, /camera/depth_registered/image_rect_raw/theora, /camera/depth_registered/image_rect_raw/theora/parameter_descriptions, /camera/depth_registered/image_rect_raw/theora/parameter_updates, /camera/depth_registered/camera_info, /camera/depth/image/compressed, /camera/depth/image/compressed/parameter_descriptions, /camera/depth/image/compressed/parameter_updates, /camera/depth/image, /camera/depth/image/theora, /camera/depth/image/theora/parameter_descriptions, /camera/depth/image/theora/parameter_updates, /camera/rgb/rectify_mono/parameter_descriptions, /camera/rgb/rectify_mono/parameter_updates, /camera/rgb/image_rect/compressed, /camera/rgb/image_rect/compressed/parameter_descriptions, /camera/rgb/image_rect/compressed/parameter_updates, /camera/rgb/image_rect, /camera/rgb/image_rect/theora, /camera/rgb/image_rect/theora/parameter_descriptions, /camera/rgb/image_rect/theora/parameter_updates, /camera/rgb/debayer/parameter_descriptions, /camera/rgb/debayer/parameter_updates, /camera/rgb/image_mono/compressed, /camera/rgb/image_mono/compressed/parameter_descriptions, /camera/rgb/image_mono/compressed/parameter_updates, /camera/rgb/image_mono, /camera/rgb/image_mono/theora, /camera/rgb/image_mono/theora/parameter_descriptions, /camera/rgb/image_mono/theora/parameter_updates, /camera/rgb/image_color/compressed, /camera/rgb/image_color/compressed/parameter_descriptions, /camera/rgb/image_color/compressed/parameter_updates, /camera/rgb/image_color, /camera/rgb/image_color/theora, /camera/rgb/image_color/theora/parameter_descriptions, /camera/rgb/image_color/theora/parameter_updates, /camera/depth/rectify_depth/parameter_descriptions, /camera/depth/rectify_depth/parameter_updates, /camera/depth/image_rect_raw/compressed, /camera/depth/image_rect_raw/compressed/parameter_descriptions, /camera/depth/image_rect_raw/compressed/parameter_updates, /camera/depth/image_rect_raw, /camera/depth/image_rect_raw/theora, /camera/depth/image_rect_raw/theora/parameter_descriptions, /camera/depth/image_rect_raw/theora/parameter_updates, /camera/depth_registered/points, /camera/depth_registered/image/compressed, /camera/depth_registered/image/compressed/parameter_descriptions, /camera/depth_registered/image/compressed/parameter_updates, /camera/depth_registered/image, /camera/depth_registered/image/theora, /camera/depth_registered/image/theora/parameter_descriptions, /camera/depth_registered/image/theora/parameter_updates] 1. device on bus 002:33 is a Xbox NUI Camera (2ae) from Microsoft (45e) with serial id 'A00363A21163046A'
+1355591599.857150442 INFO [/tmp/buildd/ros-electric-openni-kinect-0.3.4/debian/ros-electric-openni-kinect/opt/ros/electric/stacks/openni_kinect/openni_camera/src/nodelets/driver.cpp:250(DriverNodelet::setupDevice) [topics: /rosout, /camera/rgb/rectify_color/parameter_descriptions, /camera/rgb/rectify_color/parameter_updates, /camera/rgb/image_rect_color/compressed, /camera/rgb/image_rect_color/compressed/parameter_descriptions, /camera/rgb/image_rect_color/compressed/parameter_updates, /camera/rgb/image_rect_color, /camera/rgb/image_rect_color/theora, /camera/rgb/image_rect_color/theora/parameter_descriptions, /camera/rgb/image_rect_color/theora/parameter_updates, /camera/ir/rectify_ir/parameter_descriptions, /camera/ir/rectify_ir/parameter_updates, /camera/ir/image_rect/compressed, /camera/ir/image_rect/compressed/parameter_descriptions, /camera/ir/image_rect/compressed/parameter_updates, /camera/ir/image_rect, /camera/ir/image_rect/theora, /camera/ir/image_rect/theora/parameter_descriptions, /camera/ir/image_rect/theora/parameter_updates, /camera/depth_registered/disparity, /camera/depth_registered/image_rect/compressed, /camera/depth_registered/image_rect/compressed/parameter_descriptions, /camera/depth_registered/image_rect/compressed/parameter_updates, /camera/depth_registered/image_rect, /camera/depth_registered/image_rect/theora, /camera/depth_registered/image_rect/theora/parameter_descriptions, /camera/depth_registered/image_rect/theora/parameter_updates, /camera/depth/disparity, /camera/depth/points, /camera/depth/image_rect/compressed, /camera/depth/image_rect/compressed/parameter_descriptions, /camera/depth/image_rect/compressed/parameter_updates, /camera/depth/image_rect, /camera/depth/image_rect/theora, /camera/depth/image_rect/theora/parameter_descriptions, /camera/depth/image_rect/theora/parameter_updates, /camera/depth_registered/rectify_depth/parameter_descriptions, /camera/depth_registered/rectify_depth/parameter_updates, /camera/depth_registered/image_rect_raw/compressed, /camera/depth_registered/image_rect_raw/compressed/parameter_descriptions, /camera/depth_registered/image_rect_raw/compressed/parameter_updates, /camera/depth_registered/image_rect_raw, /camera/depth_registered/image_rect_raw/theora, /camera/depth_registered/image_rect_raw/theora/parameter_descriptions, /camera/depth_registered/image_rect_raw/theora/parameter_updates, /camera/depth_registered/camera_info, /camera/depth/image/compressed, /camera/depth/image/compressed/parameter_descriptions, /camera/depth/image/compressed/parameter_updates, /camera/depth/image, /camera/depth/image/theora, /camera/depth/image/theora/parameter_descriptions, /camera/depth/image/theora/parameter_updates, /camera/rgb/rectify_mono/parameter_descriptions, /camera/rgb/rectify_mono/parameter_updates, /camera/rgb/image_rect/compressed, /camera/rgb/image_rect/compressed/parameter_descriptions, /camera/rgb/image_rect/compressed/parameter_updates, /camera/rgb/image_rect, /camera/rgb/image_rect/theora, /camera/rgb/image_rect/theora/parameter_descriptions, /camera/rgb/image_rect/theora/parameter_updates, /camera/rgb/debayer/parameter_descriptions, /camera/rgb/debayer/parameter_updates, /camera/rgb/image_mono/compressed, /camera/rgb/image_mono/compressed/parameter_descriptions, /camera/rgb/image_mono/compressed/parameter_updates, /camera/rgb/image_mono, /camera/rgb/image_mono/theora, /camera/rgb/image_mono/theora/parameter_descriptions, /camera/rgb/image_mono/theora/parameter_updates, /camera/rgb/image_color/compressed, /camera/rgb/image_color/compressed/parameter_descriptions, /camera/rgb/image_color/compressed/parameter_updates, /camera/rgb/image_color, /camera/rgb/image_color/theora, /camera/rgb/image_color/theora/parameter_descriptions, /camera/rgb/image_color/theora/parameter_updates, /camera/depth/rectify_depth/parameter_descriptions, /camera/depth/rectify_depth/parameter_updates, /camera/depth/image_rect_raw/compressed, /camera/depth/image_rect_raw/compressed/parameter_descriptions, /camera/depth/image_rect_raw/compressed/parameter_updates, /camera/depth/image_rect_raw, /camera/depth/image_rect_raw/theora, /camera/depth/image_rect_raw/theora/parameter_descriptions, /camera/depth/image_rect_raw/theora/parameter_updates, /camera/depth_registered/points, /camera/depth_registered/image/compressed, /camera/depth_registered/image/compressed/parameter_descriptions, /camera/depth_registered/image/compressed/parameter_updates, /camera/depth_registered/image, /camera/depth_registered/image/theora, /camera/depth_registered/image/theora/parameter_descriptions, /camera/depth_registered/image/theora/parameter_updates] Searching for device with index = 1
+1355591599.918607037 INFO [/tmp/buildd/ros-electric-openni-kinect-0.3.4/debian/ros-electric-openni-kinect/opt/ros/electric/stacks/openni_kinect/openni_camera/src/nodelets/driver.cpp:276(DriverNodelet::setupDevice) [topics: /rosout, /camera/rgb/rectify_color/parameter_descriptions, /camera/rgb/rectify_color/parameter_updates, /camera/rgb/image_rect_color/compressed, /camera/rgb/image_rect_color/compressed/parameter_descriptions, /camera/rgb/image_rect_color/compressed/parameter_updates, /camera/rgb/image_rect_color, /camera/rgb/image_rect_color/theora, /camera/rgb/image_rect_color/theora/parameter_descriptions, /camera/rgb/image_rect_color/theora/parameter_updates, /camera/ir/rectify_ir/parameter_descriptions, /camera/ir/rectify_ir/parameter_updates, /camera/ir/image_rect/compressed, /camera/ir/image_rect/compressed/parameter_descriptions, /camera/ir/image_rect/compressed/parameter_updates, /camera/ir/image_rect, /camera/ir/image_rect/theora, /camera/ir/image_rect/theora/parameter_descriptions, /camera/ir/image_rect/theora/parameter_updates, /camera/depth_registered/disparity, /camera/depth_registered/image_rect/compressed, /camera/depth_registered/image_rect/compressed/parameter_descriptions, /camera/depth_registered/image_rect/compressed/parameter_updates, /camera/depth_registered/image_rect, /camera/depth_registered/image_rect/theora, /camera/depth_registered/image_rect/theora/parameter_descriptions, /camera/depth_registered/image_rect/theora/parameter_updates, /camera/depth/disparity, /camera/depth/points, /camera/depth/image_rect/compressed, /camera/depth/image_rect/compressed/parameter_descriptions, /camera/depth/image_rect/compressed/parameter_updates, /camera/depth/image_rect, /camera/depth/image_rect/theora, /camera/depth/image_rect/theora/parameter_descriptions, /camera/depth/image_rect/theora/parameter_updates, /camera/depth_registered/rectify_depth/parameter_descriptions, /camera/depth_registered/rectify_depth/parameter_updates, /camera/depth_registered/image_rect_raw/compressed, /camera/depth_registered/image_rect_raw/compressed/parameter_descriptions, /camera/depth_registered/image_rect_raw/compressed/parameter_updates, /camera/depth_registered/image_rect_raw, /camera/depth_registered/image_rect_raw/theora, /camera/depth_registered/image_rect_raw/theora/parameter_descriptions, /camera/depth_registered/image_rect_raw/theora/parameter_updates, /camera/depth_registered/camera_info, /camera/depth/image/compressed, /camera/depth/image/compressed/parameter_descriptions, /camera/depth/image/compressed/parameter_updates, /camera/depth/image, /camera/depth/image/theora, /camera/depth/image/theora/parameter_descriptions, /camera/depth/image/theora/parameter_updates, /camera/rgb/rectify_mono/parameter_descriptions, /camera/rgb/rectify_mono/parameter_updates, /camera/rgb/image_rect/compressed, /camera/rgb/image_rect/compressed/parameter_descriptions, /camera/rgb/image_rect/compressed/parameter_updates, /camera/rgb/image_rect, /camera/rgb/image_rect/theora, /camera/rgb/image_rect/theora/parameter_descriptions, /camera/rgb/image_rect/theora/parameter_updates, /camera/rgb/debayer/parameter_descriptions, /camera/rgb/debayer/parameter_updates, /camera/rgb/image_mono/compressed, /camera/rgb/image_mono/compressed/parameter_descriptions, /camera/rgb/image_mono/compressed/parameter_updates, /camera/rgb/image_mono, /camera/rgb/image_mono/theora, /camera/rgb/image_mono/theora/parameter_descriptions, /camera/rgb/image_mono/theora/parameter_updates, /camera/rgb/image_color/compressed, /camera/rgb/image_color/compressed/parameter_descriptions, /camera/rgb/image_color/compressed/parameter_updates, /camera/rgb/image_color, /camera/rgb/image_color/theora, /camera/rgb/image_color/theora/parameter_descriptions, /camera/rgb/image_color/theora/parameter_updates, /camera/depth/rectify_depth/parameter_descriptions, /camera/depth/rectify_depth/parameter_updates, /camera/depth/image_rect_raw/compressed, /camera/depth/image_rect_raw/compressed/parameter_descriptions, /camera/depth/image_rect_raw/compressed/parameter_updates, /camera/depth/image_rect_raw, /camera/depth/image_rect_raw/theora, /camera/depth/image_rect_raw/theora/parameter_descriptions, /camera/depth/image_rect_raw/theora/parameter_updates, /camera/depth_registered/points, /camera/depth_registered/image/compressed, /camera/depth_registered/image/compressed/parameter_descriptions, /camera/depth_registered/image/compressed/parameter_updates, /camera/depth_registered/image, /camera/depth_registered/image/theora, /camera/depth_registered/image/theora/parameter_descriptions, /camera/depth_registered/image/theora/parameter_updates] Opened 'Xbox NUI Camera' on bus 2:33 with serial number 'A00363A21163046A'
+1355591600.000285536 INFO [/tmp/buildd/ros-electric-openni-kinect-0.3.4/debian/ros-electric-openni-kinect/opt/ros/electric/stacks/openni_kinect/openni_camera/src/nodelets/driver.cpp:114(DriverNodelet::onInitImpl) [topics: /rosout, /camera/rgb/rectify_color/parameter_descriptions, /camera/rgb/rectify_color/parameter_updates, /camera/rgb/image_rect_color/compressed, /camera/rgb/image_rect_color/compressed/parameter_descriptions, /camera/rgb/image_rect_color/compressed/parameter_updates, /camera/rgb/image_rect_color, /camera/rgb/image_rect_color/theora, /camera/rgb/image_rect_color/theora/parameter_descriptions, /camera/rgb/image_rect_color/theora/parameter_updates, /camera/ir/rectify_ir/parameter_descriptions, /camera/ir/rectify_ir/parameter_updates, /camera/ir/image_rect/compressed, /camera/ir/image_rect/compressed/parameter_descriptions, /camera/ir/image_rect/compressed/parameter_updates, /camera/ir/image_rect, /camera/ir/image_rect/theora, /camera/ir/image_rect/theora/parameter_descriptions, /camera/ir/image_rect/theora/parameter_updates, /camera/depth_registered/disparity, /camera/depth_registered/image_rect/compressed, /camera/depth_registered/image_rect/compressed/parameter_descriptions, /camera/depth_registered/image_rect/compressed/parameter_updates, /camera/depth_registered/image_rect, /camera/depth_registered/image_rect/theora, /camera/depth_registered/image_rect/theora/parameter_descriptions, /camera/depth_registered/image_rect/theora/parameter_updates, /camera/depth/disparity, /camera/depth/points, /camera/depth/image_rect/compressed, /camera/depth/image_rect/compressed/parameter_descriptions, /camera/depth/image_rect/compressed/parameter_updates, /camera/depth/image_rect, /camera/depth/image_rect/theora, /camera/depth/image_rect/theora/parameter_descriptions, /camera/depth/image_rect/theora/parameter_updates, /camera/depth_registered/rectify_depth/parameter_descriptions, /camera/depth_registered/rectify_depth/parameter_updates, /camera/depth_registered/image_rect_raw/compressed, /camera/depth_registered/image_rect_raw/compressed/parameter_descriptions, /camera/depth_registered/image_rect_raw/compressed/parameter_updates, /camera/depth_registered/image_rect_raw, /camera/depth_registered/image_rect_raw/theora, /camera/depth_registered/image_rect_raw/theora/parameter_descriptions, /camera/depth_registered/image_rect_raw/theora/parameter_updates, /camera/depth_registered/camera_info, /camera/depth/image/compressed, /camera/depth/image/compressed/parameter_descriptions, /camera/depth/image/compressed/parameter_updates, /camera/depth/image, /camera/depth/image/theora, /camera/depth/image/theora/parameter_descriptions, /camera/depth/image/theora/parameter_updates, /camera/rgb/rectify_mono/parameter_descriptions, /camera/rgb/rectify_mono/parameter_updates, /camera/rgb/image_rect/compressed, /camera/rgb/image_rect/compressed/parameter_descriptions, /camera/rgb/image_rect/compressed/parameter_updates, /camera/rgb/image_rect, /camera/rgb/image_rect/theora, /camera/rgb/image_rect/theora/parameter_descriptions, /camera/rgb/image_rect/theora/parameter_updates, /camera/rgb/debayer/parameter_descriptions, /camera/rgb/debayer/parameter_updates, /camera/rgb/image_mono/compressed, /camera/rgb/image_mono/compressed/parameter_descriptions, /camera/rgb/image_mono/compressed/parameter_updates, /camera/rgb/image_mono, /camera/rgb/image_mono/theora, /camera/rgb/image_mono/theora/parameter_descriptions, /camera/rgb/image_mono/theora/parameter_updates, /camera/rgb/image_color/compressed, /camera/rgb/image_color/compressed/parameter_descriptions, /camera/rgb/image_color/compressed/parameter_updates, /camera/rgb/image_color, /camera/rgb/image_color/theora, /camera/rgb/image_color/theora/parameter_descriptions, /camera/rgb/image_color/theora/parameter_updates, /camera/depth/rectify_depth/parameter_descriptions, /camera/depth/rectify_depth/parameter_updates, /camera/depth/image_rect_raw/compressed, /camera/depth/image_rect_raw/compressed/parameter_descriptions, /camera/depth/image_rect_raw/compressed/parameter_updates, /camera/depth/image_rect_raw, /camera/depth/image_rect_raw/theora, /camera/depth/image_rect_raw/theora/parameter_descriptions, /camera/depth/image_rect_raw/theora/parameter_updates, /camera/depth_registered/points, /camera/depth_registered/image/compressed, /camera/depth_registered/image/compressed/parameter_descriptions, /camera/depth_registered/image/compressed/parameter_updates, /camera/depth_registered/image, /camera/depth_registered/image/theora, /camera/depth_registered/image/theora/parameter_descriptions, /camera/depth_registered/image/theora/parameter_updates, /camera/driver/parameter_descriptions, /camera/driver/parameter_updates] rgb_frame_id = '/camera_rgb_optical_frame' 
+1355591600.000450434 INFO [/tmp/buildd/ros-electric-openni-kinect-0.3.4/debian/ros-electric-openni-kinect/opt/ros/electric/stacks/openni_kinect/openni_camera/src/nodelets/driver.cpp:115(DriverNodelet::onInitImpl) [topics: /rosout, /camera/rgb/rectify_color/parameter_descriptions, /camera/rgb/rectify_color/parameter_updates, /camera/rgb/image_rect_color/compressed, /camera/rgb/image_rect_color/compressed/parameter_descriptions, /camera/rgb/image_rect_color/compressed/parameter_updates, /camera/rgb/image_rect_color, /camera/rgb/image_rect_color/theora, /camera/rgb/image_rect_color/theora/parameter_descriptions, /camera/rgb/image_rect_color/theora/parameter_updates, /camera/ir/rectify_ir/parameter_descriptions, /camera/ir/rectify_ir/parameter_updates, /camera/ir/image_rect/compressed, /camera/ir/image_rect/compressed/parameter_descriptions, /camera/ir/image_rect/compressed/parameter_updates, /camera/ir/image_rect, /camera/ir/image_rect/theora, /camera/ir/image_rect/theora/parameter_descriptions, /camera/ir/image_rect/theora/parameter_updates, /camera/depth_registered/disparity, /camera/depth_registered/image_rect/compressed, /camera/depth_registered/image_rect/compressed/parameter_descriptions, /camera/depth_registered/image_rect/compressed/parameter_updates, /camera/depth_registered/image_rect, /camera/depth_registered/image_rect/theora, /camera/depth_registered/image_rect/theora/parameter_descriptions, /camera/depth_registered/image_rect/theora/parameter_updates, /camera/depth/disparity, /camera/depth/points, /camera/depth/image_rect/compressed, /camera/depth/image_rect/compressed/parameter_descriptions, /camera/depth/image_rect/compressed/parameter_updates, /camera/depth/image_rect, /camera/depth/image_rect/theora, /camera/depth/image_rect/theora/parameter_descriptions, /camera/depth/image_rect/theora/parameter_updates, /camera/depth_registered/rectify_depth/parameter_descriptions, /camera/depth_registered/rectify_depth/parameter_updates, /camera/depth_registered/image_rect_raw/compressed, /camera/depth_registered/image_rect_raw/compressed/parameter_descriptions, /camera/depth_registered/image_rect_raw/compressed/parameter_updates, /camera/depth_registered/image_rect_raw, /camera/depth_registered/image_rect_raw/theora, /camera/depth_registered/image_rect_raw/theora/parameter_descriptions, /camera/depth_registered/image_rect_raw/theora/parameter_updates, /camera/depth_registered/camera_info, /camera/depth/image/compressed, /camera/depth/image/compressed/parameter_descriptions, /camera/depth/image/compressed/parameter_updates, /camera/depth/image, /camera/depth/image/theora, /camera/depth/image/theora/parameter_descriptions, /camera/depth/image/theora/parameter_updates, /camera/rgb/rectify_mono/parameter_descriptions, /camera/rgb/rectify_mono/parameter_updates, /camera/rgb/image_rect/compressed, /camera/rgb/image_rect/compressed/parameter_descriptions, /camera/rgb/image_rect/compressed/parameter_updates, /camera/rgb/image_rect, /camera/rgb/image_rect/theora, /camera/rgb/image_rect/theora/parameter_descriptions, /camera/rgb/image_rect/theora/parameter_updates, /camera/rgb/debayer/parameter_descriptions, /camera/rgb/debayer/parameter_updates, /camera/rgb/image_mono/compressed, /camera/rgb/image_mono/compressed/parameter_descriptions, /camera/rgb/image_mono/compressed/parameter_updates, /camera/rgb/image_mono, /camera/rgb/image_mono/theora, /camera/rgb/image_mono/theora/parameter_descriptions, /camera/rgb/image_mono/theora/parameter_updates, /camera/rgb/image_color/compressed, /camera/rgb/image_color/compressed/parameter_descriptions, /camera/rgb/image_color/compressed/parameter_updates, /camera/rgb/image_color, /camera/rgb/image_color/theora, /camera/rgb/image_color/theora/parameter_descriptions, /camera/rgb/image_color/theora/parameter_updates, /camera/depth/rectify_depth/parameter_descriptions, /camera/depth/rectify_depth/parameter_updates, /camera/depth/image_rect_raw/compressed, /camera/depth/image_rect_raw/compressed/parameter_descriptions, /camera/depth/image_rect_raw/compressed/parameter_updates, /camera/depth/image_rect_raw, /camera/depth/image_rect_raw/theora, /camera/depth/image_rect_raw/theora/parameter_descriptions, /camera/depth/image_rect_raw/theora/parameter_updates, /camera/depth_registered/points, /camera/depth_registered/image/compressed, /camera/depth_registered/image/compressed/parameter_descriptions, /camera/depth_registered/image/compressed/parameter_updates, /camera/depth_registered/image, /camera/depth_registered/image/theora, /camera/depth_registered/image/theora/parameter_descriptions, /camera/depth_registered/image/theora/parameter_updates, /camera/driver/parameter_descriptions, /camera/driver/parameter_updates] depth_frame_id = '/camera_depth_optical_frame' 
+1355591600.010439706 WARN [/tmp/buildd/ros-electric-image-common-1.6.1/debian/ros-electric-image-common/opt/ros/electric/stacks/image_common/camera_info_manager/src/camera_info_manager.cpp:214(CameraInfoManager::loadCalibrationFile) [topics: /rosout, /camera/rgb/rectify_color/parameter_descriptions, /camera/rgb/rectify_color/parameter_updates, /camera/rgb/image_rect_color/compressed, /camera/rgb/image_rect_color/compressed/parameter_descriptions, /camera/rgb/image_rect_color/compressed/parameter_updates, /camera/rgb/image_rect_color, /camera/rgb/image_rect_color/theora, /camera/rgb/image_rect_color/theora/parameter_descriptions, /camera/rgb/image_rect_color/theora/parameter_updates, /camera/ir/rectify_ir/parameter_descriptions, /camera/ir/rectify_ir/parameter_updates, /camera/ir/image_rect/compressed, /camera/ir/image_rect/compressed/parameter_descriptions, /camera/ir/image_rect/compressed/parameter_updates, /camera/ir/image_rect, /camera/ir/image_rect/theora, /camera/ir/image_rect/theora/parameter_descriptions, /camera/ir/image_rect/theora/parameter_updates, /camera/depth_registered/disparity, /camera/depth_registered/image_rect/compressed, /camera/depth_registered/image_rect/compressed/parameter_descriptions, /camera/depth_registered/image_rect/compressed/parameter_updates, /camera/depth_registered/image_rect, /camera/depth_registered/image_rect/theora, /camera/depth_registered/image_rect/theora/parameter_descriptions, /camera/depth_registered/image_rect/theora/parameter_updates, /camera/depth/disparity, /camera/depth/points, /camera/depth/image_rect/compressed, /camera/depth/image_rect/compressed/parameter_descriptions, /camera/depth/image_rect/compressed/parameter_updates, /camera/depth/image_rect, /camera/depth/image_rect/theora, /camera/depth/image_rect/theora/parameter_descriptions, /camera/depth/image_rect/theora/parameter_updates, /camera/depth_registered/rectify_depth/parameter_descriptions, /camera/depth_registered/rectify_depth/parameter_updates, /camera/depth_registered/image_rect_raw/compressed, /camera/depth_registered/image_rect_raw/compressed/parameter_descriptions, /camera/depth_registered/image_rect_raw/compressed/parameter_updates, /camera/depth_registered/image_rect_raw, /camera/depth_registered/image_rect_raw/theora, /camera/depth_registered/image_rect_raw/theora/parameter_descriptions, /camera/depth_registered/image_rect_raw/theora/parameter_updates, /camera/depth_registered/camera_info, /camera/depth/image/compressed, /camera/depth/image/compressed/parameter_descriptions, /camera/depth/image/compressed/parameter_updates, /camera/depth/image, /camera/depth/image/theora, /camera/depth/image/theora/parameter_descriptions, /camera/depth/image/theora/parameter_updates, /camera/rgb/rectify_mono/parameter_descriptions, /camera/rgb/rectify_mono/parameter_updates, /camera/rgb/image_rect/compressed, /camera/rgb/image_rect/compressed/parameter_descriptions, /camera/rgb/image_rect/compressed/parameter_updates, /camera/rgb/image_rect, /camera/rgb/image_rect/theora, /camera/rgb/image_rect/theora/parameter_descriptions, /camera/rgb/image_rect/theora/parameter_updates, /camera/rgb/debayer/parameter_descriptions, /camera/rgb/debayer/parameter_updates, /camera/rgb/image_mono/compressed, /camera/rgb/image_mono/compressed/parameter_descriptions, /camera/rgb/image_mono/compressed/parameter_updates, /camera/rgb/image_mono, /camera/rgb/image_mono/theora, /camera/rgb/image_mono/theora/parameter_descriptions, /camera/rgb/image_mono/theora/parameter_updates, /camera/rgb/image_color/compressed, /camera/rgb/image_color/compressed/parameter_descriptions, /camera/rgb/image_color/compressed/parameter_updates, /camera/rgb/image_color, /camera/rgb/image_color/theora, /camera/rgb/image_color/theora/parameter_descriptions, /camera/rgb/image_color/theora/parameter_updates, /camera/depth/rectify_depth/parameter_descriptions, /camera/depth/rectify_depth/parameter_updates, /camera/depth/image_rect_raw/compressed, /camera/depth/image_rect_raw/compressed/parameter_descriptions, /camera/depth/image_rect_raw/compressed/parameter_updates, /camera/depth/image_rect_raw, /camera/depth/image_rect_raw/theora, /camera/depth/image_rect_raw/theora/parameter_descriptions, /camera/depth/image_rect_raw/theora/parameter_updates, /camera/depth_registered/points, /camera/depth_registered/image/compressed, /camera/depth_registered/image/compressed/parameter_descriptions, /camera/depth_registered/image/compressed/parameter_updates, /camera/depth_registered/image, /camera/depth_registered/image/theora, /camera/depth_registered/image/theora/parameter_descriptions, /camera/depth_registered/image/theora/parameter_updates, /camera/driver/parameter_descriptions, /camera/driver/parameter_updates] Camera calibration file /home/alex/MAS/CV/project/cv_nxtdrive/data/camera_info/rgb_A00363A21163046A.yaml not found.
+1355591600.017990957 WARN [/tmp/buildd/ros-electric-image-common-1.6.1/debian/ros-electric-image-common/opt/ros/electric/stacks/image_common/camera_info_manager/src/camera_info_manager.cpp:214(CameraInfoManager::loadCalibrationFile) [topics: /rosout, /camera/rgb/rectify_color/parameter_descriptions, /camera/rgb/rectify_color/parameter_updates, /camera/rgb/image_rect_color/compressed, /camera/rgb/image_rect_color/compressed/parameter_descriptions, /camera/rgb/image_rect_color/compressed/parameter_updates, /camera/rgb/image_rect_color, /camera/rgb/image_rect_color/theora, /camera/rgb/image_rect_color/theora/parameter_descriptions, /camera/rgb/image_rect_color/theora/parameter_updates, /camera/ir/rectify_ir/parameter_descriptions, /camera/ir/rectify_ir/parameter_updates, /camera/ir/image_rect/compressed, /camera/ir/image_rect/compressed/parameter_descriptions, /camera/ir/image_rect/compressed/parameter_updates, /camera/ir/image_rect, /camera/ir/image_rect/theora, /camera/ir/image_rect/theora/parameter_descriptions, /camera/ir/image_rect/theora/parameter_updates, /camera/depth_registered/disparity, /camera/depth_registered/image_rect/compressed, /camera/depth_registered/image_rect/compressed/parameter_descriptions, /camera/depth_registered/image_rect/compressed/parameter_updates, /camera/depth_registered/image_rect, /camera/depth_registered/image_rect/theora, /camera/depth_registered/image_rect/theora/parameter_descriptions, /camera/depth_registered/image_rect/theora/parameter_updates, /camera/depth/disparity, /camera/depth/points, /camera/depth/image_rect/compressed, /camera/depth/image_rect/compressed/parameter_descriptions, /camera/depth/image_rect/compressed/parameter_updates, /camera/depth/image_rect, /camera/depth/image_rect/theora, /camera/depth/image_rect/theora/parameter_descriptions, /camera/depth/image_rect/theora/parameter_updates, /camera/depth_registered/rectify_depth/parameter_descriptions, /camera/depth_registered/rectify_depth/parameter_updates, /camera/depth_registered/image_rect_raw/compressed, /camera/depth_registered/image_rect_raw/compressed/parameter_descriptions, /camera/depth_registered/image_rect_raw/compressed/parameter_updates, /camera/depth_registered/image_rect_raw, /camera/depth_registered/image_rect_raw/theora, /camera/depth_registered/image_rect_raw/theora/parameter_descriptions, /camera/depth_registered/image_rect_raw/theora/parameter_updates, /camera/depth_registered/camera_info, /camera/depth/image/compressed, /camera/depth/image/compressed/parameter_descriptions, /camera/depth/image/compressed/parameter_updates, /camera/depth/image, /camera/depth/image/theora, /camera/depth/image/theora/parameter_descriptions, /camera/depth/image/theora/parameter_updates, /camera/rgb/rectify_mono/parameter_descriptions, /camera/rgb/rectify_mono/parameter_updates, /camera/rgb/image_rect/compressed, /camera/rgb/image_rect/compressed/parameter_descriptions, /camera/rgb/image_rect/compressed/parameter_updates, /camera/rgb/image_rect, /camera/rgb/image_rect/theora, /camera/rgb/image_rect/theora/parameter_descriptions, /camera/rgb/image_rect/theora/parameter_updates, /camera/rgb/debayer/parameter_descriptions, /camera/rgb/debayer/parameter_updates, /camera/rgb/image_mono/compressed, /camera/rgb/image_mono/compressed/parameter_descriptions, /camera/rgb/image_mono/compressed/parameter_updates, /camera/rgb/image_mono, /camera/rgb/image_mono/theora, /camera/rgb/image_mono/theora/parameter_descriptions, /camera/rgb/image_mono/theora/parameter_updates, /camera/rgb/image_color/compressed, /camera/rgb/image_color/compressed/parameter_descriptions, /camera/rgb/image_color/compressed/parameter_updates, /camera/rgb/image_color, /camera/rgb/image_color/theora, /camera/rgb/image_color/theora/parameter_descriptions, /camera/rgb/image_color/theora/parameter_updates, /camera/depth/rectify_depth/parameter_descriptions, /camera/depth/rectify_depth/parameter_updates, /camera/depth/image_rect_raw/compressed, /camera/depth/image_rect_raw/compressed/parameter_descriptions, /camera/depth/image_rect_raw/compressed/parameter_updates, /camera/depth/image_rect_raw, /camera/depth/image_rect_raw/theora, /camera/depth/image_rect_raw/theora/parameter_descriptions, /camera/depth/image_rect_raw/theora/parameter_updates, /camera/depth_registered/points, /camera/depth_registered/image/compressed, /camera/depth_registered/image/compressed/parameter_descriptions, /camera/depth_registered/image/compressed/parameter_updates, /camera/depth_registered/image, /camera/depth_registered/image/theora, /camera/depth_registered/image/theora/parameter_descriptions, /camera/depth_registered/image/theora/parameter_updates, /camera/driver/parameter_descriptions, /camera/driver/parameter_updates] Camera calibration file /home/alex/MAS/CV/project/cv_nxtdrive/data/camera_info/depth_A00363A21163046A.yaml not found.
+1355591600.022481741 WARN [/tmp/buildd/ros-electric-openni-kinect-0.3.4/debian/ros-electric-openni-kinect/opt/ros/electric/stacks/openni_kinect/openni_camera/src/nodelets/driver.cpp:160(DriverNodelet::onInitImpl) [topics: /rosout, /camera/rgb/rectify_color/parameter_descriptions, /camera/rgb/rectify_color/parameter_updates, /camera/rgb/image_rect_color/compressed, /camera/rgb/image_rect_color/compressed/parameter_descriptions, /camera/rgb/image_rect_color/compressed/parameter_updates, /camera/rgb/image_rect_color, /camera/rgb/image_rect_color/theora, /camera/rgb/image_rect_color/theora/parameter_descriptions, /camera/rgb/image_rect_color/theora/parameter_updates, /camera/ir/rectify_ir/parameter_descriptions, /camera/ir/rectify_ir/parameter_updates, /camera/ir/image_rect/compressed, /camera/ir/image_rect/compressed/parameter_descriptions, /camera/ir/image_rect/compressed/parameter_updates, /camera/ir/image_rect, /camera/ir/image_rect/theora, /camera/ir/image_rect/theora/parameter_descriptions, /camera/ir/image_rect/theora/parameter_updates, /camera/depth_registered/disparity, /camera/depth_registered/image_rect/compressed, /camera/depth_registered/image_rect/compressed/parameter_descriptions, /camera/depth_registered/image_rect/compressed/parameter_updates, /camera/depth_registered/image_rect, /camera/depth_registered/image_rect/theora, /camera/depth_registered/image_rect/theora/parameter_descriptions, /camera/depth_registered/image_rect/theora/parameter_updates, /camera/depth/disparity, /camera/depth/points, /camera/depth/image_rect/compressed, /camera/depth/image_rect/compressed/parameter_descriptions, /camera/depth/image_rect/compressed/parameter_updates, /camera/depth/image_rect, /camera/depth/image_rect/theora, /camera/depth/image_rect/theora/parameter_descriptions, /camera/depth/image_rect/theora/parameter_updates, /camera/depth_registered/rectify_depth/parameter_descriptions, /camera/depth_registered/rectify_depth/parameter_updates, /camera/depth_registered/image_rect_raw/compressed, /camera/depth_registered/image_rect_raw/compressed/parameter_descriptions, /camera/depth_registered/image_rect_raw/compressed/parameter_updates, /camera/depth_registered/image_rect_raw, /camera/depth_registered/image_rect_raw/theora, /camera/depth_registered/image_rect_raw/theora/parameter_descriptions, /camera/depth_registered/image_rect_raw/theora/parameter_updates, /camera/depth_registered/camera_info, /camera/depth/image/compressed, /camera/depth/image/compressed/parameter_descriptions, /camera/depth/image/compressed/parameter_updates, /camera/depth/image, /camera/depth/image/theora, /camera/depth/image/theora/parameter_descriptions, /camera/depth/image/theora/parameter_updates, /camera/rgb/rectify_mono/parameter_descriptions, /camera/rgb/rectify_mono/parameter_updates, /camera/rgb/image_rect/compressed, /camera/rgb/image_rect/compressed/parameter_descriptions, /camera/rgb/image_rect/compressed/parameter_updates, /camera/rgb/image_rect, /camera/rgb/image_rect/theora, /camera/rgb/image_rect/theora/parameter_descriptions, /camera/rgb/image_rect/theora/parameter_updates, /camera/rgb/debayer/parameter_descriptions, /camera/rgb/debayer/parameter_updates, /camera/rgb/image_mono/compressed, /camera/rgb/image_mono/compressed/parameter_descriptions, /camera/rgb/image_mono/compressed/parameter_updates, /camera/rgb/image_mono, /camera/rgb/image_mono/theora, /camera/rgb/image_mono/theora/parameter_descriptions, /camera/rgb/image_mono/theora/parameter_updates, /camera/rgb/image_color/compressed, /camera/rgb/image_color/compressed/parameter_descriptions, /camera/rgb/image_color/compressed/parameter_updates, /camera/rgb/image_color, /camera/rgb/image_color/theora, /camera/rgb/image_color/theora/parameter_descriptions, /camera/rgb/image_color/theora/parameter_updates, /camera/depth/rectify_depth/parameter_descriptions, /camera/depth/rectify_depth/parameter_updates, /camera/depth/image_rect_raw/compressed, /camera/depth/image_rect_raw/compressed/parameter_descriptions, /camera/depth/image_rect_raw/compressed/parameter_updates, /camera/depth/image_rect_raw, /camera/depth/image_rect_raw/theora, /camera/depth/image_rect_raw/theora/parameter_descriptions, /camera/depth/image_rect_raw/theora/parameter_updates, /camera/depth_registered/points, /camera/depth_registered/image/compressed, /camera/depth_registered/image/compressed/parameter_descriptions, /camera/depth_registered/image/compressed/parameter_updates, /camera/depth_registered/image, /camera/depth_registered/image/theora, /camera/depth_registered/image/theora/parameter_descriptions, /camera/depth_registered/image/theora/parameter_updates, /camera/driver/parameter_descriptions, /camera/driver/parameter_updates] Using default parameters for RGB camera calibration.
+1355591604.053848028 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.084150075 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.117055892 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.149370908 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.181534051 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.211282968 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.243634939 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.274424076 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.307419061 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.344404935 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.385796070 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.414721012 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.446613073 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.478507995 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.511248111 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.541887998 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.573070049 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.604590892 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.639347076 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.668569087 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.702934026 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.737943887 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.774123907 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.827439069 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.862745046 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.898648023 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.931548118 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591604.968893051 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.000955104 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.039762973 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.074963092 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.111628055 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.150610923 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.186706066 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.220010995 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.252373933 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.289009094 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.322464942 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.360567092 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.393767118 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.427578926 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.462476968 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.503199100 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.537940025 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.568393945 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.605137109 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.642530918 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.679497957 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.711138010 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.745115995 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.778964042 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.811872959 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.845145940 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.887726068 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.921503067 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.955864906 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591605.989229917 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.022531032 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.057401895 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.092236042 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.127191066 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.169001102 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.203176975 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.239027976 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.273516893 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.316138029 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.353214025 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.387774944 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.424215078 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.456454038 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.489789009 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.524863004 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.559684991 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.598241090 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.637146949 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.685472011 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.717103004 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.754144906 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.791178941 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.825694084 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.857177019 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.893891096 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.928107023 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.960261106 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591606.992130041 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.024997949 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.055989980 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.087606906 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.117801904 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.158771991 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.191204071 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.223723888 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.254054069 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.289866924 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.325867891 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.359488964 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.395534992 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.432651996 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.468631982 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.505800962 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.537137985 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.569372892 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.602674961 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.634754896 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.668297052 ERROR [:0() [topics: /rosout, /camera/depth_registered/image_rect, /camera/rgb/image_rect_color] bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x397da28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 161, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 156, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in find_close_conts
+    np.save('debug', np.array([list(x.shape) for x in cont]))
+ValueError: setting an array element with a sequence.
+
+1355591607.690358404 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:160(unloadNodelet) [topics: /rosout] Unloading nodelet /camera/disparity_depth_registered from manager /camera_nodelet_manager
+1355591607.691035630 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:160(unloadNodelet) [topics: /rosout] Unloading nodelet /camera/disparity_depth from manager /camera_nodelet_manager
+1355591607.692172461 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:160(unloadNodelet) [topics: /rosout] Unloading nodelet /camera/points_xyzrgb_depth_rgb from manager /camera_nodelet_manager
+1355591607.695639410 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:160(unloadNodelet) [topics: /rosout] Unloading nodelet /camera/depth_registered/metric from manager /camera_nodelet_manager
+1355591607.695450002 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:160(unloadNodelet) [topics: /rosout] Unloading nodelet /camera/depth_registered/metric_rect from manager /camera_nodelet_manager
+1355591607.893382192 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:160(unloadNodelet) [topics: /rosout] Unloading nodelet /camera/depth_registered/rectify_depth from manager /camera_nodelet_manager
+1355591593.089361649 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:203(loadNodelet) [topics: /rosout] /camera/depth/camera_info -> /camera/depth/camera_info
+1355591593.089395545 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:203(loadNodelet) [topics: /rosout] /camera/depth/image_rect -> /camera/depth/image_rect_raw
+1355591593.089427862 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:203(loadNodelet) [topics: /rosout] /camera/depth_registered/image_rect -> /camera/depth_registered/image_rect_raw
+1355591593.089457273 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:203(loadNodelet) [topics: /rosout] /camera/rgb/camera_info -> /camera/rgb/camera_info
+1355591607.985746327 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:160(unloadNodelet) [topics: /rosout] Unloading nodelet /camera/register_depth_rgb from manager /camera_nodelet_manager
+1355591608.088360345 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:160(unloadNodelet) [topics: /rosout] Unloading nodelet /camera/depth/points from manager /camera_nodelet_manager
+1355591608.095511444 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:160(unloadNodelet) [topics: /rosout] Unloading nodelet /camera/depth/metric from manager /camera_nodelet_manager
+1355591608.102936867 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:160(unloadNodelet) [topics: /rosout] Unloading nodelet /camera/ir/rectify_ir from manager /camera_nodelet_manager
+1355591608.104383107 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:160(unloadNodelet) [topics: /rosout] Unloading nodelet /camera/depth/rectify_depth from manager /camera_nodelet_manager
+1355591593.052394186 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:203(loadNodelet) [topics: /rosout] /camera/depth/image -> /camera/depth/image_rect
+1355591593.052486310 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:203(loadNodelet) [topics: /rosout] /camera/depth/image_raw -> /camera/depth/image_rect_raw
+1355591608.105106609 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:160(unloadNodelet) [topics: /rosout] Unloading nodelet /camera/depth/metric_rect from manager /camera_nodelet_manager
+1355591608.108291751 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:160(unloadNodelet) [topics: /rosout] Unloading nodelet /camera/rgb/rectify_color from manager /camera_nodelet_manager
+1355591608.109558355 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:160(unloadNodelet) [topics: /rosout] Unloading nodelet /camera/rgb/rectify_mono from manager /camera_nodelet_manager
+1355591608.109135652 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:160(unloadNodelet) [topics: /rosout] Unloading nodelet /camera/rgb/debayer from manager /camera_nodelet_manager
+1355591608.188759709 INFO [/tmp/buildd/ros-electric-nodelet-core-1.6.2/debian/ros-electric-nodelet-core/opt/ros/electric/stacks/nodelet_core/nodelet/src/nodelet.cpp:160(unloadNodelet) [topics: /rosout] Unloading nodelet /camera/driver from manager /camera_nodelet_manager

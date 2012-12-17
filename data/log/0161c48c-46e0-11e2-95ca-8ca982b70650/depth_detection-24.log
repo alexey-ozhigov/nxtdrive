@@ -1,0 +1,575 @@
+[rospy.client][INFO] 2012-12-15 18:51:09,749: init_node, name[/depth_detection], pid[31670]
+[xmlrpc][INFO] 2012-12-15 18:51:09,749: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-15 18:51:09,750: Started XML-RPC server [http://pc:56352/]
+[rospy.init][INFO] 2012-12-15 18:51:09,750: ROS Slave URI: [http://pc:56352/]
+[rospy.impl.masterslave][INFO] 2012-12-15 18:51:09,750: _ready: http://pc:56352/
+[rospy.registration][INFO] 2012-12-15 18:51:09,751: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2012-12-15 18:51:09,751: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2012-12-15 18:51:09,851: registered with master
+[rospy.rosout][INFO] 2012-12-15 18:51:09,898: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-15 18:51:09,902: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-15 18:51:09,904: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][ERROR] 2012-12-15 18:51:18,266: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:18,318: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:18,360: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:18,413: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:18,455: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:18,502: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:18,545: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:18,587: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:18,633: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:18,690: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:18,732: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:18,778: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:18,823: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:18,864: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:18,911: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:18,960: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,004: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,062: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,110: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,154: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,225: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,264: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,304: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,344: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,392: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,453: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,505: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,545: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,583: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,620: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,677: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,748: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,810: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,852: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,906: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:19,966: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:20,004: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:20,047: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:20,088: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:20,138: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:20,175: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:20,206: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:20,312: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:20,371: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:20,448: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:20,495: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:20,533: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:20,596: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:20,674: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rosout][ERROR] 2012-12-15 18:51:20,726: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rospy.core][INFO] 2012-12-15 18:51:20,771: signal_shutdown [signal-2]
+[rosout][ERROR] 2012-12-15 18:51:20,775: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x325fa28>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 286, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 110, in get_contours
+    cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1590: error: (-215) npoints > 0 in function drawContours
+
+
+[rospy.impl.masterslave][INFO] 2012-12-15 18:51:20,776: signal-2
+[rospy.core][INFO] 2012-12-15 18:51:20,909: signal_shutdown [atexit]

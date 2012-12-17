@@ -1,0 +1,1092 @@
+[rospy.client][INFO] 2012-12-15 15:43:08,164: init_node, name[/depth_detection], pid[4569]
+[xmlrpc][INFO] 2012-12-15 15:43:08,164: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-15 15:43:08,165: Started XML-RPC server [http://pc:48810/]
+[rospy.init][INFO] 2012-12-15 15:43:08,165: ROS Slave URI: [http://pc:48810/]
+[rospy.impl.masterslave][INFO] 2012-12-15 15:43:08,165: _ready: http://pc:48810/
+[rospy.registration][INFO] 2012-12-15 15:43:08,166: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2012-12-15 15:43:08,167: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2012-12-15 15:43:08,265: registered with master
+[rospy.rosout][INFO] 2012-12-15 15:43:08,294: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-15 15:43:08,297: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-15 15:43:08,298: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][ERROR] 2012-12-15 15:43:20,086: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,124: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,156: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,190: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,220: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,258: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,290: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,320: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,357: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,390: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,421: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,452: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,485: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,517: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,548: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,585: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,621: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,662: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,696: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,729: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,768: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,800: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,831: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,867: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,898: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,927: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,963: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:20,996: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,033: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,068: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,107: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,142: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,175: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,207: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,238: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,270: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,301: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,332: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,365: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,397: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,429: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,461: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,494: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,527: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,558: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,594: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,626: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,659: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,692: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,725: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,757: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,790: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,821: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,853: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,886: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,921: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,955: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:21,988: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,018: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,051: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,100: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,130: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,162: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,195: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,224: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,254: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,287: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,316: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,346: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,376: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,405: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,435: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,465: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,496: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,527: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rosout][ERROR] 2012-12-15 15:43:22,558: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rospy.core][INFO] 2012-12-15 15:43:22,594: signal_shutdown [signal-2]
+[rospy.impl.masterslave][INFO] 2012-12-15 15:43:22,602: signal-2
+[rospy.topics][WARNING] 2012-12-15 15:43:22,603: during shutdown, bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3839a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    np.save('cont', cont[0])
+  File "/usr/lib/pymodules/python2.7/numpy/lib/npyio.py", line 398, in save
+    arr = np.asanyarray(arr)
+  File "/usr/lib/pymodules/python2.7/numpy/core/numeric.py", line 336, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: setting an array element with a sequence.
+
+[rospy.core][INFO] 2012-12-15 15:43:22,707: signal_shutdown [atexit]

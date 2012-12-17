@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Arguments -->
+
+  <node name="capture_video" type="capture_video.py" pkg="cv_nxtdrive" output="screen" />
+
+</launch>

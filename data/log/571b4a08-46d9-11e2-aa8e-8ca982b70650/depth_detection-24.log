@@ -1,0 +1,24 @@
+[rospy.client][INFO] 2012-12-15 18:03:27,149: init_node, name[/depth_detection], pid[14418]
+[xmlrpc][INFO] 2012-12-15 18:03:27,149: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-15 18:03:27,150: Started XML-RPC server [http://pc:48283/]
+[rospy.init][INFO] 2012-12-15 18:03:27,150: ROS Slave URI: [http://pc:48283/]
+[rospy.impl.masterslave][INFO] 2012-12-15 18:03:27,150: _ready: http://pc:48283/
+[rospy.registration][INFO] 2012-12-15 18:03:27,151: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2012-12-15 18:03:27,151: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2012-12-15 18:03:27,250: registered with master
+[rospy.rosout][INFO] 2012-12-15 18:03:27,296: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-15 18:03:27,300: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-15 18:03:27,303: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][ERROR] 2012-12-15 18:03:38,343: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e38a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 282, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+TypeError: 'tuple' object does not support item assignment
+
+[rospy.core][INFO] 2012-12-15 18:03:39,925: signal_shutdown [signal-2]
+[rospy.impl.masterslave][INFO] 2012-12-15 18:03:39,932: signal-2
+[rospy.core][INFO] 2012-12-15 18:03:40,051: signal_shutdown [atexit]

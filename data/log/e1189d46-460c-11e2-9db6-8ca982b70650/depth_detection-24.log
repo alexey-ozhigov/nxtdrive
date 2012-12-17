@@ -1,0 +1,1834 @@
+[rospy.client][INFO] 2012-12-14 17:39:51,789: init_node, name[/depth_detection], pid[2451]
+[xmlrpc][INFO] 2012-12-14 17:39:51,789: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-14 17:39:51,790: Started XML-RPC server [http://pc:60882/]
+[rospy.init][INFO] 2012-12-14 17:39:51,790: ROS Slave URI: [http://pc:60882/]
+[rospy.impl.masterslave][INFO] 2012-12-14 17:39:51,790: _ready: http://pc:60882/
+[xmlrpc][INFO] 2012-12-14 17:39:51,791: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2012-12-14 17:39:51,792: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2012-12-14 17:39:51,891: registered with master
+[rospy.rosout][INFO] 2012-12-14 17:39:51,928: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-14 17:39:51,930: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-14 17:39:51,932: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][ERROR] 2012-12-14 17:40:03,939: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:03,950: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:03,963: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,002: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,028: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,061: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,115: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,132: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,170: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,206: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,232: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,260: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,308: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,330: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,360: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,418: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,430: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,461: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,515: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,538: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,559: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,601: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,629: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,675: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,714: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,728: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,769: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,802: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,829: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,886: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,896: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,934: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,983: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:04,996: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,029: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,078: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,098: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,131: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,175: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,201: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,240: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,276: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,300: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,345: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,369: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,402: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,432: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,475: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,499: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,535: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,574: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,609: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,642: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,679: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,706: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,741: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,774: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,811: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,833: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,882: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,901: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,944: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:05,968: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,008: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,033: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,071: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,098: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,140: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,179: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,195: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,245: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,268: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,305: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,341: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,373: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,410: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,447: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,471: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,510: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,545: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,577: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,601: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,646: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,668: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,702: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,743: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,765: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,810: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,842: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,868: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,893: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,949: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:06,966: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,011: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,036: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,074: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,106: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,146: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,170: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,205: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,251: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,263: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,322: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,350: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,364: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,421: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,441: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,477: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,505: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,552: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,561: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,612: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,637: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,673: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,712: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,746: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,778: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,816: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,833: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,867: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,913: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,939: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:07,971: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,007: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,044: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,069: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,103: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,143: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,177: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,208: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,238: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,270: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,321: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,337: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,382: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,404: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,442: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,485: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,509: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,535: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,583: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,606: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,645: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,690: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,714: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,741: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,778: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,801: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,840: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,870: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,906: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,944: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:08,974: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,008: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,039: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,065: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,111: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,137: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,173: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,211: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,238: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,281: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,302: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,348: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,386: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,401: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,446: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,473: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,511: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,543: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,573: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,605: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,640: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,677: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,708: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,744: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,782: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,807: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,857: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,869: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rosout][ERROR] 2012-12-14 17:40:09,916: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rospy.core][INFO] 2012-12-14 17:40:09,924: signal_shutdown [signal-2]
+[rospy.impl.masterslave][INFO] 2012-12-14 17:40:09,939: signal-2
+[rospy.topics][WARNING] 2012-12-14 17:40:09,952: during shutdown, bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x22028c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 206, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 189, in filter_edge_depth
+    print min_val, min_loc
+NameError: global name 'min_loc' is not defined
+
+[rospy.core][INFO] 2012-12-14 17:40:10,081: signal_shutdown [atexit]

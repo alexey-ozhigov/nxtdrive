@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Arguments -->
+
+  <include file="$(find cv_nxtdrive)/launch/capture_video.launch" />
+  <node name="skin_detection" type="skin_detection.py" pkg="cv_nxtdrive" output="screen" />
+
+</launch>

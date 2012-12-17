@@ -1,0 +1,1102 @@
+[rospy.client][INFO] 2012-12-15 16:22:39,954: init_node, name[/depth_detection], pid[10156]
+[xmlrpc][INFO] 2012-12-15 16:22:39,954: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-15 16:22:39,955: Started XML-RPC server [http://pc:47392/]
+[rospy.init][INFO] 2012-12-15 16:22:39,955: ROS Slave URI: [http://pc:47392/]
+[rospy.impl.masterslave][INFO] 2012-12-15 16:22:39,955: _ready: http://pc:47392/
+[rospy.registration][INFO] 2012-12-15 16:22:39,956: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2012-12-15 16:22:39,956: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2012-12-15 16:22:40,055: registered with master
+[rospy.rosout][INFO] 2012-12-15 16:22:40,085: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-15 16:22:40,088: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-15 16:22:40,089: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][ERROR] 2012-12-15 16:22:52,148: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,188: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,224: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,259: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,325: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,358: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,391: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,428: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,464: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,517: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,548: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,578: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,613: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,643: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,673: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,704: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,738: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,769: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,800: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,829: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,860: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,890: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,921: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,953: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:52,983: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,013: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,048: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,077: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,129: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,161: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,191: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,217: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,250: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,279: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,308: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,338: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,369: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,399: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,427: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,461: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,507: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,565: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,599: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,650: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,693: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,724: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,753: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,782: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,813: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,841: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,869: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,899: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,926: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,954: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:53,982: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:54,014: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:54,042: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:54,072: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:54,101: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:54,130: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:54,159: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:54,190: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:54,219: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:54,251: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:54,281: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-15 16:22:54,313: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rospy.core][INFO] 2012-12-15 16:22:54,339: signal_shutdown [signal-2]
+[rosout][ERROR] 2012-12-15 16:22:54,349: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rospy.impl.masterslave][INFO] 2012-12-15 16:22:54,375: signal-2
+[rospy.topics][WARNING] 2012-12-15 16:22:54,382: during shutdown, bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2074a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 280, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 154, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 131, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 125, in dist
+    d2 = p1[1] - p2[1]
+IndexError: index out of bounds
+
+[rospy.core][INFO] 2012-12-15 16:22:54,494: signal_shutdown [atexit]

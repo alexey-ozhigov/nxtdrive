@@ -1,0 +1,1238 @@
+[rospy.client][INFO] 2012-12-14 20:54:13,674: init_node, name[/depth_detection], pid[7682]
+[xmlrpc][INFO] 2012-12-14 20:54:13,674: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-14 20:54:13,675: Started XML-RPC server [http://pc:50299/]
+[rospy.init][INFO] 2012-12-14 20:54:13,675: ROS Slave URI: [http://pc:50299/]
+[rospy.impl.masterslave][INFO] 2012-12-14 20:54:13,675: _ready: http://pc:50299/
+[rospy.registration][INFO] 2012-12-14 20:54:13,676: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2012-12-14 20:54:13,676: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2012-12-14 20:54:13,775: registered with master
+[rospy.rosout][INFO] 2012-12-14 20:54:13,806: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-14 20:54:13,809: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-14 20:54:13,810: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][ERROR] 2012-12-14 20:54:22,857: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:22,879: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:22,899: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:22,938: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:22,960: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:22,989: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,040: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,060: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,097: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,134: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,156: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,205: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,227: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,265: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,293: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,338: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,357: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,400: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,432: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,467: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,496: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,524: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,577: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,598: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,634: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,654: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,709: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,731: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,761: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,810: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,833: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,862: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,907: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,928: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,969: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:23,998: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,044: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,066: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,103: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,123: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,169: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,198: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,237: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,257: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,302: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,327: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,370: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,403: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,442: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,467: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,498: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,546: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,567: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,603: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,625: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,671: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,692: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,741: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,765: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,804: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,839: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,866: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,896: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,951: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:24,980: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,009: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,039: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,067: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,100: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,129: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,168: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,199: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,237: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,263: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,306: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,327: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,367: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,401: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,434: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,477: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,499: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,527: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,575: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,598: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,642: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,663: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,705: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,728: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,783: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,803: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,839: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,861: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,915: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,937: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:25,967: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,006: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,033: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,067: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,104: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,131: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,173: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,194: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,234: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,267: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,297: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,334: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,364: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,400: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,434: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,478: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,499: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,543: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,565: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,601: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,633: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,669: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,691: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,737: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,760: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,798: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,844: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,865: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,903: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,935: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:26,965: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:27,019: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:27,042: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:27,065: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:27,102: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:27,135: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:27,171: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:27,205: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:27,233: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:27,277: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rosout][ERROR] 2012-12-14 20:54:27,297: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rospy.core][INFO] 2012-12-14 20:54:27,334: signal_shutdown [signal-2]
+[rosout][ERROR] 2012-12-14 20:54:27,334: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3ad08c0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 236, in depth_cb
+    cv2.imwrite('img_contours%03d' % self.depth_frame_cnt, img_contours)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/highgui/src/loadsave.cpp:276: error: (-2) could not find a writer for the specified extension in function imwrite_
+
+
+[rospy.impl.masterslave][INFO] 2012-12-14 20:54:27,339: signal-2
+[rospy.core][INFO] 2012-12-14 20:54:27,505: signal_shutdown [atexit]

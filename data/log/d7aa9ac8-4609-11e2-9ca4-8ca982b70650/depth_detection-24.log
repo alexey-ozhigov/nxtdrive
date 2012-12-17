@@ -1,0 +1,238 @@
+[rospy.client][INFO] 2012-12-14 17:18:07,275: init_node, name[/depth_detection], pid[19406]
+[xmlrpc][INFO] 2012-12-14 17:18:07,275: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-14 17:18:07,275: Started XML-RPC server [http://pc:35564/]
+[rospy.init][INFO] 2012-12-14 17:18:07,276: ROS Slave URI: [http://pc:35564/]
+[rospy.impl.masterslave][INFO] 2012-12-14 17:18:07,276: _ready: http://pc:35564/
+[rospy.registration][INFO] 2012-12-14 17:18:07,277: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2012-12-14 17:18:07,277: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2012-12-14 17:18:07,376: registered with master
+[rospy.rosout][INFO] 2012-12-14 17:18:07,414: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-14 17:18:07,416: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-14 17:18:07,418: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][ERROR] 2012-12-14 17:18:30,816: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x25ce878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 202, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 138, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 122, in plot_dist_hist
+    norm=norm, boundaries=bounds, ticks=[v_min, 0, v_max])
+  File "/usr/lib/pymodules/python2.7/matplotlib/pyplot.py", line 1519, in colorbar
+    ret = gcf().colorbar(mappable, cax = cax, ax=ax, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/figure.py", line 1104, in colorbar
+    cb = cbar.Colorbar(cax, mappable, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 731, in __init__
+    ColorbarBase.__init__(self, ax, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 246, in __init__
+    self.draw_all()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 264, in draw_all
+    self._config_axes(X, Y)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 350, in _config_axes
+    self.update_ticks()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 286, in update_ticks
+    ticks, ticklabels, offset_string = self._ticker()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 490, in _ticker
+    formatter.set_locs(b)
+  File "/usr/lib/pymodules/python2.7/matplotlib/ticker.py", line 430, in set_locs
+    self._set_format()
+  File "/usr/lib/pymodules/python2.7/matplotlib/ticker.py", line 477, in _set_format
+    for loc in locs]
+IndexError: list index out of range
+
+[rosout][ERROR] 2012-12-14 17:18:32,345: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x25ce878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 202, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 138, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 122, in plot_dist_hist
+    norm=norm, boundaries=bounds, ticks=[v_min, 0, v_max])
+  File "/usr/lib/pymodules/python2.7/matplotlib/pyplot.py", line 1519, in colorbar
+    ret = gcf().colorbar(mappable, cax = cax, ax=ax, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/figure.py", line 1104, in colorbar
+    cb = cbar.Colorbar(cax, mappable, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 731, in __init__
+    ColorbarBase.__init__(self, ax, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 246, in __init__
+    self.draw_all()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 264, in draw_all
+    self._config_axes(X, Y)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 350, in _config_axes
+    self.update_ticks()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 286, in update_ticks
+    ticks, ticklabels, offset_string = self._ticker()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 490, in _ticker
+    formatter.set_locs(b)
+  File "/usr/lib/pymodules/python2.7/matplotlib/ticker.py", line 430, in set_locs
+    self._set_format()
+  File "/usr/lib/pymodules/python2.7/matplotlib/ticker.py", line 477, in _set_format
+    for loc in locs]
+IndexError: list index out of range
+
+[rosout][ERROR] 2012-12-14 17:18:33,852: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x25ce878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 202, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 138, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 122, in plot_dist_hist
+    norm=norm, boundaries=bounds, ticks=[v_min, 0, v_max])
+  File "/usr/lib/pymodules/python2.7/matplotlib/pyplot.py", line 1519, in colorbar
+    ret = gcf().colorbar(mappable, cax = cax, ax=ax, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/figure.py", line 1104, in colorbar
+    cb = cbar.Colorbar(cax, mappable, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 731, in __init__
+    ColorbarBase.__init__(self, ax, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 246, in __init__
+    self.draw_all()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 264, in draw_all
+    self._config_axes(X, Y)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 350, in _config_axes
+    self.update_ticks()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 286, in update_ticks
+    ticks, ticklabels, offset_string = self._ticker()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 490, in _ticker
+    formatter.set_locs(b)
+  File "/usr/lib/pymodules/python2.7/matplotlib/ticker.py", line 430, in set_locs
+    self._set_format()
+  File "/usr/lib/pymodules/python2.7/matplotlib/ticker.py", line 477, in _set_format
+    for loc in locs]
+IndexError: list index out of range
+
+[rosout][ERROR] 2012-12-14 17:18:35,354: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x25ce878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 202, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 138, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 122, in plot_dist_hist
+    norm=norm, boundaries=bounds, ticks=[v_min, 0, v_max])
+  File "/usr/lib/pymodules/python2.7/matplotlib/pyplot.py", line 1519, in colorbar
+    ret = gcf().colorbar(mappable, cax = cax, ax=ax, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/figure.py", line 1104, in colorbar
+    cb = cbar.Colorbar(cax, mappable, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 731, in __init__
+    ColorbarBase.__init__(self, ax, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 246, in __init__
+    self.draw_all()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 264, in draw_all
+    self._config_axes(X, Y)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 350, in _config_axes
+    self.update_ticks()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 286, in update_ticks
+    ticks, ticklabels, offset_string = self._ticker()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 490, in _ticker
+    formatter.set_locs(b)
+  File "/usr/lib/pymodules/python2.7/matplotlib/ticker.py", line 430, in set_locs
+    self._set_format()
+  File "/usr/lib/pymodules/python2.7/matplotlib/ticker.py", line 477, in _set_format
+    for loc in locs]
+IndexError: list index out of range
+
+[rosout][ERROR] 2012-12-14 17:18:36,820: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x25ce878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 202, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 138, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 122, in plot_dist_hist
+    norm=norm, boundaries=bounds, ticks=[v_min, 0, v_max])
+  File "/usr/lib/pymodules/python2.7/matplotlib/pyplot.py", line 1519, in colorbar
+    ret = gcf().colorbar(mappable, cax = cax, ax=ax, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/figure.py", line 1104, in colorbar
+    cb = cbar.Colorbar(cax, mappable, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 731, in __init__
+    ColorbarBase.__init__(self, ax, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 246, in __init__
+    self.draw_all()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 264, in draw_all
+    self._config_axes(X, Y)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 350, in _config_axes
+    self.update_ticks()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 286, in update_ticks
+    ticks, ticklabels, offset_string = self._ticker()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 490, in _ticker
+    formatter.set_locs(b)
+  File "/usr/lib/pymodules/python2.7/matplotlib/ticker.py", line 430, in set_locs
+    self._set_format()
+  File "/usr/lib/pymodules/python2.7/matplotlib/ticker.py", line 477, in _set_format
+    for loc in locs]
+IndexError: list index out of range
+
+[rosout][ERROR] 2012-12-14 17:18:38,307: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x25ce878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 202, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 138, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 122, in plot_dist_hist
+    norm=norm, boundaries=bounds, ticks=[v_min, 0, v_max])
+  File "/usr/lib/pymodules/python2.7/matplotlib/pyplot.py", line 1519, in colorbar
+    ret = gcf().colorbar(mappable, cax = cax, ax=ax, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/figure.py", line 1104, in colorbar
+    cb = cbar.Colorbar(cax, mappable, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 731, in __init__
+    ColorbarBase.__init__(self, ax, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 246, in __init__
+    self.draw_all()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 264, in draw_all
+    self._config_axes(X, Y)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 350, in _config_axes
+    self.update_ticks()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 286, in update_ticks
+    ticks, ticklabels, offset_string = self._ticker()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 490, in _ticker
+    formatter.set_locs(b)
+  File "/usr/lib/pymodules/python2.7/matplotlib/ticker.py", line 430, in set_locs
+    self._set_format()
+  File "/usr/lib/pymodules/python2.7/matplotlib/ticker.py", line 477, in _set_format
+    for loc in locs]
+IndexError: list index out of range
+
+[rospy.core][INFO] 2012-12-14 17:18:39,747: signal_shutdown [signal-2]
+[rospy.impl.masterslave][INFO] 2012-12-14 17:18:39,756: signal-2
+[rospy.topics][WARNING] 2012-12-14 17:18:39,799: during shutdown, bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x25ce878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 202, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 138, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 122, in plot_dist_hist
+    norm=norm, boundaries=bounds, ticks=[v_min, 0, v_max])
+  File "/usr/lib/pymodules/python2.7/matplotlib/pyplot.py", line 1519, in colorbar
+    ret = gcf().colorbar(mappable, cax = cax, ax=ax, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/figure.py", line 1104, in colorbar
+    cb = cbar.Colorbar(cax, mappable, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 731, in __init__
+    ColorbarBase.__init__(self, ax, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 246, in __init__
+    self.draw_all()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 264, in draw_all
+    self._config_axes(X, Y)
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 350, in _config_axes
+    self.update_ticks()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 286, in update_ticks
+    ticks, ticklabels, offset_string = self._ticker()
+  File "/usr/lib/pymodules/python2.7/matplotlib/colorbar.py", line 490, in _ticker
+    formatter.set_locs(b)
+  File "/usr/lib/pymodules/python2.7/matplotlib/ticker.py", line 430, in set_locs
+    self._set_format()
+  File "/usr/lib/pymodules/python2.7/matplotlib/ticker.py", line 477, in _set_format
+    for loc in locs]
+IndexError: list index out of range
+
+[rospy.core][INFO] 2012-12-14 17:18:41,865: signal_shutdown [atexit]

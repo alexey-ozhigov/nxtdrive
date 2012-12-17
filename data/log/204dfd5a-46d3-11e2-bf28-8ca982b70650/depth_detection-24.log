@@ -1,0 +1,64 @@
+[rospy.client][INFO] 2012-12-15 17:18:58,142: init_node, name[/depth_detection], pid[29520]
+[xmlrpc][INFO] 2012-12-15 17:18:58,142: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-15 17:18:58,143: Started XML-RPC server [http://pc:58017/]
+[rospy.init][INFO] 2012-12-15 17:18:58,143: ROS Slave URI: [http://pc:58017/]
+[rospy.impl.masterslave][INFO] 2012-12-15 17:18:58,143: _ready: http://pc:58017/
+[xmlrpc][INFO] 2012-12-15 17:18:58,144: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2012-12-15 17:18:58,144: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2012-12-15 17:18:58,244: registered with master
+[rospy.rosout][INFO] 2012-12-15 17:18:58,285: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-15 17:18:58,288: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-15 17:18:58,290: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][ERROR] 2012-12-15 17:19:07,055: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3589b00>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 155, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 132, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+IndexError: invalid index to scalar variable.
+
+[rosout][ERROR] 2012-12-15 17:19:07,388: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3589b00>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 155, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 132, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+IndexError: invalid index to scalar variable.
+
+[rosout][ERROR] 2012-12-15 17:19:07,709: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3589b00>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 155, in merge_contours
+    i, j, i_pos, j_pos = cls.find_close_conts(cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 132, in find_close_conts
+    if dist(c_i[0], c_j[0]) < MIN_DIST:
+IndexError: invalid index to scalar variable.
+
+[rospy.core][INFO] 2012-12-15 17:19:07,904: signal_shutdown [signal-2]
+[rospy.impl.masterslave][INFO] 2012-12-15 17:19:07,910: signal-2
+[rospy.core][INFO] 2012-12-15 17:19:08,079: signal_shutdown [atexit]

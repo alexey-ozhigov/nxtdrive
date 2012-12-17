@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Arguments -->
+  <!-- The bag contains point cloud messages of type image_raw -->
+  <arg name="bag" default="kinect.bag" />
+  <arg name="topic" default="/camera/rgb/image_color" />
+
+  <!-- Run Gazebo -->
+  <!-- <node name="rviz" type="rviz" pkg="rviz" /> -->
+  <!-- Rosbag play -->
+  <node name="rosbag_play" type="play" pkg="rosbag" args="$(arg bag)"/>
+
+  <node name="cv_nxtdrive" type="get_frames.py" pkg="cv_nxtdrive" args="$(arg bag) $(arg topic)" output="screen" />
+
+</launch>

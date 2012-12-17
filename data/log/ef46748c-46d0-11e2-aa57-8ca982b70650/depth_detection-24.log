@@ -1,0 +1,1294 @@
+[rospy.client][INFO] 2012-12-15 17:03:16,918: init_node, name[/depth_detection], pid[17229]
+[xmlrpc][INFO] 2012-12-15 17:03:16,918: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-15 17:03:16,919: Started XML-RPC server [http://pc:43478/]
+[rospy.init][INFO] 2012-12-15 17:03:16,919: ROS Slave URI: [http://pc:43478/]
+[rospy.impl.masterslave][INFO] 2012-12-15 17:03:16,919: _ready: http://pc:43478/
+[rospy.registration][INFO] 2012-12-15 17:03:16,920: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2012-12-15 17:03:16,920: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2012-12-15 17:03:17,019: registered with master
+[rospy.rosout][INFO] 2012-12-15 17:03:17,059: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-15 17:03:17,062: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-15 17:03:17,063: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][ERROR] 2012-12-15 17:03:27,528: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:27,561: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:27,592: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:27,628: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:27,662: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:27,705: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:27,752: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:27,781: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:27,816: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:27,855: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:27,896: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:27,934: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:27,967: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:27,997: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,028: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,059: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,116: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,152: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,184: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,233: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,277: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,316: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,344: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,381: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,419: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,449: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,479: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,520: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,560: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,587: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,623: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,652: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,681: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,712: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,742: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,770: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,809: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,846: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,878: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,907: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,937: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,965: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:28,994: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,026: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,058: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,089: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,127: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,155: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,186: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,219: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,247: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,277: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,308: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,339: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,366: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,403: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,439: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,474: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,505: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,536: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,576: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,611: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,644: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,673: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,703: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,734: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,762: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,794: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,823: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,858: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,901: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,948: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:29,977: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:30,006: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:30,039: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:30,069: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:30,101: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:30,142: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:30,182: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:30,213: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:30,242: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:30,273: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:30,304: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:30,336: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:30,375: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:30,403: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:30,431: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 160, in merge_contours
+    return cls.merge_contours(new_cont)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rosout][ERROR] 2012-12-15 17:03:30,461: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rospy.core][INFO] 2012-12-15 17:03:30,463: signal_shutdown [signal-2]
+[rospy.impl.masterslave][INFO] 2012-12-15 17:03:30,470: signal-2
+[rospy.topics][WARNING] 2012-12-15 17:03:30,504: during shutdown, bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x3bfeab8>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 281, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 159, in merge_contours
+    new_cont.append(cls.merge_two_contours(cont, i, j, i_pos, j_pos))
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 145, in merge_two_contours
+    return cont[i][::-1] + cont[j]
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+
+[rospy.core][INFO] 2012-12-15 17:03:30,598: signal_shutdown [atexit]

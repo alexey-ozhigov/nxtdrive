@@ -1,0 +1,738 @@
+[rospy.client][INFO] 2012-12-14 15:21:48,397: init_node, name[/depth_detection], pid[18430]
+[xmlrpc][INFO] 2012-12-14 15:21:48,659: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-14 15:21:48,698: Started XML-RPC server [http://pc:47023/]
+[rospy.init][INFO] 2012-12-14 15:21:48,698: ROS Slave URI: [http://pc:47023/]
+[rospy.impl.masterslave][INFO] 2012-12-14 15:21:48,698: _ready: http://pc:47023/
+[rospy.registration][INFO] 2012-12-14 15:21:48,700: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2012-12-14 15:21:48,700: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2012-12-14 15:21:48,799: registered with master
+[rospy.rosout][INFO] 2012-12-14 15:21:52,229: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-14 15:21:52,726: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-14 15:21:52,729: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][ERROR] 2012-12-14 15:24:52,253: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 140, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:24:52,396: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,407: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,424: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,439: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,454: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,465: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,475: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,487: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,498: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,552: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,569: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,602: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,639: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,669: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,705: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,750: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,766: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,803: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,841: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,868: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,902: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,936: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:52,981: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,002: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,051: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,066: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,104: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,139: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,188: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,201: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,233: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,287: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,302: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,334: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,371: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,428: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,438: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,473: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,501: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,539: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,569: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,607: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,636: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,667: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,719: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,735: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,785: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,802: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,843: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,876: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,912: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,943: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:53,966: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:54,002: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:54,054: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:54,066: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:54,114: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:54,135: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:54,171: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:54,210: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:54,241: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:54,269: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:54,311: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:54,341: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:54,376: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:54,411: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:54,443: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:54,468: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:54,506: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rosout][ERROR] 2012-12-14 15:24:54,538: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rospy.core][INFO] 2012-12-14 15:24:54,581: signal_shutdown [signal-2]
+[rosout][ERROR] 2012-12-14 15:24:54,787: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2841878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 134, in write_dist_hist_img
+    self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
+IndexError: index out of bounds
+
+[rospy.impl.masterslave][INFO] 2012-12-14 15:24:54,806: signal-2
+[rospy.core][INFO] 2012-12-14 15:24:55,420: signal_shutdown [atexit]

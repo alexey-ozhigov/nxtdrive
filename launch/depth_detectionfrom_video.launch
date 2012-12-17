@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Arguments -->
+  <arg name="bkg_sep_mode" default="depth_auto" />
+
+  <node name="depth_detection" pkg="cv_nxtdrive" type="depth_detection.py"
+        args="$(arg bkg_sep_mode)" output="screen" />
+
+</launch>

@@ -1,0 +1,561 @@
+[rosmaster.main][INFO] 2012-12-15 15:38:51,676: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2012-12-15 15:38:51,676: Starting ROS Master Node
+[xmlrpc][INFO] 2012-12-15 15:38:51,678: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-15 15:38:51,679: Started XML-RPC server [http://pc:11311/]
+[xmlrpc][INFO] 2012-12-15 15:38:51,679: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2012-12-15 15:38:51,680: Master initialized: port[11311], uri[http://pc:11311/]
+[rosmaster.master][INFO] 2012-12-15 15:38:51,694: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2012-12-15 15:38:51,697: +PARAM [/roslaunch/uris/host_pc__56464] by /roslaunch
+[rosmaster.master][INFO] 2012-12-15 15:38:51,727: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2012-12-15 15:38:51,728: +PARAM [/camera/driver/rgb_frame_id] by /roslaunch
+[rosmaster.master][INFO] 2012-12-15 15:38:51,728: +PARAM [/camera/disparity_depth_registered/min_range] by /roslaunch
+[rosmaster.master][INFO] 2012-12-15 15:38:51,728: +PARAM [/camera/driver/rgb_camera_info_url] by /roslaunch
+[rosmaster.master][INFO] 2012-12-15 15:38:51,728: +PARAM [/camera/depth_registered/rectify_depth/interpolation] by /roslaunch
+[rosmaster.master][INFO] 2012-12-15 15:38:51,729: +PARAM [/camera/driver/depth_frame_id] by /roslaunch
+[rosmaster.master][INFO] 2012-12-15 15:38:51,730: +PARAM [/camera/depth/rectify_depth/interpolation] by /roslaunch
+[rosmaster.master][INFO] 2012-12-15 15:38:51,730: +PARAM [/camera/disparity_depth/max_range] by /roslaunch
+[rosmaster.master][INFO] 2012-12-15 15:38:51,730: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2012-12-15 15:38:51,730: +PARAM [/camera/driver/device_id] by /roslaunch
+[rosmaster.master][INFO] 2012-12-15 15:38:51,731: +PARAM [/camera/driver/depth_camera_info_url] by /roslaunch
+[rosmaster.master][INFO] 2012-12-15 15:38:51,731: +PARAM [/camera/disparity_depth/min_range] by /roslaunch
+[rosmaster.master][INFO] 2012-12-15 15:38:51,731: +PARAM [/camera/disparity_depth_registered/max_range] by /roslaunch
+[rosmaster.master][INFO] 2012-12-15 15:38:51,732: +SERVICE [/rosout/get_loggers] /rosout http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,733: +SERVICE [/rosout/set_logger_level] /rosout http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,736: +PUB [/rosout_agg] /rosout http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,737: +SUB [/rosout] /rosout http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,769: +PUB [/rosout] /camera/driver http://pc:60734/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,771: +SERVICE [/camera/driver/get_loggers] /camera/driver http://pc:60734/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,773: +SERVICE [/camera/driver/set_logger_level] /camera/driver http://pc:60734/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,777: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,781: +PUB [/rosout] /camera/rgb/debayer http://pc:55322/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,786: +SERVICE [/camera/rgb/debayer/get_loggers] /camera/rgb/debayer http://pc:55322/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,795: +PARAM [/camera/driver] by /camera/driver
+[rosmaster.master][INFO] 2012-12-15 15:38:51,797: +SERVICE [/camera/rgb/debayer/set_logger_level] /camera/rgb/debayer http://pc:55322/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,806: +PUB [/rosout] /camera/rgb/rectify_color http://pc:58274/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,812: +PUB [/rosout] /camera/rgb/rectify_mono http://pc:34990/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,817: +SERVICE [/camera/rgb/rectify_color/get_loggers] /camera/rgb/rectify_color http://pc:58274/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,818: +PUB [/rosout] /camera/ir/rectify_ir http://pc:53762/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,819: +SERVICE [/camera/rgb/rectify_mono/get_loggers] /camera/rgb/rectify_mono http://pc:34990/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,825: +SERVICE [/camera/rgb/rectify_color/set_logger_level] /camera/rgb/rectify_color http://pc:58274/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,827: +SERVICE [/camera/ir/rectify_ir/get_loggers] /camera/ir/rectify_ir http://pc:53762/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,830: +SERVICE [/camera/rgb/rectify_mono/set_logger_level] /camera/rgb/rectify_mono http://pc:34990/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,836: +SERVICE [/camera/ir/rectify_ir/set_logger_level] /camera/ir/rectify_ir http://pc:53762/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,838: +PUB [/rosout] /camera/depth/rectify_depth http://pc:60494/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,847: +SERVICE [/camera/depth/rectify_depth/get_loggers] /camera/depth/rectify_depth http://pc:60494/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,873: +SERVICE [/camera/depth/rectify_depth/set_logger_level] /camera/depth/rectify_depth http://pc:60494/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,878: +PUB [/rosout] /camera/depth/metric http://pc:39984/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,879: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,880: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,883: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,885: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,886: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,888: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,896: +SERVICE [/camera/depth/metric/get_loggers] /camera/depth/metric http://pc:39984/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,897: +PUB [/rosout] /camera/depth/points http://pc:34401/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,913: +PUB [/rosout] /camera/depth_registered/rectify_depth http://pc:39444/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,916: +SERVICE [/camera/depth/metric/set_logger_level] /camera/depth/metric http://pc:39984/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,919: +SERVICE [/camera/depth/points/get_loggers] /camera/depth/points http://pc:34401/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,924: +PARAM [/camera/depth/rectify_depth] by /camera/depth/rectify_depth
+[rosmaster.master][INFO] 2012-12-15 15:38:51,926: +SERVICE [/camera/depth_registered/rectify_depth/get_loggers] /camera/depth_registered/rectify_depth http://pc:39444/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,930: +SERVICE [/camera/depth/points/set_logger_level] /camera/depth/points http://pc:34401/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,932: +PUB [/rosout] /camera/points_xyzrgb_depth_rgb http://pc:35550/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,935: +SERVICE [/camera/depth_registered/rectify_depth/set_logger_level] /camera/depth_registered/rectify_depth http://pc:39444/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,939: +SERVICE [/camera/points_xyzrgb_depth_rgb/get_loggers] /camera/points_xyzrgb_depth_rgb http://pc:35550/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,953: +SERVICE [/camera/points_xyzrgb_depth_rgb/set_logger_level] /camera/points_xyzrgb_depth_rgb http://pc:35550/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,968: +PUB [/rosout] /camera/disparity_depth http://pc:43440/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,970: +PARAM [/camera/depth_registered/rectify_depth] by /camera/depth_registered/rectify_depth
+[rosmaster.master][INFO] 2012-12-15 15:38:51,974: +PUB [/rosout] /camera_base_link http://pc:33880/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,979: +SERVICE [/camera/disparity_depth/get_loggers] /camera/disparity_depth http://pc:43440/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,982: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,983: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,985: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,987: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,988: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,991: +SERVICE [/camera_base_link/get_loggers] /camera_base_link http://pc:33880/
+[rosmaster.master][INFO] 2012-12-15 15:38:51,993: +PUB [/rosout] /camera_base_link1 http://pc:32936/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,000: +SERVICE [/camera/disparity_depth/set_logger_level] /camera/disparity_depth http://pc:43440/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,016: +PUB [/rosout] /camera_base_link2 http://pc:36317/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,019: +PUB [/rosout] /camera_base_link3 http://pc:50263/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,022: +SERVICE [/camera_base_link2/get_loggers] /camera_base_link2 http://pc:36317/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,028: +PARAM [/camera/disparity_depth] by /camera/disparity_depth
+[rosmaster.master][INFO] 2012-12-15 15:38:52,030: +SERVICE [/camera_base_link3/get_loggers] /camera_base_link3 http://pc:50263/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,031: +SERVICE [/camera_base_link2/set_logger_level] /camera_base_link2 http://pc:36317/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,040: +SERVICE [/camera_base_link3/set_logger_level] /camera_base_link3 http://pc:50263/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,060: +PUB [/tf] /camera_base_link2 http://pc:36317/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,065: +PUB [/tf] /camera_base_link3 http://pc:50263/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,079: +PUB [/rosout] /camera/depth/metric_rect http://pc:35135/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,083: +SERVICE [/camera/depth/metric_rect/get_loggers] /camera/depth/metric_rect http://pc:35135/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,085: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,087: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,095: +PUB [/rosout] /camera/register_depth_rgb http://pc:50835/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,103: +SERVICE [/camera/depth/metric_rect/set_logger_level] /camera/depth/metric_rect http://pc:35135/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,107: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,108: +SERVICE [/camera/register_depth_rgb/get_loggers] /camera/register_depth_rgb http://pc:50835/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,109: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,114: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,129: +SERVICE [/camera/register_depth_rgb/set_logger_level] /camera/register_depth_rgb http://pc:50835/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,164: +PUB [/rosout] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,166: +SERVICE [/camera_nodelet_manager/get_loggers] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,168: +SERVICE [/camera_nodelet_manager/set_logger_level] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,173: +SERVICE [/camera_nodelet_manager/load_nodelet] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,177: +SERVICE [/camera_nodelet_manager/unload_nodelet] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,187: +SERVICE [/camera_nodelet_manager/list] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,195: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,434: +PUB [/rosout] /set_dr http://pc:42811/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,498: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,595: +SERVICE [/camera/rgb/rectify_mono/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,596: +PUB [/camera/rgb/rectify_mono/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,597: +PUB [/camera/rgb/rectify_mono/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,599: +PARAM [/camera/rgb/rectify_mono/interpolation] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:52,604: +PUB [/camera/rgb/image_rect/compressed] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,605: +SERVICE [/camera/rgb/image_rect/compressed/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,606: +PUB [/camera/rgb/image_rect/compressed/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,607: +PUB [/camera/rgb/image_rect/compressed/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,615: +PARAM [/camera/rgb/image_rect/compressed/format] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:52,616: +PARAM [/camera/rgb/image_rect/compressed/jpeg_quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:52,619: +PARAM [/camera/rgb/image_rect/compressed/png_level] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:52,621: +PUB [/camera/rgb/image_rect] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,624: +PUB [/camera/rgb/image_rect/theora] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,625: +SERVICE [/camera/rgb/image_rect/theora/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,626: +PUB [/camera/rgb/image_rect/theora/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,627: +PUB [/camera/rgb/image_rect/theora/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,631: +PARAM [/camera/rgb/image_rect/theora/optimize_for] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:52,632: +PARAM [/camera/rgb/image_rect/theora/target_bitrate] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:52,633: +PARAM [/camera/rgb/image_rect/theora/quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:52,634: +PARAM [/camera/rgb/image_rect/theora/keyframe_frequency] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:52,890: +PUB [/camera/depth/image/compressed] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,892: +SERVICE [/camera/depth/image/compressed/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,894: +PUB [/camera/depth/image/compressed/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,897: +PUB [/camera/depth/image/compressed/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,904: +PARAM [/camera/depth/image/compressed/format] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:52,907: +PARAM [/camera/depth/image/compressed/jpeg_quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:52,910: +PARAM [/camera/depth/image/compressed/png_level] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:52,912: +PUB [/camera/depth/image] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,915: +PUB [/camera/depth/image/theora] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,917: +SERVICE [/camera/depth/image/theora/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,920: +PUB [/camera/depth/image/theora/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,923: +PUB [/camera/depth/image/theora/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:52,934: +PARAM [/camera/depth/image/theora/optimize_for] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:52,936: +PARAM [/camera/depth/image/theora/target_bitrate] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:52,938: +PARAM [/camera/depth/image/theora/quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:52,941: +PARAM [/camera/depth/image/theora/keyframe_frequency] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:53,238: +SERVICE [/camera/rgb/debayer/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,240: +PUB [/camera/rgb/debayer/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,243: +PUB [/camera/rgb/debayer/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,246: +PARAM [/camera/rgb/debayer/debayer] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:53,249: +PUB [/camera/rgb/image_mono/compressed] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,251: +SERVICE [/camera/rgb/image_mono/compressed/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,253: +PUB [/camera/rgb/image_mono/compressed/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,255: +PUB [/camera/rgb/image_mono/compressed/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,263: +PARAM [/camera/rgb/image_mono/compressed/format] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:53,265: +PARAM [/camera/rgb/image_mono/compressed/jpeg_quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:53,267: +PARAM [/camera/rgb/image_mono/compressed/png_level] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:53,270: +PUB [/camera/rgb/image_mono] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,273: +PUB [/camera/rgb/image_mono/theora] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,276: +SERVICE [/camera/rgb/image_mono/theora/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,278: +PUB [/camera/rgb/image_mono/theora/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,282: +PUB [/camera/rgb/image_mono/theora/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,292: +PARAM [/camera/rgb/image_mono/theora/optimize_for] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:53,295: +PARAM [/camera/rgb/image_mono/theora/target_bitrate] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:53,297: +PARAM [/camera/rgb/image_mono/theora/quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:53,299: +PARAM [/camera/rgb/image_mono/theora/keyframe_frequency] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:53,302: +PUB [/camera/rgb/image_color/compressed] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,304: +SERVICE [/camera/rgb/image_color/compressed/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,308: +PUB [/camera/rgb/image_color/compressed/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,311: +PUB [/camera/rgb/image_color/compressed/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,321: +PARAM [/camera/rgb/image_color/compressed/format] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:53,324: +PARAM [/camera/rgb/image_color/compressed/jpeg_quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:53,326: +PARAM [/camera/rgb/image_color/compressed/png_level] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:53,329: +PUB [/camera/rgb/image_color] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,331: +PUB [/camera/rgb/image_color/theora] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,333: +SERVICE [/camera/rgb/image_color/theora/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,336: +PUB [/camera/rgb/image_color/theora/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,339: +PUB [/camera/rgb/image_color/theora/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:53,351: +PARAM [/camera/rgb/image_color/theora/optimize_for] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:53,354: +PARAM [/camera/rgb/image_color/theora/target_bitrate] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:53,356: +PARAM [/camera/rgb/image_color/theora/quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:53,359: +PARAM [/camera/rgb/image_color/theora/keyframe_frequency] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:54,140: +PUB [/camera/depth/disparity] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:54,641: +SUB [/tf] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:54,648: +SERVICE [/camera_nodelet_manager/tf_frames] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:54,916: +PUB [/rosout] /camera/depth_registered/metric http://pc:54775/
+[rosmaster.master][INFO] 2012-12-15 15:38:54,919: +SERVICE [/camera/depth_registered/metric/get_loggers] /camera/depth_registered/metric http://pc:54775/
+[rosmaster.master][INFO] 2012-12-15 15:38:54,922: +PUB [/rosout] /camera/depth_registered/metric_rect http://pc:44883/
+[rosmaster.master][INFO] 2012-12-15 15:38:54,923: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:54,925: +SERVICE [/camera/depth_registered/metric/set_logger_level] /camera/depth_registered/metric http://pc:54775/
+[rosmaster.master][INFO] 2012-12-15 15:38:54,926: +SERVICE [/camera/depth_registered/metric_rect/get_loggers] /camera/depth_registered/metric_rect http://pc:44883/
+[rosmaster.master][INFO] 2012-12-15 15:38:54,927: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:54,930: +SERVICE [/camera/depth_registered/metric_rect/set_logger_level] /camera/depth_registered/metric_rect http://pc:44883/
+[rosmaster.master][INFO] 2012-12-15 15:38:54,952: +PUB [/rosout] /camera/disparity_depth_registered http://pc:55589/
+[rosmaster.master][INFO] 2012-12-15 15:38:54,953: +SERVICE [/camera/disparity_depth_registered/get_loggers] /camera/disparity_depth_registered http://pc:55589/
+[rosmaster.master][INFO] 2012-12-15 15:38:54,954: +SERVICE [/camera/disparity_depth_registered/set_logger_level] /camera/disparity_depth_registered http://pc:55589/
+[rosmaster.master][INFO] 2012-12-15 15:38:54,957: +PARAM [/camera/disparity_depth_registered] by /camera/disparity_depth_registered
+[rosmaster.master][INFO] 2012-12-15 15:38:54,998: +SERVICE [/camera_base_link/set_logger_level] /camera_base_link http://pc:33880/
+[rosmaster.master][INFO] 2012-12-15 15:38:55,000: +PUB [/tf] /camera_base_link http://pc:33880/
+[rosmaster.master][INFO] 2012-12-15 15:38:55,003: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:55,005: publisherUpdate[/tf] -> http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:55,007: +SERVICE [/camera_base_link1/get_loggers] /camera_base_link1 http://pc:32936/
+[rosmaster.master][INFO] 2012-12-15 15:38:55,009: +SERVICE [/camera_base_link1/set_logger_level] /camera_base_link1 http://pc:32936/
+[rosmaster.master][INFO] 2012-12-15 15:38:55,012: +PUB [/tf] /camera_base_link1 http://pc:32936/
+[rosmaster.master][INFO] 2012-12-15 15:38:55,030: publisherUpdate[/tf] -> http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:55,393: +PUB [/camera/depth_registered/image_rect_raw/compressed] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:55,394: +SERVICE [/camera/depth_registered/image_rect_raw/compressed/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:55,397: +PUB [/camera/depth_registered/image_rect_raw/compressed/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:55,400: +PUB [/camera/depth_registered/image_rect_raw/compressed/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:55,405: +PARAM [/camera/depth_registered/image_rect_raw/compressed/format] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:55,406: +PARAM [/camera/depth_registered/image_rect_raw/compressed/jpeg_quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:55,406: +PARAM [/camera/depth_registered/image_rect_raw/compressed/png_level] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:55,408: +PUB [/camera/depth_registered/image_rect_raw] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:55,409: +PUB [/camera/depth_registered/image_rect_raw/theora] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:55,410: +SERVICE [/camera/depth_registered/image_rect_raw/theora/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:55,411: +PUB [/camera/depth_registered/image_rect_raw/theora/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:55,412: +PUB [/camera/depth_registered/image_rect_raw/theora/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:55,416: +PARAM [/camera/depth_registered/image_rect_raw/theora/optimize_for] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:55,417: +PARAM [/camera/depth_registered/image_rect_raw/theora/target_bitrate] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:55,418: +PARAM [/camera/depth_registered/image_rect_raw/theora/quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:55,419: +PARAM [/camera/depth_registered/image_rect_raw/theora/keyframe_frequency] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:55,420: +PUB [/camera/depth_registered/camera_info] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:56,504: +PUB [/camera/depth_registered/points] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:56,771: +PUB [/camera/depth/points] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,041: +PUB [/camera/depth/image_rect/compressed] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,042: +SERVICE [/camera/depth/image_rect/compressed/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,043: +PUB [/camera/depth/image_rect/compressed/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,044: +PUB [/camera/depth/image_rect/compressed/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,050: +PARAM [/camera/depth/image_rect/compressed/format] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,052: +PARAM [/camera/depth/image_rect/compressed/jpeg_quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,054: +PARAM [/camera/depth/image_rect/compressed/png_level] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,056: +PUB [/camera/depth/image_rect] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,058: +PUB [/camera/depth/image_rect/theora] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,060: +SERVICE [/camera/depth/image_rect/theora/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,063: +PUB [/camera/depth/image_rect/theora/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,065: +PUB [/camera/depth/image_rect/theora/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,074: +PARAM [/camera/depth/image_rect/theora/optimize_for] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,076: +PARAM [/camera/depth/image_rect/theora/target_bitrate] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,079: +PARAM [/camera/depth/image_rect/theora/quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,082: +PARAM [/camera/depth/image_rect/theora/keyframe_frequency] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,356: +SERVICE [/camera/rgb/rectify_color/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,358: +PUB [/camera/rgb/rectify_color/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,361: +PUB [/camera/rgb/rectify_color/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,365: +PARAM [/camera/rgb/rectify_color/interpolation] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,367: +PUB [/camera/rgb/image_rect_color/compressed] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,370: +SERVICE [/camera/rgb/image_rect_color/compressed/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,373: +PUB [/camera/rgb/image_rect_color/compressed/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,376: +PUB [/camera/rgb/image_rect_color/compressed/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,386: +PARAM [/camera/rgb/image_rect_color/compressed/format] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,388: +PARAM [/camera/rgb/image_rect_color/compressed/jpeg_quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,392: +PARAM [/camera/rgb/image_rect_color/compressed/png_level] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,395: +PUB [/camera/rgb/image_rect_color] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,398: +PUB [/camera/rgb/image_rect_color/theora] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,401: +SERVICE [/camera/rgb/image_rect_color/theora/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,403: +PUB [/camera/rgb/image_rect_color/theora/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,405: +PUB [/camera/rgb/image_rect_color/theora/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,415: +PARAM [/camera/rgb/image_rect_color/theora/optimize_for] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,417: +PARAM [/camera/rgb/image_rect_color/theora/target_bitrate] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,420: +PARAM [/camera/rgb/image_rect_color/theora/quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,422: +PARAM [/camera/rgb/image_rect_color/theora/keyframe_frequency] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,708: +SERVICE [/camera/ir/rectify_ir/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,710: +PUB [/camera/ir/rectify_ir/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,711: +PUB [/camera/ir/rectify_ir/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,715: +PARAM [/camera/ir/rectify_ir/interpolation] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,719: +PUB [/camera/ir/image_rect/compressed] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,722: +SERVICE [/camera/ir/image_rect/compressed/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,724: +PUB [/camera/ir/image_rect/compressed/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,727: +PUB [/camera/ir/image_rect/compressed/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,736: +PARAM [/camera/ir/image_rect/compressed/format] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,738: +PARAM [/camera/ir/image_rect/compressed/jpeg_quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,740: +PARAM [/camera/ir/image_rect/compressed/png_level] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,744: +PUB [/camera/ir/image_rect] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,747: +PUB [/camera/ir/image_rect/theora] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,749: +SERVICE [/camera/ir/image_rect/theora/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,752: +PUB [/camera/ir/image_rect/theora/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,754: +PUB [/camera/ir/image_rect/theora/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:57,765: +PARAM [/camera/ir/image_rect/theora/optimize_for] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,767: +PARAM [/camera/ir/image_rect/theora/target_bitrate] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,769: +PARAM [/camera/ir/image_rect/theora/quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:57,772: +PARAM [/camera/ir/image_rect/theora/keyframe_frequency] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,064: +PUB [/camera/depth_registered/image/compressed] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,065: +SERVICE [/camera/depth_registered/image/compressed/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,067: +PUB [/camera/depth_registered/image/compressed/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,069: +PUB [/camera/depth_registered/image/compressed/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,076: +PARAM [/camera/depth_registered/image/compressed/format] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,078: +PARAM [/camera/depth_registered/image/compressed/jpeg_quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,081: +PARAM [/camera/depth_registered/image/compressed/png_level] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,084: +PUB [/camera/depth_registered/image] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,087: +PUB [/camera/depth_registered/image/theora] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,091: +SERVICE [/camera/depth_registered/image/theora/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,094: +PUB [/camera/depth_registered/image/theora/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,097: +PUB [/camera/depth_registered/image/theora/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,111: +PARAM [/camera/depth_registered/image/theora/optimize_for] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,114: +PARAM [/camera/depth_registered/image/theora/target_bitrate] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,117: +PARAM [/camera/depth_registered/image/theora/quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,120: +PARAM [/camera/depth_registered/image/theora/keyframe_frequency] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,122: +SERVICE [/camera/driver/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,124: +PUB [/camera/driver/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,127: +PUB [/camera/driver/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,143: +PARAM [/camera/driver/image_mode] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,143: +PARAM [/camera/driver/depth_mode] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,145: +PARAM [/camera/driver/depth_registration] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,146: +PARAM [/camera/driver/data_skip] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,148: +PARAM [/camera/driver/depth_time_offset] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,149: +PARAM [/camera/driver/image_time_offset] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,150: +PARAM [/camera/driver/depth_ir_offset_x] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,152: +PARAM [/camera/driver/depth_ir_offset_y] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,152: +PARAM [/camera/driver/z_offset_mm] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,161: +SERVICE [/camera/rgb/set_camera_info] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,162: +SERVICE [/camera/ir/set_camera_info] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,164: +PUB [/camera/rgb/image_raw/compressed] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,165: +SERVICE [/camera/rgb/image_raw/compressed/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,166: +PUB [/camera/rgb/image_raw/compressed/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,167: +PUB [/camera/rgb/image_raw/compressed/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,170: +PARAM [/camera/rgb/image_raw/compressed/format] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,171: +PARAM [/camera/rgb/image_raw/compressed/jpeg_quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,172: +PARAM [/camera/rgb/image_raw/compressed/png_level] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,173: +PUB [/camera/rgb/image_raw] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,174: +PUB [/camera/rgb/image_raw/theora] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,178: +SERVICE [/camera/rgb/image_raw/theora/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,180: +PUB [/camera/rgb/image_raw/theora/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,181: +PUB [/camera/rgb/image_raw/theora/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,188: +SUB [/camera/driver/parameter_updates] /set_dr http://pc:42811/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,189: +PARAM [/camera/rgb/image_raw/theora/optimize_for] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,191: +SUB [/camera/driver/parameter_descriptions] /set_dr http://pc:42811/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,192: +PARAM [/camera/rgb/image_raw/theora/target_bitrate] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,193: +PARAM [/camera/rgb/image_raw/theora/quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,194: +PARAM [/camera/rgb/image_raw/theora/keyframe_frequency] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,195: +PUB [/camera/rgb/camera_info] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,196: +PUB [/camera/ir/image_raw/compressed] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,197: +SERVICE [/camera/ir/image_raw/compressed/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,198: +PUB [/camera/ir/image_raw/compressed/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,199: +PUB [/camera/ir/image_raw/compressed/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,203: +PARAM [/camera/ir/image_raw/compressed/format] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,205: +PARAM [/camera/ir/image_raw/compressed/jpeg_quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,207: +PARAM [/camera/ir/image_raw/compressed/png_level] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,209: +PUB [/camera/ir/image_raw] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,211: +PUB [/camera/ir/image_raw/theora] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,212: +SERVICE [/camera/ir/image_raw/theora/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,213: +PUB [/camera/ir/image_raw/theora/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,214: +PUB [/camera/ir/image_raw/theora/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,218: +PARAM [/camera/ir/image_raw/theora/optimize_for] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,219: +PARAM [/camera/ir/image_raw/theora/target_bitrate] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,220: +PARAM [/camera/ir/image_raw/theora/quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,221: +PARAM [/camera/ir/image_raw/theora/keyframe_frequency] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,222: +PUB [/camera/ir/camera_info] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,246: +PARAM [/camera/driver/image_mode] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,247: +PUB [/camera/depth/image_raw/compressed] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,249: +PARAM [/camera/driver/depth_mode] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,250: +SERVICE [/camera/depth/image_raw/compressed/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,251: +PARAM [/camera/driver/depth_registration] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,252: +PUB [/camera/depth/image_raw/compressed/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,254: +PARAM [/camera/driver/data_skip] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,255: +PUB [/camera/depth/image_raw/compressed/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,256: +PARAM [/camera/driver/depth_time_offset] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,259: +PARAM [/camera/driver/image_time_offset] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,261: +PARAM [/camera/driver/depth_ir_offset_x] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,262: +PARAM [/camera/driver/depth_ir_offset_y] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,263: +PARAM [/camera/driver/z_offset_mm] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,265: +PARAM [/camera/depth/image_raw/compressed/format] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,267: -SUB [/camera/driver/parameter_updates] /set_dr http://pc:42811/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,268: -SUB [/camera/driver/parameter_descriptions] /set_dr http://pc:42811/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,268: -PUB [/rosout] /set_dr http://pc:42811/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,268: +PARAM [/camera/depth/image_raw/compressed/jpeg_quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,270: +PARAM [/camera/depth/image_raw/compressed/png_level] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,273: +PUB [/camera/depth/image_raw] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,274: +PUB [/camera/depth/image_raw/theora] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,275: +SERVICE [/camera/depth/image_raw/theora/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,276: +PUB [/camera/depth/image_raw/theora/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,277: +PUB [/camera/depth/image_raw/theora/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,281: +PARAM [/camera/depth/image_raw/theora/optimize_for] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,282: +PARAM [/camera/depth/image_raw/theora/target_bitrate] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,283: +PARAM [/camera/depth/image_raw/theora/quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,284: +PARAM [/camera/depth/image_raw/theora/keyframe_frequency] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,285: +PUB [/camera/depth/camera_info] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,286: +PUB [/camera/projector/camera_info] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,287: +PUB [/camera/depth_registered/image_raw/compressed] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,288: +SERVICE [/camera/depth_registered/image_raw/compressed/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,289: +PUB [/camera/depth_registered/image_raw/compressed/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,290: +PUB [/camera/depth_registered/image_raw/compressed/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,293: +PARAM [/camera/depth_registered/image_raw/compressed/format] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,295: +PARAM [/camera/depth_registered/image_raw/compressed/jpeg_quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,295: +PARAM [/camera/depth_registered/image_raw/compressed/png_level] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,297: +PUB [/camera/depth_registered/image_raw] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,298: +PUB [/camera/depth_registered/image_raw/theora] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,299: +SERVICE [/camera/depth_registered/image_raw/theora/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,300: +PUB [/camera/depth_registered/image_raw/theora/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,301: +PUB [/camera/depth_registered/image_raw/theora/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,307: +PARAM [/camera/depth_registered/image_raw/theora/optimize_for] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,308: +PARAM [/camera/depth_registered/image_raw/theora/target_bitrate] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,309: +PARAM [/camera/depth_registered/image_raw/theora/quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,310: +PARAM [/camera/depth_registered/image_raw/theora/keyframe_frequency] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,311: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,413: +PUB [/camera/depth_registered/image_rect/compressed] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,415: +SERVICE [/camera/depth_registered/image_rect/compressed/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,417: +PUB [/camera/depth_registered/image_rect/compressed/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,419: +PUB [/camera/depth_registered/image_rect/compressed/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,425: +PARAM [/camera/depth_registered/image_rect/compressed/format] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,426: +PARAM [/camera/depth_registered/image_rect/compressed/jpeg_quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,427: +PARAM [/camera/depth_registered/image_rect/compressed/png_level] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,429: +PUB [/camera/depth_registered/image_rect] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,431: +PUB [/camera/depth_registered/image_rect/theora] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,432: +SERVICE [/camera/depth_registered/image_rect/theora/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,434: +PUB [/camera/depth_registered/image_rect/theora/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,436: +PUB [/camera/depth_registered/image_rect/theora/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:58,441: +PARAM [/camera/depth_registered/image_rect/theora/optimize_for] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,443: +PARAM [/camera/depth_registered/image_rect/theora/target_bitrate] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,445: +PARAM [/camera/depth_registered/image_rect/theora/quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,446: +PARAM [/camera/depth_registered/image_rect/theora/keyframe_frequency] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:58,743: +PUB [/camera/depth_registered/disparity] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:59,048: +SERVICE [/camera/depth/rectify_depth/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:59,051: +PUB [/camera/depth/rectify_depth/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:59,053: +PUB [/camera/depth/rectify_depth/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:59,055: +PARAM [/camera/depth/rectify_depth/interpolation] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:59,057: +PUB [/camera/depth/image_rect_raw/compressed] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:59,058: +SERVICE [/camera/depth/image_rect_raw/compressed/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:59,059: +PUB [/camera/depth/image_rect_raw/compressed/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:59,061: +PUB [/camera/depth/image_rect_raw/compressed/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:59,071: +PARAM [/camera/depth/image_rect_raw/compressed/format] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:59,074: +PARAM [/camera/depth/image_rect_raw/compressed/jpeg_quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:59,076: +PARAM [/camera/depth/image_rect_raw/compressed/png_level] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:59,079: +PUB [/camera/depth/image_rect_raw] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:59,081: +PUB [/camera/depth/image_rect_raw/theora] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:59,083: +SERVICE [/camera/depth/image_rect_raw/theora/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:59,085: +PUB [/camera/depth/image_rect_raw/theora/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:59,088: +PUB [/camera/depth/image_rect_raw/theora/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:59,099: +PARAM [/camera/depth/image_rect_raw/theora/optimize_for] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:59,101: +PARAM [/camera/depth/image_rect_raw/theora/target_bitrate] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:59,105: +PARAM [/camera/depth/image_rect_raw/theora/quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:59,108: +PARAM [/camera/depth/image_rect_raw/theora/keyframe_frequency] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:59,396: +SERVICE [/camera/depth_registered/rectify_depth/set_parameters] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:59,398: +PUB [/camera/depth_registered/rectify_depth/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:59,400: +PUB [/camera/depth_registered/rectify_depth/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:38:59,404: +PARAM [/camera/depth_registered/rectify_depth/interpolation] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:59,413: +PARAM [/camera/depth_registered/image_rect_raw/compressed/format] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:59,416: +PARAM [/camera/depth_registered/image_rect_raw/compressed/jpeg_quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:59,420: +PARAM [/camera/depth_registered/image_rect_raw/compressed/png_level] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:59,434: +PARAM [/camera/depth_registered/image_rect_raw/theora/optimize_for] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:59,437: +PARAM [/camera/depth_registered/image_rect_raw/theora/target_bitrate] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:59,440: +PARAM [/camera/depth_registered/image_rect_raw/theora/quality] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:38:59,446: +PARAM [/camera/depth_registered/image_rect_raw/theora/keyframe_frequency] by /camera_nodelet_manager
+[rosmaster.master][INFO] 2012-12-15 15:40:19,183: +PUB [/rosout] /rostopic_2896_1355582419010 http://pc:37265/
+[rosmaster.master][INFO] 2012-12-15 15:40:19,186: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:19,194: +SUB [/camera/depth_registered/image_rect] /rostopic_2896_1355582419010 http://pc:37265/
+[rosmaster.master][INFO] 2012-12-15 15:40:19,257: +SUB [/camera/depth_registered/image_rect_raw] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:19,264: +SUB [/camera/depth_registered/image_raw] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:19,267: +SUB [/camera/depth/image_rect_raw] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:19,270: +SUB [/camera/depth/camera_info] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:19,274: +SUB [/camera/rgb/camera_info] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:19,277: +SUB [/camera/depth/image_raw] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:19,280: +SUB [/camera/depth_registered/camera_info] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:25,535: -SUB [/camera/depth_registered/image_rect] /rostopic_2896_1355582419010 http://pc:37265/
+[rosmaster.master][INFO] 2012-12-15 15:40:25,536: -PUB [/rosout] /rostopic_2896_1355582419010 http://pc:37265/
+[rosmaster.master][INFO] 2012-12-15 15:40:25,568: -SUB [/camera/depth_registered/image_rect_raw] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:25,571: -SUB [/camera/depth_registered/image_raw] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:25,574: -SUB [/camera/depth_registered/camera_info] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:25,577: -SUB [/camera/depth/image_rect_raw] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:25,580: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:25,581: -SUB [/camera/rgb/camera_info] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:25,585: -SUB [/camera/depth/image_raw] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:25,588: -SUB [/camera/depth/camera_info] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:38,974: -PUB [/camera/depth_registered/disparity] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:38,982: -PUB [/camera/depth/disparity] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:38,987: -PUB [/camera/depth_registered/points] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:38,990: -PUB [/camera/depth_registered/rectify_depth/parameter_descriptions] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:38,993: -PUB [/camera/depth_registered/rectify_depth/parameter_updates] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:38,995: -SERVICE [/camera/depth_registered/rectify_depth/set_parameters] /camera_nodelet_manager rosrpc://pc:34339
+[rosmaster.master][INFO] 2012-12-15 15:40:39,052: -PUB [/rosout] /camera/disparity_depth http://pc:43440/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,055: -SERVICE [/camera/disparity_depth/get_loggers] /camera/disparity_depth rosrpc://pc:55766
+[rosmaster.master][INFO] 2012-12-15 15:40:39,058: -PUB [/rosout] /camera/depth_registered/metric_rect http://pc:44883/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,061: -PUB [/rosout] /camera/depth_registered/metric http://pc:54775/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,063: -SERVICE [/camera/disparity_depth/set_logger_level] /camera/disparity_depth rosrpc://pc:55766
+[rosmaster.master][INFO] 2012-12-15 15:40:39,066: -SERVICE [/camera/depth_registered/metric/get_loggers] /camera/depth_registered/metric rosrpc://pc:44709
+[rosmaster.master][INFO] 2012-12-15 15:40:39,067: -SERVICE [/camera/depth_registered/metric_rect/get_loggers] /camera/depth_registered/metric_rect rosrpc://pc:53026
+[rosmaster.master][INFO] 2012-12-15 15:40:39,070: -SERVICE [/camera/depth_registered/metric/set_logger_level] /camera/depth_registered/metric rosrpc://pc:44709
+[rosmaster.master][INFO] 2012-12-15 15:40:39,072: -SERVICE [/camera/depth_registered/metric_rect/set_logger_level] /camera/depth_registered/metric_rect rosrpc://pc:53026
+[rosmaster.master][INFO] 2012-12-15 15:40:39,091: -PUB [/rosout] /camera_base_link1 http://pc:32936/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,093: -PUB [/rosout] /camera_base_link http://pc:33880/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,096: -PUB [/tf] /camera_base_link1 http://pc:32936/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,099: -PUB [/tf] /camera_base_link http://pc:33880/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,101: -SERVICE [/camera_base_link1/get_loggers] /camera_base_link1 rosrpc://pc:40874
+[rosmaster.master][INFO] 2012-12-15 15:40:39,103: -SERVICE [/camera_base_link/get_loggers] /camera_base_link rosrpc://pc:59535
+[rosmaster.master][INFO] 2012-12-15 15:40:39,106: -SERVICE [/camera_base_link1/set_logger_level] /camera_base_link1 rosrpc://pc:40874
+[rosmaster.master][INFO] 2012-12-15 15:40:39,106: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,110: -SERVICE [/camera_base_link/set_logger_level] /camera_base_link rosrpc://pc:59535
+[rosmaster.master][INFO] 2012-12-15 15:40:39,111: publisherUpdate[/tf] -> http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,112: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,113: publisherUpdate[/tf] -> http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,116: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,119: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,122: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,153: -PUB [/rosout] /camera/points_xyzrgb_depth_rgb http://pc:35550/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,155: -PUB [/rosout] /camera/depth_registered/rectify_depth http://pc:39444/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,158: -SERVICE [/camera/points_xyzrgb_depth_rgb/get_loggers] /camera/points_xyzrgb_depth_rgb rosrpc://pc:35082
+[rosmaster.master][INFO] 2012-12-15 15:40:39,160: -PUB [/rosout] /camera_base_link2 http://pc:36317/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,163: -PUB [/rosout] /camera/disparity_depth_registered http://pc:55589/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,166: -PUB [/rosout] /camera_base_link3 http://pc:50263/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,170: -SERVICE [/camera/depth_registered/rectify_depth/get_loggers] /camera/depth_registered/rectify_depth rosrpc://pc:37053
+[rosmaster.master][INFO] 2012-12-15 15:40:39,173: -PUB [/tf] /camera_base_link2 http://pc:36317/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,174: -SERVICE [/camera/points_xyzrgb_depth_rgb/set_logger_level] /camera/points_xyzrgb_depth_rgb rosrpc://pc:35082
+[rosmaster.master][INFO] 2012-12-15 15:40:39,177: -SERVICE [/camera/disparity_depth_registered/get_loggers] /camera/disparity_depth_registered rosrpc://pc:53920
+[rosmaster.master][INFO] 2012-12-15 15:40:39,180: -PUB [/tf] /camera_base_link3 http://pc:50263/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,182: -SERVICE [/camera_base_link2/get_loggers] /camera_base_link2 rosrpc://pc:33063
+[rosmaster.master][INFO] 2012-12-15 15:40:39,186: -SERVICE [/camera/depth_registered/rectify_depth/set_logger_level] /camera/depth_registered/rectify_depth rosrpc://pc:37053
+[rosmaster.master][INFO] 2012-12-15 15:40:39,188: -SERVICE [/camera/disparity_depth_registered/set_logger_level] /camera/disparity_depth_registered rosrpc://pc:53920
+[rosmaster.master][INFO] 2012-12-15 15:40:39,190: -SERVICE [/camera_base_link3/get_loggers] /camera_base_link3 rosrpc://pc:41005
+[rosmaster.master][INFO] 2012-12-15 15:40:39,191: -SERVICE [/camera_base_link2/set_logger_level] /camera_base_link2 rosrpc://pc:33063
+[rosmaster.master][INFO] 2012-12-15 15:40:39,194: -SERVICE [/camera_base_link3/set_logger_level] /camera_base_link3 rosrpc://pc:41005
+[rosmaster.master][INFO] 2012-12-15 15:40:39,215: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,218: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,221: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,223: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,224: publisherUpdate[/tf] -> http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,226: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,227: publisherUpdate[/tf] -> http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,271: -SERVICE [/camera/depth_registered/image_rect_raw/compressed/set_parameters] /camera_nodelet_manager rosrpc://pc:34339
+[rosmaster.master][INFO] 2012-12-15 15:40:39,274: -SERVICE [/camera/depth_registered/image_rect_raw/theora/set_parameters] /camera_nodelet_manager rosrpc://pc:34339
+[rosmaster.master][INFO] 2012-12-15 15:40:39,277: -SUB [/tf] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,279: -SERVICE [/camera_nodelet_manager/tf_frames] /camera_nodelet_manager rosrpc://pc:34339
+[rosmaster.master][INFO] 2012-12-15 15:40:39,283: -PUB [/camera/depth/points] /camera_nodelet_manager http://pc:60648/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,354: -PUB [/rosout] /camera/register_depth_rgb http://pc:50835/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,359: -SERVICE [/camera/register_depth_rgb/get_loggers] /camera/register_depth_rgb rosrpc://pc:54107
+[rosmaster.master][INFO] 2012-12-15 15:40:39,365: -PUB [/rosout] /camera/depth/points http://pc:34401/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,370: -PUB [/rosout] /camera/depth/metric http://pc:39984/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,380: -SERVICE [/camera/depth/points/get_loggers] /camera/depth/points rosrpc://pc:44074
+[rosmaster.master][INFO] 2012-12-15 15:40:39,383: -SERVICE [/camera/register_depth_rgb/set_logger_level] /camera/register_depth_rgb rosrpc://pc:54107
+[rosmaster.master][INFO] 2012-12-15 15:40:39,385: -SERVICE [/camera/depth/metric/get_loggers] /camera/depth/metric rosrpc://pc:54240
+[rosmaster.master][INFO] 2012-12-15 15:40:39,390: -SERVICE [/camera/depth/points/set_logger_level] /camera/depth/points rosrpc://pc:44074
+[rosmaster.master][INFO] 2012-12-15 15:40:39,392: -SERVICE [/camera/depth/metric/set_logger_level] /camera/depth/metric rosrpc://pc:54240
+[rosmaster.master][INFO] 2012-12-15 15:40:39,426: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,428: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:39,430: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:50,351: -PUB [/rosout] /camera/rgb/debayer http://pc:55322/
+[rosmaster.master][INFO] 2012-12-15 15:40:50,353: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:50,355: -SERVICE [/camera/rgb/debayer/get_loggers] /camera/rgb/debayer rosrpc://pc:51889
+[rosmaster.master][INFO] 2012-12-15 15:40:50,358: -SERVICE [/camera/rgb/debayer/set_logger_level] /camera/rgb/debayer rosrpc://pc:51889
+[rosmaster.master][INFO] 2012-12-15 15:40:50,370: -PUB [/rosout] /camera/depth/metric_rect http://pc:35135/
+[rosmaster.master][INFO] 2012-12-15 15:40:50,373: -SERVICE [/camera/depth/metric_rect/get_loggers] /camera/depth/metric_rect rosrpc://pc:50369
+[rosmaster.master][INFO] 2012-12-15 15:40:50,376: -PUB [/rosout] /camera/ir/rectify_ir http://pc:53762/
+[rosmaster.master][INFO] 2012-12-15 15:40:50,379: -PUB [/rosout] /camera/rgb/rectify_mono http://pc:34990/
+[rosmaster.master][INFO] 2012-12-15 15:40:50,381: -SERVICE [/camera/depth/metric_rect/set_logger_level] /camera/depth/metric_rect rosrpc://pc:50369
+[rosmaster.master][INFO] 2012-12-15 15:40:50,384: -PUB [/rosout] /camera/rgb/rectify_color http://pc:58274/
+[rosmaster.master][INFO] 2012-12-15 15:40:50,385: -SERVICE [/camera/ir/rectify_ir/get_loggers] /camera/ir/rectify_ir rosrpc://pc:50368
+[rosmaster.master][INFO] 2012-12-15 15:40:50,389: -SERVICE [/camera/rgb/rectify_mono/get_loggers] /camera/rgb/rectify_mono rosrpc://pc:34426
+[rosmaster.master][INFO] 2012-12-15 15:40:50,391: -SERVICE [/camera/rgb/rectify_color/get_loggers] /camera/rgb/rectify_color rosrpc://pc:51414
+[rosmaster.master][INFO] 2012-12-15 15:40:50,393: -SERVICE [/camera/ir/rectify_ir/set_logger_level] /camera/ir/rectify_ir rosrpc://pc:50368
+[rosmaster.master][INFO] 2012-12-15 15:40:50,395: -SERVICE [/camera/rgb/rectify_mono/set_logger_level] /camera/rgb/rectify_mono rosrpc://pc:34426
+[rosmaster.master][INFO] 2012-12-15 15:40:50,396: -SERVICE [/camera/rgb/rectify_color/set_logger_level] /camera/rgb/rectify_color rosrpc://pc:51414
+[rosmaster.master][INFO] 2012-12-15 15:40:50,450: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:50,453: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:50,455: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:50,456: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:50,464: -PUB [/rosout] /camera/driver http://pc:60734/
+[rosmaster.master][INFO] 2012-12-15 15:40:50,466: -SERVICE [/camera/driver/get_loggers] /camera/driver rosrpc://pc:53208
+[rosmaster.master][INFO] 2012-12-15 15:40:50,469: -SERVICE [/camera/driver/set_logger_level] /camera/driver rosrpc://pc:53208
+[rosmaster.master][INFO] 2012-12-15 15:40:50,473: -PUB [/rosout] /camera/depth/rectify_depth http://pc:60494/
+[rosmaster.master][INFO] 2012-12-15 15:40:50,476: -SERVICE [/camera/depth/rectify_depth/get_loggers] /camera/depth/rectify_depth rosrpc://pc:52116
+[rosmaster.master][INFO] 2012-12-15 15:40:50,479: -SERVICE [/camera/depth/rectify_depth/set_logger_level] /camera/depth/rectify_depth rosrpc://pc:52116
+[rosmaster.master][INFO] 2012-12-15 15:40:50,551: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:50,553: publisherUpdate[/rosout] -> http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:50,755: -PUB [/rosout_agg] /rosout http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:50,756: -SUB [/rosout] /rosout http://pc:49602/
+[rosmaster.master][INFO] 2012-12-15 15:40:50,757: -SERVICE [/rosout/get_loggers] /rosout rosrpc://pc:57064
+[rosmaster.master][INFO] 2012-12-15 15:40:50,758: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://pc:57064
+[rosmaster.main][INFO] 2012-12-15 15:40:50,772: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2012-12-15 15:40:50,772: stopping master...

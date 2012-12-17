@@ -1,0 +1,1654 @@
+[rospy.client][INFO] 2012-12-14 17:08:52,617: init_node, name[/depth_detection], pid[15165]
+[xmlrpc][INFO] 2012-12-14 17:08:52,617: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-14 17:08:52,618: Started XML-RPC server [http://pc:56032/]
+[rospy.init][INFO] 2012-12-14 17:08:52,618: ROS Slave URI: [http://pc:56032/]
+[rospy.impl.masterslave][INFO] 2012-12-14 17:08:52,618: _ready: http://pc:56032/
+[rospy.registration][INFO] 2012-12-14 17:08:52,620: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2012-12-14 17:08:52,620: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2012-12-14 17:08:52,719: registered with master
+[rospy.rosout][INFO] 2012-12-14 17:08:52,758: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-14 17:08:52,761: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-14 17:08:52,763: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][ERROR] 2012-12-14 17:09:04,935: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:04,949: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:04,959: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:04,988: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,018: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,067: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,090: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,125: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,152: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,188: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,218: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,259: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,293: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,316: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,367: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,393: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,428: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,455: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,488: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,533: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,559: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,582: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,620: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,667: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,685: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,725: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,772: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,789: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,821: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,870: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,889: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,916: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,970: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:05,982: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,025: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,064: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,088: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,123: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,163: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,195: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,230: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,252: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,290: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,337: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,350: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,389: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,423: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,457: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,496: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,531: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,554: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,590: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,628: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,655: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,687: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,737: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,758: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,784: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,831: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,857: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,894: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,926: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,959: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:06,988: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,039: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,053: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,085: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,117: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,159: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,190: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,228: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,271: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,290: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,323: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,355: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,396: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,437: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,453: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,492: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,525: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,562: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,596: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,624: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,657: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,695: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,732: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,755: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,794: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,823: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,855: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,893: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,935: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:07,951: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,005: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,032: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,058: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,097: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,122: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,162: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,197: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,232: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,252: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,305: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,327: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,355: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,394: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,428: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,460: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,496: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,535: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,557: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,594: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,626: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,669: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,687: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,730: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,764: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,797: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,826: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,863: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,895: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,929: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,962: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:08,991: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,029: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,065: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,095: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,124: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,160: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,194: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,230: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,267: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,299: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,323: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,362: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,391: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,419: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,461: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,494: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,517: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,568: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,598: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,630: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,655: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,693: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,722: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,770: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,794: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,832: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,858: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,899: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,938: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,955: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:09,997: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:10,045: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:10,068: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:10,095: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:10,141: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:10,155: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:10,210: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:10,228: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:10,272: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rosout][ERROR] 2012-12-14 17:09:10,295: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rospy.core][INFO] 2012-12-14 17:09:10,320: signal_shutdown [signal-2]
+[rospy.impl.masterslave][INFO] 2012-12-14 17:09:10,336: signal-2
+[rosout][ERROR] 2012-12-14 17:09:10,337: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x27e8878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 198, in depth_cb
+    self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 177, in filter_edge_depth
+    if u == 0 or v == 0 or u == img.shape[0] or v == img.shape[1]:
+UnboundLocalError: local variable 'u' referenced before assignment
+
+[rospy.core][INFO] 2012-12-14 17:09:10,501: signal_shutdown [atexit]

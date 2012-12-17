@@ -1,0 +1,364 @@
+[rospy.client][INFO] 2012-12-14 15:32:30,426: init_node, name[/depth_detection], pid[7071]
+[xmlrpc][INFO] 2012-12-14 15:32:30,426: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-14 15:32:30,427: Started XML-RPC server [http://pc:43286/]
+[rospy.init][INFO] 2012-12-14 15:32:30,427: ROS Slave URI: [http://pc:43286/]
+[rospy.impl.masterslave][INFO] 2012-12-14 15:32:30,427: _ready: http://pc:43286/
+[xmlrpc][INFO] 2012-12-14 15:32:30,429: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2012-12-14 15:32:30,429: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2012-12-14 15:32:30,528: registered with master
+[rospy.rosout][INFO] 2012-12-14 15:32:30,571: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-14 15:32:30,576: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-14 15:32:30,579: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][ERROR] 2012-12-14 15:34:57,801: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:35:04,793: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:35:11,779: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:35:18,576: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:35:25,430: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:35:32,314: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:35:39,147: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:35:46,007: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:35:52,830: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:35:59,658: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:36:06,523: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:36:13,383: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:36:20,201: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:36:27,042: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:36:33,844: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:36:40,732: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:36:47,597: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:36:54,422: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:37:01,246: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:37:08,112: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:37:15,219: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:37:22,200: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:37:29,108: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:37:35,986: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rosout][ERROR] 2012-12-14 15:37:42,914: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23fc878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 190, in depth_cb
+    self.write_dist_hist_img(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 137, in write_dist_hist_img
+    self.plot_dist_hist(self.dist_hist_imgs, fname)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 108, in plot_dist_hist
+    v = np.var(imgs_float, axis=0)
+  File "/usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py", line 2529, in var
+    return var(axis, dtype, out, ddof)
+MemoryError
+
+[rospy.core][INFO] 2012-12-14 15:37:43,877: signal_shutdown [signal-2]
+[rospy.impl.masterslave][INFO] 2012-12-14 15:37:44,567: signal-2
+[rospy.core][INFO] 2012-12-14 15:37:44,976: signal_shutdown [atexit]

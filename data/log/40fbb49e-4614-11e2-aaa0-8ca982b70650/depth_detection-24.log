@@ -1,0 +1,3004 @@
+[rospy.client][INFO] 2012-12-14 18:32:38,962: init_node, name[/depth_detection], pid[8740]
+[xmlrpc][INFO] 2012-12-14 18:32:38,962: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-14 18:32:38,963: Started XML-RPC server [http://pc:44062/]
+[rospy.init][INFO] 2012-12-14 18:32:38,963: ROS Slave URI: [http://pc:44062/]
+[rospy.impl.masterslave][INFO] 2012-12-14 18:32:38,963: _ready: http://pc:44062/
+[xmlrpc][INFO] 2012-12-14 18:32:38,963: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2012-12-14 18:32:38,964: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2012-12-14 18:32:39,063: registered with master
+[rospy.rosout][INFO] 2012-12-14 18:32:39,101: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-14 18:32:39,105: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-14 18:32:39,108: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][ERROR] 2012-12-14 18:32:51,489: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:51,499: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:51,528: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:51,561: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:51,598: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:51,633: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:51,655: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:51,696: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:51,724: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:51,756: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:51,811: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:51,835: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:51,863: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:51,908: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:51,935: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:51,972: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:51,993: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,030: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,067: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,110: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,139: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,161: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,199: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,236: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,261: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,309: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,321: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,365: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,403: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,436: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,465: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,499: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,534: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,559: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,597: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,643: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,664: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,704: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,736: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,758: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,801: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,834: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,871: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,907: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,930: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,970: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:52,996: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,028: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,065: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,094: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,132: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,161: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,204: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,229: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,267: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,304: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,338: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,370: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,409: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,434: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,473: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,497: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,530: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,570: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,612: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,639: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,665: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,694: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,721: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,771: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,807: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,832: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,875: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,903: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,927: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:53,968: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,012: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,035: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,068: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,095: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,131: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,167: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,208: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,243: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,271: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,306: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,336: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,372: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,395: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,439: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,471: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,504: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,538: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,575: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,598: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,637: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,673: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,702: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,742: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,771: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,796: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,835: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,876: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,896: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,945: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:54,970: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,005: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,031: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,070: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,096: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,140: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,173: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,211: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,237: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,272: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,296: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,333: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,367: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,406: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,437: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,462: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,511: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,534: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,567: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,617: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,636: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,678: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,711: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,736: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,762: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,798: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,836: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,871: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,900: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,938: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:55,966: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,014: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,026: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,060: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,094: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,135: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,169: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,208: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,242: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,267: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,297: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,327: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,367: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,400: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,433: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,469: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,506: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,531: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,571: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,607: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,639: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,675: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,701: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,745: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,771: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,809: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,831: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,879: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,899: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,929: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:56,976: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,004: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,038: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,074: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,109: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,132: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,178: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,203: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,242: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,278: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,301: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,337: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,383: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,402: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,442: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,479: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,495: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,539: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,579: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,606: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,638: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,675: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,719: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,738: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,779: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,804: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,839: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,874: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,915: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,935: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:57,981: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,006: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,053: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,078: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,101: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,150: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,172: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,199: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,246: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,272: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,307: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,343: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,376: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,403: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,441: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,476: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,507: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,541: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,574: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,597: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,641: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,669: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,711: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,740: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,778: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,811: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,847: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,871: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,905: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,941: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:58,979: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,001: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,046: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,075: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,098: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,146: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,172: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,209: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,242: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,277: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,305: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,350: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,374: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,411: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,447: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,469: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,507: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,544: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,579: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,606: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,650: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,664: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,711: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,747: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,771: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,809: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,842: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,870: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,901: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,941: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:32:59,976: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,013: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,046: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,072: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,118: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,141: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,178: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,206: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,232: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,276: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,309: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,339: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,381: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,416: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,442: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,489: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,509: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,544: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,582: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,607: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,631: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,674: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,699: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,744: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,778: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,799: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,850: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,873: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,910: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,945: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:00,995: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:01,009: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:01,042: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:01,069: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:01,112: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:01,140: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:01,178: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:01,211: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:01,233: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:01,278: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:01,315: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:01,338: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rosout][ERROR] 2012-12-14 18:33:01,388: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rospy.core][INFO] 2012-12-14 18:33:01,394: signal_shutdown [signal-2]
+[rospy.impl.masterslave][INFO] 2012-12-14 18:33:01,400: signal-2
+[rospy.topics][WARNING] 2012-12-14 18:33:01,411: during shutdown, bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2d86878>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 213, in depth_cb
+    img = self.filter_edge_depth(img)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 179, in filter_edge_depth
+    self.new_img_filter_buf[nans] = self.img_filter_buf
+ValueError: array is not broadcastable to correct shape
+
+[rospy.core][INFO] 2012-12-14 18:33:01,525: signal_shutdown [atexit]

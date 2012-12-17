@@ -1,0 +1,124 @@
+[rospy.client][INFO] 2012-12-15 18:00:12,317: init_node, name[/depth_detection], pid[10263]
+[xmlrpc][INFO] 2012-12-15 18:00:12,318: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-15 18:00:12,318: Started XML-RPC server [http://pc:34993/]
+[rospy.init][INFO] 2012-12-15 18:00:12,318: ROS Slave URI: [http://pc:34993/]
+[rospy.impl.masterslave][INFO] 2012-12-15 18:00:12,318: _ready: http://pc:34993/
+[rospy.registration][INFO] 2012-12-15 18:00:12,319: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2012-12-15 18:00:12,320: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2012-12-15 18:00:12,419: registered with master
+[rospy.rosout][INFO] 2012-12-15 18:00:12,466: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-15 18:00:12,470: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-15 18:00:12,472: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][ERROR] 2012-12-15 18:00:19,325: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e54a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 283, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+TypeError: 'tuple' object does not support item assignment
+
+[rosout][ERROR] 2012-12-15 18:00:22,507: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e54a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 283, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+TypeError: 'tuple' object does not support item assignment
+
+[rosout][ERROR] 2012-12-15 18:00:22,813: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e54a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 283, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+TypeError: 'tuple' object does not support item assignment
+
+[rosout][ERROR] 2012-12-15 18:00:23,115: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e54a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 283, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+TypeError: 'tuple' object does not support item assignment
+
+[rosout][ERROR] 2012-12-15 18:00:23,583: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e54a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 283, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+TypeError: 'tuple' object does not support item assignment
+
+[rosout][ERROR] 2012-12-15 18:00:23,972: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e54a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 283, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+TypeError: 'tuple' object does not support item assignment
+
+[rosout][ERROR] 2012-12-15 18:00:24,196: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e54a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 283, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+TypeError: 'tuple' object does not support item assignment
+
+[rosout][ERROR] 2012-12-15 18:00:24,554: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e54a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 283, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+TypeError: 'tuple' object does not support item assignment
+
+[rosout][ERROR] 2012-12-15 18:00:24,995: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e54a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 283, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+TypeError: 'tuple' object does not support item assignment
+
+[rosout][ERROR] 2012-12-15 18:00:25,912: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e54a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 283, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+TypeError: 'tuple' object does not support item assignment
+
+[rosout][ERROR] 2012-12-15 18:00:26,778: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x2e54a70>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 283, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 107, in get_contours
+    cont[0] = DepthDetector.merge_contours(cont[0])
+TypeError: 'tuple' object does not support item assignment
+
+[rospy.core][INFO] 2012-12-15 18:00:26,784: signal_shutdown [signal-2]
+[rospy.impl.masterslave][INFO] 2012-12-15 18:00:26,790: signal-2
+[rospy.core][INFO] 2012-12-15 18:00:26,921: signal_shutdown [atexit]

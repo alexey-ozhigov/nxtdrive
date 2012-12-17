@@ -1,0 +1,884 @@
+[rospy.client][INFO] 2012-12-14 21:12:27,347: init_node, name[/depth_detection], pid[15816]
+[xmlrpc][INFO] 2012-12-14 21:12:27,348: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-14 21:12:27,348: Started XML-RPC server [http://pc:59115/]
+[rospy.init][INFO] 2012-12-14 21:12:27,348: ROS Slave URI: [http://pc:59115/]
+[rospy.impl.masterslave][INFO] 2012-12-14 21:12:27,348: _ready: http://pc:59115/
+[rospy.registration][INFO] 2012-12-14 21:12:27,349: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2012-12-14 21:12:27,349: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2012-12-14 21:12:27,449: registered with master
+[rospy.rosout][INFO] 2012-12-14 21:12:27,479: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-14 21:12:27,481: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-14 21:12:27,483: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][ERROR] 2012-12-14 21:12:38,646: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:38,671: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:38,688: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:38,707: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:38,724: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:38,760: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:38,802: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:38,829: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:38,864: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:38,899: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:38,945: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:38,961: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,007: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,024: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,070: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,088: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,142: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,159: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,197: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,240: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,257: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,299: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,324: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,369: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,391: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,430: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,468: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,498: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,537: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,553: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,608: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,624: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,668: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,687: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,738: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,757: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,812: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,830: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,868: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,893: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,939: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:39,956: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,000: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,026: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,070: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,093: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,131: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,163: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,196: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,244: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,269: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,293: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,339: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,357: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,401: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,428: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,469: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,499: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,536: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,558: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,605: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,621: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,672: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,691: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,737: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,760: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,807: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,834: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,864: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,892: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,927: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:40,964: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:41,001: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:41,032: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:41,058: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:41,107: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:41,123: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:41,176: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:41,194: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:41,237: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:41,265: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:41,292: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:41,329: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:41,371: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:41,398: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rosout][ERROR] 2012-12-14 21:12:41,430: bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rospy.core][INFO] 2012-12-14 21:12:41,455: signal_shutdown [signal-2]
+[rospy.impl.masterslave][INFO] 2012-12-14 21:12:41,461: signal-2
+[rospy.topics][WARNING] 2012-12-14 21:12:41,468: during shutdown, bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x257a908>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 234, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 112, in get_contours
+    cv2.putText(img_contours, str(i), color=RGB(0, 0, 255))
+TypeError: Required argument 'org' (pos 3) not found
+
+[rospy.core][INFO] 2012-12-14 21:12:41,601: signal_shutdown [atexit]

@@ -1,0 +1,25 @@
+[rospy.client][INFO] 2012-12-15 19:55:30,092: init_node, name[/depth_detection], pid[8218]
+[xmlrpc][INFO] 2012-12-15 19:55:30,092: XML-RPC server binding to 0.0.0.0
+[xmlrpc][INFO] 2012-12-15 19:55:30,093: Started XML-RPC server [http://pc:50424/]
+[rospy.impl.masterslave][INFO] 2012-12-15 19:55:30,093: _ready: http://pc:50424/
+[rospy.init][INFO] 2012-12-15 19:55:30,093: ROS Slave URI: [http://pc:50424/]
+[rospy.registration][INFO] 2012-12-15 19:55:30,094: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2012-12-15 19:55:30,095: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2012-12-15 19:55:30,194: registered with master
+[rospy.rosout][INFO] 2012-12-15 19:55:30,222: initializing /rosout core topic
+[rospy.rosout][INFO] 2012-12-15 19:55:30,224: connected to core topic /rosout
+[rospy.simtime][INFO] 2012-12-15 19:55:30,226: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.core][INFO] 2012-12-15 19:55:38,807: signal_shutdown [debug]
+[rospy.impl.masterslave][INFO] 2012-12-15 19:55:38,811: debug
+[rospy.topics][WARNING] 2012-12-15 19:55:38,945: during shutdown, bad callback: <bound method DepthDetector.depth_cb of <__main__.DepthDetector instance at 0x23059e0>>
+Traceback (most recent call last):
+  File "/opt/ros/electric/stacks/ros_comm/clients/rospy/src/rospy/topics.py", line 581, in _invoke_callback
+    cb(msg)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 292, in depth_cb
+    (contours, img_contours) = self.get_contours(img_fore)
+  File "/home/alex/MAS/CV/project/cv_nxtdrive/src/depth_detection.py", line 119, in get_contours
+    brect = cv2.boundingRect(c)
+error: /tmp/buildd/libopencv-2.3.1+svn6514+branch23/modules/imgproc/src/contours.cpp:1664: error: (-215) points.checkVector(2) >= 0 && (points.depth() == CV_32F || points.depth() == CV_32S) in function boundingRect
+
+
+[rospy.core][INFO] 2012-12-15 19:55:39,279: signal_shutdown [atexit]
