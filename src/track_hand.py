@@ -19,25 +19,30 @@ import matplotlib.pyplot as plt
 from time import sleep
 from math import sqrt
 import pickle
+from histogram import Histogram
+from myutils import calc_back_proj
+
+from kcurv import kcurv
+
 depth_hist_file = 'depth_histogram.txt'
 DEF_TOPIC_NAME = '/camera/depth_registered/image_rect'
 bridge = CvBridge()
 
-class Enum(set):
+import cProfile
 
+class Enum(set):
     def __getattr__(self, name):
         if name in self:
             return name
         raise AttributeError
 
-
 ThresholdMode = Enum(['DEPTH_AUTO', 'DEPTH_MANUAL'])
+TrackerState = Enum(['INIT', 'RUN'])
 
 def dist(p1, p2):
     d1 = p1[0] - p2[0]
     d2 = p1[1] - p2[1]
     return sqrt(d1 * d1 + d2 * d2)
-
 
 def build_line(p1, p2, debug_img = False):
     ret_line = np.empty([0, 1, 2], dtype='int32')
@@ -85,8 +90,8 @@ def max_filter(img):
     img_f = np.zeros((s[0] + 2, s[1] + 2), dtype='uint8')
     img_ret = np.zeros((s[0], s[1]), dtype='uint8')
     img_f[1:s[0] + 1, 1:s[1] + 1] = img
-    for i in range(1, s[0]):
-        for j in range(1, s[1]):
+    for i in xrange(1, s[0]):
+        for j in xrange(1, s[1]):
             img_ret[i][j] = np.max(img_f[i - 1:i + 2, j - 1:j + 2])
 
     return img_ret
@@ -98,8 +103,13 @@ class DepthDetector():
     def __init__(self, topic = DEF_TOPIC_NAME, mode = ThresholdMode.DEPTH_AUTO):
         self.mouse_x = 0
         self.mouse_y = 0
+        self.state = TrackerState.INIT
+        self.init_state_max = 5
+        self.state_cnt = 0
+        self.init_bbox = None
+        self.img_fore = None
         self.MAX_RANGE = 5.0
-        self.write_dist_hist = True
+        self.write_dist_hist = False
         self.dist_hist_sample_size = 100
         self.dist_hist_sample_cnt = 0
         self.dist_hist_sample_number = 0
@@ -117,14 +127,12 @@ class DepthDetector():
         cv2.namedWindow('wnd_orig', 0)
         cv2.namedWindow('wnd_prob', 0)
         cv2.namedWindow('wnd_contours', 0)
-        cv2.namedWindow('wnd_debug', 0)
         cv2.setMouseCallback('wnd_orig', self.on_orig_mouse, None)
         self.depth_threshold = 127
         if self.mode == ThresholdMode.DEPTH_MANUAL:
             cv2.createTrackbar('track_depth', 'wnd_prob', self.depth_threshold, 255, self.on_depth_track)
-        rospy.on_shutdown(self.on_shutdown)
         rospy.Subscriber(topic, Image, self.depth_cb)
-        rospy.Subscriber('/camera/rgb/image_rect_color', Image, self.rgb_cb)
+        #rospy.Subscriber('/camera/rgb/image_rect_color', Image, self.rgb_cb)
 
     def on_orig_mouse(self, event, x, y, i, data):
         self.mouse_x = x
@@ -138,14 +146,14 @@ class DepthDetector():
         print 'MIN_DIST', min_dist_m
         return min_dist_m
 
-    def get_foreground(self, img):
+    def get_foreground_uint8(self, img):
         RANGE_DELTA_M = 0.15
         if self.mode == ThresholdMode.DEPTH_MANUAL:
             d_thr = self.depth_threshold / 256.0 + 0.5
         elif self.mode == ThresholdMode.DEPTH_AUTO:
             d_thr = self.get_auto_threshold(img)
         depth_bin = cv2.threshold(img, d_thr + RANGE_DELTA_M, 255, cv2.THRESH_BINARY_INV)
-        return depth_bin[1]
+        return depth_bin[1].astype('uint8')
 
     @classmethod
     def draw_contours_info(cls, cont, img_contours, merge_points):
@@ -213,16 +221,15 @@ class DepthDetector():
 
     @classmethod
     def get_contours(cls, img_fore):
-        img_ed_canny = cv2.Canny(img_fore, 10, 30)
-        img_ed = max_filter(img_ed_canny)
+        img_ed_canny = cv2.Canny(img_fore, 10, 40)
+        img_ed = img_ed_canny
+        #img_ed = max_filter(img_ed_canny)
         cont = cv2.findContours(img_ed, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
         pickle.dump(cont[0], file('c0', 'w'))
-        cont = ([ c for c in cont[0] if len(c.shape) == 3 and len(c) > 600 ], cont[1])
-        img_contours0 = np.zeros([480, 640, 3], dtype=np.uint8)
-        cv2.drawContours(img_contours0, cont[0], -1, RGB(255, 255, 0))
+        cont = ([ c for c in cont[0] if len(c.shape) == 3 and len(c) > 2 ], cont[1])
         img_contours = np.zeros([480, 640, 3], dtype=np.uint8)
         cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
-        return (cont[0], img_contours, img_contours0)
+        return (cont[0], img_contours)
 
     @classmethod
     def find_close_conts(cls, cont):
@@ -320,13 +327,33 @@ class DepthDetector():
             self.dist_hist_imgs[self.dist_hist_imgs_i] = img_float
             self.dist_hist_imgs_i += 1
 
-    def get_convex_hulls(self, contours):
+    @classmethod
+    def get_kcurvs(cls, contours, delta):
+        kcurvs = []
+        conts = []
+        for c in contours:
+            kc, cont = kcurv(c, delta)
+            kcurvs.append(kc)
+            conts.append(cont)
+        return (kcurvs, conts)
+
+    @classmethod
+    def get_kcurv_fingers(cls, kcurvs):
+        KCURV_MAX_ANGLE = 1.32
+        fingers = []
+        for i in range(len(kcurvs)):
+            kc = kcurvs[i]
+            fing = np.array([i for i in range(len(kc)) if kc[i][1] < KCURV_MAX_ANGLE])
+            fingers.append(fing)
+        return fingers
+
+    @classmethod
+    def get_convex_hulls(cls, contours):
         MIN_CONTOUR_LEN = 100
         curv = []
         for c in contours:
             if len(c) > MIN_CONTOUR_LEN:
-                curv.append(cv2.convexHull(c))
-
+                curv.append(cv2.convexHull(c, returnPoints = True))
         return curv
 
     def draw_convex_hulls(self, img, conv):
@@ -336,18 +363,43 @@ class DepthDetector():
                 cv2.line(img, tuple(prev_p[0]), tuple(p[0]), RGB(0, 255, 0))
                 prev_p = p
 
-    def draw_debug_info(self, img):
-        CROSS_SIZE = 20
-        c = self.stat_pixel_pos
-        p1 = (c[0], c[1] - CROSS_SIZE / 2)
-        p2 = (c[0], c[1] + CROSS_SIZE / 2)
-        p3 = (c[0] - CROSS_SIZE / 2, c[1])
-        p4 = (c[0] + CROSS_SIZE / 2, c[1])
-        color = RGB(0, 0, 255)
-        cv2.line(img, p1, p2, color)
-        cv2.line(img, p3, p4, color)
+    def draw_debug_info(self, img_orig, img_fore, bbox, bbox_init, img_contours, contours_fingers, kcurvs, hulls):
+        img_curv = img_contours.copy()
+        for cf_i in range(len(contours_fingers)):
+            f = contours_fingers[cf_i]
+            for p in f:
+                cv2.circle(img_contours, tuple(kcurvs[cf_i][p][0]), 10, RGB(0, 255, 0))
+        cv2.imwrite('img_contours_%03d.png' % self.depth_frame_cnt, img_contours)
+        for i in range(len(kcurvs)):
+            kc = kcurvs[i]
+            l = len(kc)
+            for pt_i in range(1, len(kc) - 1):
+                pt0 = kc[pt_i - 1]
+                pt1 = kc[pt_i]
+                pt2 = kc[pt_i + 1]
+                cv2.line(img_curv, tuple(pt0[0]), tuple(pt1[0]), RGB(0, 255, 0))
+                cv2.putText(img_curv, '%.3f' % pt1[1], tuple(pt1[0]), cv2.FONT_HERSHEY_PLAIN, 0.7, RGB(0, 255, 0))
+                cv2.line(img_curv, tuple(pt1[0]), tuple(pt2[0]), RGB(0, 255, 0))
+        cv2.imwrite('img_kcurvs_%03d.png' % self.depth_frame_cnt, img_curv)
 
-    def filter_edge_depth_simple(self, img):
+        img_fore_bgr = cv2.cvtColor(img_fore, cv2.COLOR_GRAY2BGR)
+        bbox_str = 'Bounding box ratio: %.2f' % (1.0 * bbox[2] / bbox_init[2])
+        fnt = cv2.FONT_HERSHEY_PLAIN
+        clr = RGB(255, 0, 0)
+        cv2.putText(img_fore_bgr, bbox_str, (30, 30) , fnt, 2.0, clr)
+        bbox_p1 = (bbox[1], bbox[0])
+        bbox_p2 = (bbox[1] + bbox[3], bbox[0] + bbox[2])
+        cv2.rectangle(img_fore_bgr, bbox_p1, bbox_p2, color=RGB(0, 255, 0)) 
+        cv2.imwrite('img_fore_%03d.png' % self.depth_frame_cnt, img_fore_bgr)
+        
+        img_hulls = 255 * np.ones([480, 640, 3], dtype='uint8')
+        self.draw_convex_hulls(img_hulls, hulls)
+        cv2.imwrite('img_hulls_%03d.png' % self.depth_frame_cnt, img_hulls)
+        img_orig_cm = (100 * img_orig * 255 / 200).astype('uint8')
+        cv2.imwrite('img_orig_%03d.png' % self.depth_frame_cnt, img_orig_cm)
+     
+
+    def filter_nan_depth_simple(self, img):
         img[np.where(np.isnan(img))] = self.MAX_RANGE
 
     def filter_edge_depth(self, img):
@@ -357,33 +409,64 @@ class DepthDetector():
         self.img_filter_buf = self.new_img_filter_buf
         return self.img_filter_buf
 
+    def calc_hist_from_fore(self, img, img_fore):
+        hist = Histogram()
+        hist.calc(img, user_mask = img_fore)
+        back_proj = calc_back_proj(img, hist.hist)
+        back_proj &= img_fore
+        cv2.imwrite('img_back_%03d.png' % self.depth_frame_cnt, back_proj)
+
     def rgb_cb(self, msg):
+        '''
+        try:
+            img = bridge.imgmsg_to_cv(msg)
+            img = np.asarray(img)
+        except CvBridgeError as e:
+            print >> stderr, 'Cannot convert from ROS msg to CV image:', e
+        if self.img_fore != None:
+            hist = self.calc_hist_from_fore(img, self.img_fore)
+        '''
         pass
 
+    def get_bounding_box(self, img_fore):
+        fore = np.where(img_fore == 255)
+        fore_pts = np.array([[[fore[0][i], fore[1][i]]] for i in range(len(fore[0]))], dtype='int32')
+        return cv2.boundingRect(fore_pts)
+
     def depth_cb(self, msg):
+        self.depth_frame_cnt += 1
+        self.state_cnt += 1
+        if self.depth_frame_cnt % 1 != 0:
+            return
         try:
-            img = bridge.imgmsg_to_cv(msg, 'passthrough')
+            img = bridge.imgmsg_to_cv(msg, desired_encoding='32FC1')
             img = np.asarray(img)
         except CvBridgeError as e:
             print >> stderr, 'Cannot convert from ROS msg to CV image:', e
 
+        #print img.shape, msg.encoding
         x = self.mouse_x
         y = self.mouse_y
-        self.filter_edge_depth_simple(img)
+        self.filter_nan_depth_simple(img)
         print 'Depth(%d, %d): %f' % (x, y, img[y][x])
-        if self.write_dist_hist and self.depth_frame_cnt % 3 == 0:
+        if self.write_dist_hist and self.depth_frame_cnt % 1 == 0:
             self.write_dist_hist_img(img)
-        self.depth_frame_cnt += 1
-        img_fore = self.get_foreground(img).astype('uint8')
-        cv2.imwrite('img_fore.png', img_fore)
-        contours, img_contours, img_contours0 = DepthDetector.get_contours(img_fore)
-        hulls = self.get_convex_hulls(contours)
-        self.draw_debug_info(img_contours)
+        self.img_fore = self.get_foreground_uint8(img)
+        bbox = self.get_bounding_box(self.img_fore)
+        if self.state == TrackerState.INIT:
+            if self.state_cnt >= self.init_state_max:
+                self.state = TrackerState.RUN
+                self.state_cnt = 0
+            else:
+                self.bbox_init = bbox
+        contours, img_contours = DepthDetector.get_contours(self.img_fore)
+        kcurvs, conts = DepthDetector.get_kcurvs(contours, 30)
+        contours_fingers = DepthDetector.get_kcurv_fingers(kcurvs)
+        hulls = DepthDetector.get_convex_hulls(contours)
+        self.draw_debug_info(img, self.img_fore, bbox, self.bbox_init, img_contours, contours_fingers, kcurvs, hulls)
         cv2.imshow('wnd_orig', (img * 100).astype('uint8'))
-        cv2.imshow('wnd_prob', img_fore)
+        cv2.imshow('wnd_prob', self.img_fore)
         cv2.imshow('wnd_contours', img_contours)
-        cv2.imwrite('img_contours%03d.png' % self.depth_frame_cnt, img_contours)
-        cv2.imwrite('img0contours%03d.png' % self.depth_frame_cnt, img_contours0)
         ch = cv2.waitKey(10)
         if ch == 27:
             rospy.signal_shutdown('Quit')
@@ -417,10 +500,60 @@ def do_track_hand():
 def test():
     img_fore = cv2.imread('data/img_fore.png')
     img_fore = cv2.cvtColor(img_fore, cv2.COLOR_BGR2GRAY)
-    contours, img, img_old = DepthDetector.get_contours(img_fore)
+    contours, img = DepthDetector.get_contours(img_fore)
+    kcurvs, conts = DepthDetector.get_kcurvs(contours, 30)
+    #hulls = DepthDetector.get_convex_hulls(contours)
+    contours_fingers = DepthDetector.get_kcurv_fingers(kcurvs)
+    for cf_i in range(len(contours_fingers)):
+        f = contours_fingers[cf_i]
+        for p in f:
+            cv2.circle(img, tuple(kcurvs[cf_i][p][0]), 10, RGB(0, 255, 0))
+    cv2.imwrite('d.png', img)
+    '''
+    for h in hulls:
+        print h
+        for p in h:
+            cv2.circle(img, tuple(contours[0][p[0]][0]), 10, RGB(0, 255, 0))
     cv2.imwrite('d.png', img)
     cv2.imwrite('d0.png', img_old)
+    '''
 
+def plot_kcurv(kcurv, fname):
+    plt.clf()
+    kcurv_coef = [x[1] for x in kcurv]
+    plt.title(fname)
+    plt.plot(kcurv_coef)
+    plt.savefig(fname)
+
+def test_kcurv():
+    img_fore = cv2.imread('data/img_fore.png')
+    img_fore = cv2.cvtColor(img_fore, cv2.COLOR_BGR2GRAY)
+    contours, img = DepthDetector.get_contours(img_fore)
+    kcurvs, conts = DepthDetector.get_kcurvs(contours, 30)
+    cv2.namedWindow('kcurv')
+    img_curv = img.copy()
+    for i in range(len(kcurvs)):
+        kc = kcurvs[i]
+        l = len(kc)
+        for pt_i in range(1, len(kc) - 1):
+            pt0 = kc[pt_i - 1]
+            pt1 = kc[pt_i]
+            pt2 = kc[pt_i + 1]
+            _img = img.copy()
+            cv2.line(_img, tuple(pt0[0]), tuple(pt1[0]), RGB(0, 255, 0))
+            cv2.line(img_curv, tuple(pt0[0]), tuple(pt1[0]), RGB(0, 255, 0))
+            cv2.putText(_img, '%.3f' % pt1[1], tuple(pt1[0]), cv2.FONT_HERSHEY_PLAIN, 1.0, RGB(0, 255, 0))
+            cv2.putText(img_curv, '%.3f' % pt1[1], tuple(pt1[0]), cv2.FONT_HERSHEY_PLAIN, 0.7, RGB(0, 255, 0))
+            cv2.line(_img, tuple(pt1[0]), tuple(pt2[0]), RGB(0, 255, 0))
+            cv2.line(img_curv, tuple(pt1[0]), tuple(pt2[0]), RGB(0, 255, 0))
+            cv2.imshow('kcurv', _img)
+            cv2.waitKey(-1)
+        plot_kcurv(kc, 'kcurv%03d.png' % i)
+    while cv2.waitKey(100) != 27:
+        pass
+    cv2.destroyWindow('kcurv')
+    cv2.waitKey(100)
+    cv2.imwrite('img_curv.png', img_curv)
 
 def test2():
     img = np.zeros([320, 240], dtype='uint8')
@@ -460,5 +593,6 @@ def test4():
 
 
 if __name__ == '__main__':
-    #do_track_hand()
-    test()
+    do_track_hand()
+    #test()
+    #test_kcurv()

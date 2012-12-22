@@ -3,10 +3,13 @@
   <!-- Arguments -->
     <arg name="depth" default="true"/>
     <arg name="from_kinect" default="false"/>
+    <arg name="from_bag" default="false"/>
+    <arg name="bag" default="kinect.bag"/>
     <arg name="bkg_sep_mode" default="depth_auto" />
     <arg name="video_dir" value="/home/alex/MAS/CV/project/cv_nxtdrive/data/1"/>
 
     <group if="$(arg depth)">
+        <node name="depth_detection" type="track_hand.py" pkg="cv_nxtdrive" args="$(arg bkg_sep_mode)" output="screen" />
         <group if="$(arg from_kinect)">
             <include file="$(find openni_launch)/launch/openni.launch"/>
             <node name="set_dr" pkg="dynamic_reconfigure" type="dynparam" args="set /camera/driver depth_registration true" />
@@ -17,7 +20,11 @@
                 <arg name="depth_video" value="$(arg video_dir)/hand_depth.avi"/>
             </include> 
         </group>
-        <node name="depth_detection" type="track_hand.py" pkg="cv_nxtdrive" args="$(arg bkg_sep_mode)" output="screen" />
+        <group if="$(arg from_bag)">
+            <group unless="$(arg from_kinect)">
+                <node name="play_bag" type="play" pkg="rosbag" args="$(arg bag) topic:=/camera/depth_registered/image_rect" output="screen" />
+            </group>
+        </group>
     </group>
     <group unless="$(arg depth)">
         <include file="$(find cv_nxtdrive)/launch/capture_video.launch" />
