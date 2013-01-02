@@ -1,5 +1,9 @@
 FILE(REMOVE_RECURSE
+  "../msg_gen"
+  "../src/cv_nxtdrive/msg"
+  "../msg_gen"
   "CMakeFiles/ROSBUILD_genmsg_cpp"
+  "../msg_gen/cpp/include/cv_nxtdrive/HandRect.h"
 )
 
 # Per-language clean rules from dependency scanning.

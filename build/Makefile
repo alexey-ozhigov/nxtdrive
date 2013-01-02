@@ -125,6 +125,19 @@ ROSBUILD_genmsg_lisp/fast:
 .PHONY : ROSBUILD_genmsg_lisp/fast
 
 #=============================================================================
+# Target rules for targets named ROSBUILD_genmsg_py
+
+# Build rule for target.
+ROSBUILD_genmsg_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ROSBUILD_genmsg_py
+.PHONY : ROSBUILD_genmsg_py
+
+# fast build rule for target.
+ROSBUILD_genmsg_py/fast:
+	$(MAKE) -f CMakeFiles/ROSBUILD_genmsg_py.dir/build.make CMakeFiles/ROSBUILD_genmsg_py.dir/build
+.PHONY : ROSBUILD_genmsg_py/fast
+
+#=============================================================================
 # Target rules for targets named ROSBUILD_gensrv_cpp
 
 # Build rule for target.
@@ -164,6 +177,19 @@ clean-test-results/fast:
 .PHONY : clean-test-results/fast
 
 #=============================================================================
+# Target rules for targets named hand_recognizer
+
+# Build rule for target.
+hand_recognizer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hand_recognizer
+.PHONY : hand_recognizer
+
+# fast build rule for target.
+hand_recognizer/fast:
+	$(MAKE) -f CMakeFiles/hand_recognizer.dir/build.make CMakeFiles/hand_recognizer.dir/build
+.PHONY : hand_recognizer/fast
+
+#=============================================================================
 # Target rules for targets named rosbuild_precompile
 
 # Build rule for target.
@@ -201,6 +227,19 @@ rospack_genmsg: cmake_check_build_system
 rospack_genmsg/fast:
 	$(MAKE) -f CMakeFiles/rospack_genmsg.dir/build.make CMakeFiles/rospack_genmsg.dir/build
 .PHONY : rospack_genmsg/fast
+
+#=============================================================================
+# Target rules for targets named rospack_genmsg_all
+
+# Build rule for target.
+rospack_genmsg_all: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rospack_genmsg_all
+.PHONY : rospack_genmsg_all
+
+# fast build rule for target.
+rospack_genmsg_all/fast:
+	$(MAKE) -f CMakeFiles/rospack_genmsg_all.dir/build.make CMakeFiles/rospack_genmsg_all.dir/build
+.PHONY : rospack_genmsg_all/fast
 
 #=============================================================================
 # Target rules for targets named rospack_genmsg_libexe
@@ -293,6 +332,21 @@ tests/fast:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
+# target to build an object file
+src/hand_recognizer.o:
+	$(MAKE) -f CMakeFiles/hand_recognizer.dir/build.make CMakeFiles/hand_recognizer.dir/src/hand_recognizer.o
+.PHONY : src/hand_recognizer.o
+
+# target to preprocess a source file
+src/hand_recognizer.i:
+	$(MAKE) -f CMakeFiles/hand_recognizer.dir/build.make CMakeFiles/hand_recognizer.dir/src/hand_recognizer.i
+.PHONY : src/hand_recognizer.i
+
+# target to generate assembly for a file
+src/hand_recognizer.s:
+	$(MAKE) -f CMakeFiles/hand_recognizer.dir/build.make CMakeFiles/hand_recognizer.dir/src/hand_recognizer.s
+.PHONY : src/hand_recognizer.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -301,14 +355,17 @@ help:
 	@echo "... depend"
 	@echo "... ROSBUILD_genmsg_cpp"
 	@echo "... ROSBUILD_genmsg_lisp"
+	@echo "... ROSBUILD_genmsg_py"
 	@echo "... ROSBUILD_gensrv_cpp"
 	@echo "... ROSBUILD_gensrv_lisp"
 	@echo "... clean-test-results"
 	@echo "... edit_cache"
+	@echo "... hand_recognizer"
 	@echo "... rebuild_cache"
 	@echo "... rosbuild_precompile"
 	@echo "... rosbuild_premsgsrvgen"
 	@echo "... rospack_genmsg"
+	@echo "... rospack_genmsg_all"
 	@echo "... rospack_genmsg_libexe"
 	@echo "... rospack_gensrv"
 	@echo "... test"
@@ -316,6 +373,9 @@ help:
 	@echo "... test-results"
 	@echo "... test-results-run"
 	@echo "... tests"
+	@echo "... src/hand_recognizer.o"
+	@echo "... src/hand_recognizer.i"
+	@echo "... src/hand_recognizer.s"
 .PHONY : help
 
 

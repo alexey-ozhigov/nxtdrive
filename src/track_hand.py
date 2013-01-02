@@ -4,6 +4,7 @@ import roslib
 roslib.load_manifest('cv_nxtdrive')
 import rospy
 from sensor_msgs.msg import Image
+from cv_nxtdrive.msg import HandRect
 from cv_bridge import CvBridge, CvBridgeError
 import cv2
 from cv2.cv import RGB
@@ -21,6 +22,7 @@ from math import sqrt
 import pickle
 from histogram import Histogram
 from myutils import calc_back_proj
+from common_utils import prepare_env
 
 from kcurv import kcurv
 
@@ -133,6 +135,7 @@ class DepthDetector():
             cv2.createTrackbar('track_depth', 'wnd_prob', self.depth_threshold, 255, self.on_depth_track)
         rospy.Subscriber(topic, Image, self.depth_cb)
         #rospy.Subscriber('/camera/rgb/image_rect_color', Image, self.rgb_cb)
+        rospy.Subscriber('/hand_recognizer/pos', HandRect, self.hand_rect_cb)
 
     def on_orig_mouse(self, event, x, y, i, data):
         self.mouse_x = x
@@ -167,7 +170,8 @@ class DepthDetector():
 
         if merge_points != None:
             for p in merge_points:
-                cv2.circle(img_contours, tuple(p), 10, clr)
+                pass
+                #cv2.circle(img_contours, tuple(p), 10, clr)
 
     @classmethod
     def dump_contours(cls, cont, fname):
@@ -368,8 +372,9 @@ class DepthDetector():
         for cf_i in range(len(contours_fingers)):
             f = contours_fingers[cf_i]
             for p in f:
-                cv2.circle(img_contours, tuple(kcurvs[cf_i][p][0]), 10, RGB(0, 255, 0))
-        cv2.imwrite('img_contours_%03d.png' % self.depth_frame_cnt, img_contours)
+                pass
+                #cv2.circle(img_contours, tuple(kcurvs[cf_i][p][0]), 10, RGB(0, 255, 0))
+        cv2.imwrite('out_cont/img_contours_%03d.png' % self.depth_frame_cnt, img_contours)
         for i in range(len(kcurvs)):
             kc = kcurvs[i]
             l = len(kc)
@@ -380,7 +385,7 @@ class DepthDetector():
                 cv2.line(img_curv, tuple(pt0[0]), tuple(pt1[0]), RGB(0, 255, 0))
                 cv2.putText(img_curv, '%.3f' % pt1[1], tuple(pt1[0]), cv2.FONT_HERSHEY_PLAIN, 0.7, RGB(0, 255, 0))
                 cv2.line(img_curv, tuple(pt1[0]), tuple(pt2[0]), RGB(0, 255, 0))
-        cv2.imwrite('img_kcurvs_%03d.png' % self.depth_frame_cnt, img_curv)
+        cv2.imwrite('out_kcurv/img_kcurvs_%03d.png' % self.depth_frame_cnt, img_curv)
 
         img_fore_bgr = cv2.cvtColor(img_fore, cv2.COLOR_GRAY2BGR)
         bbox_str = 'Bounding box ratio: %.2f' % (1.0 * bbox[2] / bbox_init[2])
@@ -390,13 +395,13 @@ class DepthDetector():
         bbox_p1 = (bbox[1], bbox[0])
         bbox_p2 = (bbox[1] + bbox[3], bbox[0] + bbox[2])
         cv2.rectangle(img_fore_bgr, bbox_p1, bbox_p2, color=RGB(0, 255, 0)) 
-        cv2.imwrite('img_fore_%03d.png' % self.depth_frame_cnt, img_fore_bgr)
+        cv2.imwrite('out_fore/img_fore_%03d.png' % self.depth_frame_cnt, img_fore_bgr)
         
         img_hulls = 255 * np.ones([480, 640, 3], dtype='uint8')
         self.draw_convex_hulls(img_hulls, hulls)
-        cv2.imwrite('img_hulls_%03d.png' % self.depth_frame_cnt, img_hulls)
+        cv2.imwrite('out_hull/img_hulls_%03d.png' % self.depth_frame_cnt, img_hulls)
         img_orig_cm = (100 * img_orig * 255 / 200).astype('uint8')
-        cv2.imwrite('img_orig_%03d.png' % self.depth_frame_cnt, img_orig_cm)
+        cv2.imwrite('out_orig/img_orig_%03d.png' % self.depth_frame_cnt, img_orig_cm)
      
 
     def filter_nan_depth_simple(self, img):
@@ -427,6 +432,9 @@ class DepthDetector():
             hist = self.calc_hist_from_fore(img, self.img_fore)
         '''
         pass
+
+    def hand_rect_cb(self, hand_rect):
+        print hand_rect
 
     def get_bounding_box(self, img_fore):
         fore = np.where(img_fore == 255)
@@ -593,6 +601,7 @@ def test4():
 
 
 if __name__ == '__main__':
+    prepare_env()
     do_track_hand()
     #test()
     #test_kcurv()

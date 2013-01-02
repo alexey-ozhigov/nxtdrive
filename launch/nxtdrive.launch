@@ -1,23 +1,28 @@
 <?xml version="1.0"?>
 <launch>
   <!-- Arguments -->
-    <arg name="depth" default="true"/>
-    <arg name="from_kinect" default="false"/>
-    <arg name="from_bag" default="false"/>
-    <arg name="bag" default="kinect.bag"/>
+    <env name="ROS_HOME" value="$(find cv_nxtdrive)" />
+    <arg name="depth" default="true" />
+    <arg name="from_kinect" default="false" />
+    <arg name="from_bag" default="false" />
+    <arg name="bag" default="kinect.bag" />
     <arg name="bkg_sep_mode" default="depth_auto" />
-    <arg name="video_dir" value="/home/alex/MAS/CV/project/cv_nxtdrive/data/1"/>
+    <arg name="video_dir" value="/home/alex/MAS/CV/project/cv_nxtdrive/data/1" />
+    <arg name="use_recognition" default="true" />
 
+    <group if="$(arg use_recognition)">
+        <node name="hand_recognizer" type="hand_recognizer" pkg="cv_nxtdrive" output="screen" />
+    </group>
     <group if="$(arg depth)">
-        <node name="depth_detection" type="track_hand.py" pkg="cv_nxtdrive" args="$(arg bkg_sep_mode)" output="screen" />
+        <node name="track_hand" type="track_hand.py" pkg="cv_nxtdrive" args="$(arg bkg_sep_mode)" required="true" output="screen" />
         <group if="$(arg from_kinect)">
-            <include file="$(find openni_launch)/launch/openni.launch"/>
+            <include file="$(find openni_launch)/launch/openni.launch" />
             <node name="set_dr" pkg="dynamic_reconfigure" type="dynparam" args="set /camera/driver depth_registration true" />
         </group>
         <group unless="$(arg from_kinect)">
             <include file="$(find simple_pcl)/launch/play_video_as_bag.launch">
-                <arg name="rgb_video" value="$(arg video_dir)/hand_rgb.avi"/>
-                <arg name="depth_video" value="$(arg video_dir)/hand_depth.avi"/>
+                <arg name="rgb_video" value="$(arg video_dir)/hand_rgb.avi" />
+                <arg name="depth_video" value="$(arg video_dir)/hand_depth.avi" />
             </include> 
         </group>
         <group if="$(arg from_bag)">

@@ -49,10 +49,118 @@ include CMakeFiles/cv_nxtdrive.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cv_nxtdrive.dir/flags.make
 
-CMakeFiles/cv_nxtdrive.dir/requires:
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: CMakeFiles/cv_nxtdrive.dir/flags.make
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: ../src/hand_recognizer.cpp
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: ../manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/ros/tools/rospack/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/ros/core/roslib/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/ros/core/rosbuild/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/ros/core/roslang/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/ros/tools/rosclean/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/tools/rosgraph/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/tools/rosparam/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/tools/rosmaster/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/tools/rosout/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/tools/roslaunch/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/ros/tools/rosunit/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/tools/rostest/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/tools/rosbag/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/tools/rosbagmigration/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/common_msgs/geometry_msgs/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/eigen/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/perception_pcl/cminpack/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/perception_pcl/flann/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/perception_pcl/pcl/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/pluginlib/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/bond_core/bond/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/bond_core/smclib/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/bond_core/bondcpp/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/nodelet_core/nodelet/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/utilities/message_filters/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/nodelet_core/nodelet_topic_tools/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/tools/rosmsg/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/tools/rostopic/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/tools/rosservice/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/driver_common/dynamic_reconfigure/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/bullet/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/geometry/angles/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/tools/rosnode/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/utilities/roswtf/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/geometry/tf/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/perception_pcl/pcl_ros/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/vision_opencv/opencv2/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/vision_opencv/cv_bridge/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/image_common/image_transport/manifest.xml
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/srv_gen/generated
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/common_msgs/geometry_msgs/msg_gen/generated
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/msg_gen/generated
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/srv_gen/generated
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/perception_pcl/pcl/msg_gen/generated
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/bond_core/bond/msg_gen/generated
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/nodelet_core/nodelet/srv_gen/generated
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/driver_common/dynamic_reconfigure/msg_gen/generated
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/driver_common/dynamic_reconfigure/srv_gen/generated
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/geometry/tf/msg_gen/generated
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o: /opt/ros/electric/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alex/MAS/CV/project/cv_nxtdrive/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o -c /home/alex/MAS/CV/project/cv_nxtdrive/src/hand_recognizer.cpp
+
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/alex/MAS/CV/project/cv_nxtdrive/src/hand_recognizer.cpp > CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.i
+
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/alex/MAS/CV/project/cv_nxtdrive/src/hand_recognizer.cpp -o CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.s
+
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o.requires:
+.PHONY : CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o.requires
+
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o.provides: CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o.requires
+	$(MAKE) -f CMakeFiles/cv_nxtdrive.dir/build.make CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o.provides.build
+.PHONY : CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o.provides
+
+CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o.provides.build: CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o
+
+# Object files for target cv_nxtdrive
+cv_nxtdrive_OBJECTS = \
+"CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o"
+
+# External object files for target cv_nxtdrive
+cv_nxtdrive_EXTERNAL_OBJECTS =
+
+../bin/cv_nxtdrive: CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o
+../bin/cv_nxtdrive: CMakeFiles/cv_nxtdrive.dir/build.make
+../bin/cv_nxtdrive: CMakeFiles/cv_nxtdrive.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../bin/cv_nxtdrive"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cv_nxtdrive.dir/link.txt --verbose=$(VERBOSE)
+
+# Rule to build all files generated by this target.
+CMakeFiles/cv_nxtdrive.dir/build: ../bin/cv_nxtdrive
+.PHONY : CMakeFiles/cv_nxtdrive.dir/build
+
+CMakeFiles/cv_nxtdrive.dir/requires: CMakeFiles/cv_nxtdrive.dir/src/hand_recognizer.o.requires
 .PHONY : CMakeFiles/cv_nxtdrive.dir/requires
 
 CMakeFiles/cv_nxtdrive.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/cv_nxtdrive.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/cv_nxtdrive.dir/clean
 
 CMakeFiles/cv_nxtdrive.dir/depend:
