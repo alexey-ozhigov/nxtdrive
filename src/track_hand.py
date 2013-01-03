@@ -160,6 +160,7 @@ class HandTracker():
         return min_dist_m
 
     def get_foreground_uint8(self, img):
+        #first get threshold value and do depth tresholding
         RANGE_DELTA_M = 0.15
         if self.mode == ThresholdMode.DEPTH_MANUAL:
             d_thr = self.depth_threshold / 256.0 + 0.5
@@ -171,6 +172,11 @@ class HandTracker():
             else:
                 img_roi = img[p1.y:p2.y, p1.x:p2.x]
             d_thr = self.get_auto_threshold(img_roi)
+            #second filter out irrelevant objects (nothing if hand recognition is off)
+            img_croped = self.MAX_RANGE * np.ones(img.shape, img.dtype)
+            if self.recog_cnt >= self.recog_cnt_min:#stable recognition, crop foreground
+                img_croped[p1.y:p2.y, p1.x:p2.x] = img_roi
+                img = img_croped
         depth_bin = cv2.threshold(img, d_thr + RANGE_DELTA_M, 255, cv2.THRESH_BINARY_INV)
         return depth_bin[1].astype('uint8')
 
@@ -396,7 +402,14 @@ class HandTracker():
         bbox_p1 = (bbox[1], bbox[0])
         bbox_p2 = (bbox[1] + bbox[3], bbox[0] + bbox[2])
         cv2.rectangle(img_fore, bbox_p1, bbox_p2, RGB(0, 255, 0), 5) 
-        cv2.rectangle(img_fore, self.hand_area[0], self.hand_area[1], RGB(0, 0, 255), 5) 
+        if bbox_init:    
+            bbox_p1 = (bbox_init[1], bbox_init[0])
+            bbox_p2 = (bbox_init[1] + bbox_init[3], bbox_init[0] + bbox_init[2])
+            cv2.rectangle(img_fore, bbox_p1, bbox_p2, RGB(255, 0, 0), 5) 
+        if self.recog_cnt > 0:
+            p1 = (int(self.hand_area[0].x), int(self.hand_area[0].y))
+            p2 = (int(self.hand_area[1].x), int(self.hand_area[1].y))
+            cv2.rectangle(img_fore, p1, p2, RGB(0, 0, 255), 2) 
         #cv2.imwrite('out_fore/img_fore_%03d.png' % self.depth_frame_cnt, img_fore_bgr)
         return img_fore
 

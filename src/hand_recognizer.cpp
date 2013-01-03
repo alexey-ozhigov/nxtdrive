@@ -16,8 +16,6 @@ using namespace std;
 const std::string cascade_name = "hand_recognition/palm3.xml";
 ros::Publisher recog_pub;
 
-CascadeClassifier cascade(cascade_name.c_str());
-
 int prepare_env()
 {
     const char *path = getenv("ROS_HOME");
@@ -57,15 +55,18 @@ int recognize(const Mat& img, cv_nxtdrive::HandRect& hr)
     static int deltat_i = 0;
     clock_gettime(CLOCK_MONOTONIC_RAW, &tv0);
 #endif
+    CascadeClassifier cascade = CascadeClassifier(cascade_name.c_str());
     vector<Rect> objects;
     cascade.detectMultiScale(img, objects);
     int i;
-    int scale = 1;
+    float scale = 1.2;
     for (i = 0; i < (int)objects.size(); i++ ) {
-        hr.p1.x = objects[i].x * scale;
-        hr.p2.x = (objects[i].x + objects[i].width) * scale;
-        hr.p1.y = objects[i].y * scale;
-        hr.p2.y = (objects[i].y + objects[i].height) * scale;
+        float dx = objects[i].x * (1.0 - 1.0 / scale);
+        float dy = objects[i].y * (1.0 - 1.0 / scale);
+        hr.p1.x = objects[i].x - dx;
+        hr.p2.x = objects[i].x + objects[i].width + dx;
+        hr.p1.y = objects[i].y - dy;
+        hr.p2.y = objects[i].y + objects[i].height + dy;
     }
 
 #ifdef PROFILE_RECOGNIZE
