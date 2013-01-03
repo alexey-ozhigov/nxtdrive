@@ -26,7 +26,7 @@ int prepare_env()
     return 0;
 }
 
-#define PROFILE_RECOGNIZE
+//#define PROFILE_RECOGNIZE
 #ifdef PROFILE_RECOGNIZE
 void deltat_stat(struct timespec *deltat, int deltat_size, int& mean_us, int& std_us)
 {

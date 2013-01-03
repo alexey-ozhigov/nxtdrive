@@ -396,6 +396,7 @@ class HandTracker():
         bbox_p1 = (bbox[1], bbox[0])
         bbox_p2 = (bbox[1] + bbox[3], bbox[0] + bbox[2])
         cv2.rectangle(img_fore, bbox_p1, bbox_p2, RGB(0, 255, 0), 5) 
+        cv2.rectangle(img_fore, self.hand_area[0], self.hand_area[1], RGB(0, 0, 255), 5) 
         #cv2.imwrite('out_fore/img_fore_%03d.png' % self.depth_frame_cnt, img_fore_bgr)
         return img_fore
 
