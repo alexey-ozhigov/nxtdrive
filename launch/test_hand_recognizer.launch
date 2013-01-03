@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find openni_launch)/launch/openni.launch" />
+    <node name="set_dr" pkg="dynamic_reconfigure" type="dynparam" args="set /camera/driver depth_registration true" />
+    <node name="hand_recognizer" type="hand_recognizer" pkg="cv_nxtdrive" output="screen" />
+</launch>

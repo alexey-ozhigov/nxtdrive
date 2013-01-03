@@ -4,6 +4,7 @@ import roslib
 roslib.load_manifest('cv_nxtdrive')
 import rospy
 from sensor_msgs.msg import Image
+from geometry_msgs.msg import Point
 from cv_nxtdrive.msg import HandRect
 from cv_bridge import CvBridge, CvBridgeError
 import cv2
@@ -99,16 +100,21 @@ def max_filter(img):
     return img_ret
 
 
-class DepthDetector():
+class HandTracker():
     MIN_DIST = 3.0
 
-    def __init__(self, topic = DEF_TOPIC_NAME, mode = ThresholdMode.DEPTH_AUTO):
+    def __init__(self, topic = DEF_TOPIC_NAME, mode = ThresholdMode.DEPTH_AUTO, use_recognition = False):
         self.mouse_x = 0
         self.mouse_y = 0
         self.state = TrackerState.INIT
+        p1 = Point(0, 0, 0)
+        p2 = Point(640, 480, 0)
+        self.hand_area = (p1, p2)
+        self.recog_cnt = 0
+        self.recog_cnt_min = 5
         self.init_state_max = 5
         self.state_cnt = 0
-        self.init_bbox = None
+        self.bbox_init = None
         self.img_fore = None
         self.MAX_RANGE = 5.0
         self.write_dist_hist = False
@@ -126,16 +132,20 @@ class DepthDetector():
         self.mode = mode
         self.depth_frame_cnt = 0
         rospy.init_node('track_hand', anonymous=True)
-        cv2.namedWindow('wnd_orig', 0)
+        #cv2.namedWindow('wnd_orig', 0)
         cv2.namedWindow('wnd_prob', 0)
-        cv2.namedWindow('wnd_contours', 0)
-        cv2.setMouseCallback('wnd_orig', self.on_orig_mouse, None)
+        #cv2.namedWindow('wnd_contours', 0)
+        #cv2.setMouseCallback('wnd_orig', self.on_orig_mouse, None)
         self.depth_threshold = 127
         if self.mode == ThresholdMode.DEPTH_MANUAL:
             cv2.createTrackbar('track_depth', 'wnd_prob', self.depth_threshold, 255, self.on_depth_track)
         rospy.Subscriber(topic, Image, self.depth_cb)
         #rospy.Subscriber('/camera/rgb/image_rect_color', Image, self.rgb_cb)
-        rospy.Subscriber('/hand_recognizer/pos', HandRect, self.hand_rect_cb)
+        if use_recognition:
+            self.use_recognition = True
+            rospy.Subscriber('/hand_recognizer/pos', HandRect, self.hand_rect_cb)
+        else:
+            self.use_recognition = False
 
     def on_orig_mouse(self, event, x, y, i, data):
         self.mouse_x = x
@@ -144,9 +154,9 @@ class DepthDetector():
     def on_depth_track(self, pos, *argv):
         self.depth_threshold = pos
 
-    def get_auto_threshold(self, img):
-        min_dist_m = np.min(img)
-        print 'MIN_DIST', min_dist_m
+    def get_auto_threshold(self, img_roi):
+        min_dist_m = np.min(img_roi)
+        #print 'MIN_DIST', min_dist_m
         return min_dist_m
 
     def get_foreground_uint8(self, img):
@@ -154,7 +164,13 @@ class DepthDetector():
         if self.mode == ThresholdMode.DEPTH_MANUAL:
             d_thr = self.depth_threshold / 256.0 + 0.5
         elif self.mode == ThresholdMode.DEPTH_AUTO:
-            d_thr = self.get_auto_threshold(img)
+            p1 = self.hand_area[0]
+            p2 = self.hand_area[1]
+            if self.recog_cnt < self.recog_cnt_min:#unstable recognition
+                img_roi = img
+            else:
+                img_roi = img[p1.y:p2.y, p1.x:p2.x]
+            d_thr = self.get_auto_threshold(img_roi)
         depth_bin = cv2.threshold(img, d_thr + RANGE_DELTA_M, 255, cv2.THRESH_BINARY_INV)
         return depth_bin[1].astype('uint8')
 
@@ -193,7 +209,7 @@ class DepthDetector():
             p1 = c[j]
             p2 = c[j + 1]
             d = dist(p1[0], p2[0])
-            if d > DepthDetector.MIN_DIST:
+            if d > HandTracker.MIN_DIST:
                 raise Exception('BOOM in i%d j%d d%d %d %d %d %d' % (j,
                  j + 1,
                  d,
@@ -243,22 +259,22 @@ class DepthDetector():
             for j in [ x for x in range(len(cont)) if x != i ]:
                 c_j0 = cont[j][0]
                 c_jl = cont[j][len(cont[j]) - 1]
-                if dist(c_i0[0], c_j0[0]) < DepthDetector.MIN_DIST:
+                if dist(c_i0[0], c_j0[0]) < HandTracker.MIN_DIST:
                     return (i,
                      j,
                      0,
                      0)
-                if dist(c_i0[0], c_jl[0]) < DepthDetector.MIN_DIST:
+                if dist(c_i0[0], c_jl[0]) < HandTracker.MIN_DIST:
                     return (i,
                      j,
                      0,
                      len(cont[j]) - 1)
-                if dist(c_il[0], c_jl[0]) < DepthDetector.MIN_DIST:
+                if dist(c_il[0], c_jl[0]) < HandTracker.MIN_DIST:
                     return (i,
                      j,
                      len(cont[i]) - 1,
                      len(cont[j]) - 1)
-                if dist(c_il[0], c_j0[0]) < DepthDetector.MIN_DIST:
+                if dist(c_il[0], c_j0[0]) < HandTracker.MIN_DIST:
                     return (i,
                      j,
                      len(cont[i]) - 1,
@@ -367,6 +383,22 @@ class DepthDetector():
                 cv2.line(img, tuple(prev_p[0]), tuple(p[0]), RGB(0, 255, 0))
                 prev_p = p
 
+    def draw_fore_info(self, img_fore, bbox, bbox_init):
+        img_fore = cv2.cvtColor(img_fore, cv2.COLOR_GRAY2BGR)
+        fnt = cv2.FONT_HERSHEY_PLAIN
+        fnt_size = 2.4
+        clr = RGB(255, 0, 0)
+        state = 'INIT' if self.state == TrackerState.INIT else 'RUN'
+        cv2.putText(img_fore, 'State: %s' % state, (30, 30) , fnt, fnt_size, clr)
+        if bbox_init:
+            bbox_str = 'Bounding box ratio: %.2f' % (1.0 * bbox[2] / bbox_init[2])
+            cv2.putText(img_fore, bbox_str, (30, 60) , fnt, fnt_size, clr)
+        bbox_p1 = (bbox[1], bbox[0])
+        bbox_p2 = (bbox[1] + bbox[3], bbox[0] + bbox[2])
+        cv2.rectangle(img_fore, bbox_p1, bbox_p2, RGB(0, 255, 0), 5) 
+        #cv2.imwrite('out_fore/img_fore_%03d.png' % self.depth_frame_cnt, img_fore_bgr)
+        return img_fore
+
     def draw_debug_info(self, img_orig, img_fore, bbox, bbox_init, img_contours, contours_fingers, kcurvs, hulls):
         img_curv = img_contours.copy()
         for cf_i in range(len(contours_fingers)):
@@ -374,7 +406,7 @@ class DepthDetector():
             for p in f:
                 pass
                 #cv2.circle(img_contours, tuple(kcurvs[cf_i][p][0]), 10, RGB(0, 255, 0))
-        cv2.imwrite('out_cont/img_contours_%03d.png' % self.depth_frame_cnt, img_contours)
+        #cv2.imwrite('out_cont/img_contours_%03d.png' % self.depth_frame_cnt, img_contours)
         for i in range(len(kcurvs)):
             kc = kcurvs[i]
             l = len(kc)
@@ -385,23 +417,15 @@ class DepthDetector():
                 cv2.line(img_curv, tuple(pt0[0]), tuple(pt1[0]), RGB(0, 255, 0))
                 cv2.putText(img_curv, '%.3f' % pt1[1], tuple(pt1[0]), cv2.FONT_HERSHEY_PLAIN, 0.7, RGB(0, 255, 0))
                 cv2.line(img_curv, tuple(pt1[0]), tuple(pt2[0]), RGB(0, 255, 0))
-        cv2.imwrite('out_kcurv/img_kcurvs_%03d.png' % self.depth_frame_cnt, img_curv)
+        #cv2.imwrite('out_kcurv/img_kcurvs_%03d.png' % self.depth_frame_cnt, img_curv)
 
-        img_fore_bgr = cv2.cvtColor(img_fore, cv2.COLOR_GRAY2BGR)
-        bbox_str = 'Bounding box ratio: %.2f' % (1.0 * bbox[2] / bbox_init[2])
-        fnt = cv2.FONT_HERSHEY_PLAIN
-        clr = RGB(255, 0, 0)
-        cv2.putText(img_fore_bgr, bbox_str, (30, 30) , fnt, 2.0, clr)
-        bbox_p1 = (bbox[1], bbox[0])
-        bbox_p2 = (bbox[1] + bbox[3], bbox[0] + bbox[2])
-        cv2.rectangle(img_fore_bgr, bbox_p1, bbox_p2, color=RGB(0, 255, 0)) 
-        cv2.imwrite('out_fore/img_fore_%03d.png' % self.depth_frame_cnt, img_fore_bgr)
-        
+        self.draw_fore_info(img_fore, bbox, bbox_init)
+       
         img_hulls = 255 * np.ones([480, 640, 3], dtype='uint8')
         self.draw_convex_hulls(img_hulls, hulls)
-        cv2.imwrite('out_hull/img_hulls_%03d.png' % self.depth_frame_cnt, img_hulls)
+        #cv2.imwrite('out_hull/img_hulls_%03d.png' % self.depth_frame_cnt, img_hulls)
         img_orig_cm = (100 * img_orig * 255 / 200).astype('uint8')
-        cv2.imwrite('out_orig/img_orig_%03d.png' % self.depth_frame_cnt, img_orig_cm)
+        #cv2.imwrite('out_orig/img_orig_%03d.png' % self.depth_frame_cnt, img_orig_cm)
      
 
     def filter_nan_depth_simple(self, img):
@@ -434,7 +458,14 @@ class DepthDetector():
         pass
 
     def hand_rect_cb(self, hand_rect):
-        print hand_rect
+        p1 = hand_rect.p1
+        p2 = hand_rect.p2
+        self.hand_area = (p1, p2)
+        if p1.x == -1.0:
+            self.recog_cnt = 0
+        else:
+            print 'HAND:', p1, p2
+            self.recog_cnt += 1
 
     def get_bounding_box(self, img_fore):
         fore = np.where(img_fore == 255)
@@ -456,25 +487,26 @@ class DepthDetector():
         x = self.mouse_x
         y = self.mouse_y
         self.filter_nan_depth_simple(img)
-        print 'Depth(%d, %d): %f' % (x, y, img[y][x])
+        #print 'Depth(%d, %d): %f' % (x, y, img[y][x])
         if self.write_dist_hist and self.depth_frame_cnt % 1 == 0:
             self.write_dist_hist_img(img)
         self.img_fore = self.get_foreground_uint8(img)
         bbox = self.get_bounding_box(self.img_fore)
         if self.state == TrackerState.INIT:
-            if self.state_cnt >= self.init_state_max:
+            if (not self.use_recognition and self.state_cnt >= self.init_state_max) or \
+               (self.use_recognition and self.recog_cnt >= self.recog_cnt_min):
                 self.state = TrackerState.RUN
-                self.state_cnt = 0
-            else:
                 self.bbox_init = bbox
-        contours, img_contours = DepthDetector.get_contours(self.img_fore)
-        kcurvs, conts = DepthDetector.get_kcurvs(contours, 30)
-        contours_fingers = DepthDetector.get_kcurv_fingers(kcurvs)
-        hulls = DepthDetector.get_convex_hulls(contours)
-        self.draw_debug_info(img, self.img_fore, bbox, self.bbox_init, img_contours, contours_fingers, kcurvs, hulls)
-        cv2.imshow('wnd_orig', (img * 100).astype('uint8'))
+                self.state_cnt = 0
+        contours, img_contours = HandTracker.get_contours(self.img_fore)
+        kcurvs, conts = HandTracker.get_kcurvs(contours, 30)
+        contours_fingers = HandTracker.get_kcurv_fingers(kcurvs)
+        hulls = HandTracker.get_convex_hulls(contours)
+        #self.draw_debug_info(img, self.img_fore, bbox, self.bbox_init, img_contours, contours_fingers, kcurvs, hulls)
+        self.img_fore = self.draw_fore_info(self.img_fore, bbox, self.bbox_init)
+        #cv2.imshow('wnd_orig', (img * 100).astype('uint8'))
         cv2.imshow('wnd_prob', self.img_fore)
-        cv2.imshow('wnd_contours', img_contours)
+        #cv2.imshow('wnd_contours', img_contours)
         ch = cv2.waitKey(10)
         if ch == 27:
             rospy.signal_shutdown('Quit')
@@ -489,29 +521,35 @@ class DepthDetector():
         cv2.waitKey(100)
 
 
-def depth_detector(topic_name, thr_mode):
-    dpdet = DepthDetector(topic_name, thr_mode)
+def hand_tracker(topic_name, thr_mode, use_recognition):
+    dpdet = HandTracker(topic_name, thr_mode, use_recognition)
     dpdet.run()
 
 
 def do_track_hand():
-    assert len(argv) >= 2, 'USAGE: track_hand.py <threshold_mode>'
+    assert len(argv) >= 2, 'USAGE: track_hand.py <threshold_mode> <use_recognition>'
     if argv[1] == 'depth_auto':
         thr_mode = ThresholdMode.DEPTH_AUTO
     elif argv[1] == 'depth_manual':
         thr_mode = ThresholdMode.DEPTH_MANUAL
     else:
         raise Exception('Illegal threshold_mode %s, use DEPTH_AUTO' % argv[1])
-    depth_detector(DEF_TOPIC_NAME, thr_mode)
+    if argv[2] == 'true':
+        use_recognition = True
+    elif argv[2] == 'false':
+        use_recognition = False
+    else:
+        raise Exception('Illegal use_recognition %s, use true or false' % argv[2])
+    hand_tracker(DEF_TOPIC_NAME, thr_mode, use_recognition)
 
 
 def test():
     img_fore = cv2.imread('data/img_fore.png')
     img_fore = cv2.cvtColor(img_fore, cv2.COLOR_BGR2GRAY)
-    contours, img = DepthDetector.get_contours(img_fore)
-    kcurvs, conts = DepthDetector.get_kcurvs(contours, 30)
-    #hulls = DepthDetector.get_convex_hulls(contours)
-    contours_fingers = DepthDetector.get_kcurv_fingers(kcurvs)
+    contours, img = HandTracker.get_contours(img_fore)
+    kcurvs, conts = HandTracker.get_kcurvs(contours, 30)
+    #hulls = HandTracker.get_convex_hulls(contours)
+    contours_fingers = HandTracker.get_kcurv_fingers(kcurvs)
     for cf_i in range(len(contours_fingers)):
         f = contours_fingers[cf_i]
         for p in f:
@@ -536,8 +574,8 @@ def plot_kcurv(kcurv, fname):
 def test_kcurv():
     img_fore = cv2.imread('data/img_fore.png')
     img_fore = cv2.cvtColor(img_fore, cv2.COLOR_BGR2GRAY)
-    contours, img = DepthDetector.get_contours(img_fore)
-    kcurvs, conts = DepthDetector.get_kcurvs(contours, 30)
+    contours, img = HandTracker.get_contours(img_fore)
+    kcurvs, conts = HandTracker.get_kcurvs(contours, 30)
     cv2.namedWindow('kcurv')
     img_curv = img.copy()
     for i in range(len(kcurvs)):

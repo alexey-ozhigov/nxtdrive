@@ -7,12 +7,16 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/objdetect/objdetect.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
+#include <time.h>
+#include <math.h>
 
 namespace enc = sensor_msgs::image_encodings;
 using namespace cv;
 using namespace std;
 const std::string cascade_name = "hand_recognition/palm3.xml";
 ros::Publisher recog_pub;
+
+CascadeClassifier cascade(cascade_name.c_str());
 
 int prepare_env()
 {
@@ -22,9 +26,37 @@ int prepare_env()
     return 0;
 }
 
+#define PROFILE_RECOGNIZE
+#ifdef PROFILE_RECOGNIZE
+void deltat_stat(struct timespec *deltat, int deltat_size, int& mean_us, int& std_us)
+{
+    long total_us = 0;
+    for (int i = 0; i < deltat_size; i++)
+        total_us += deltat[i].tv_sec * 1000000 + deltat[i].tv_nsec / 1000;
+    //cout << "total: " << total_ms;
+    mean_us = total_us / deltat_size;
+    total_us = 0;
+    for (int i = 0; i < deltat_size; i++) {
+        long d = deltat[i].tv_sec * 1000000 + deltat[i].tv_nsec / 1000 - mean_us;
+        long d2 = d*d;
+        total_us += d2;
+    }
+    //cout << "total: " << total_ms;
+    std_us = sqrt(total_us / deltat_size);
+}
+#endif
+
 int recognize(const Mat& img, cv_nxtdrive::HandRect& hr)
 {
-    CascadeClassifier cascade(cascade_name.c_str());
+#ifdef PROFILE_RECOGNIZE
+    struct timespec tv0;
+    struct timespec tv_cur;
+    const int DELTAT_MAX = 1000;
+    static struct timespec deltat[DELTAT_MAX];
+    static const int deltat_size = sizeof(deltat) / sizeof(struct timespec);
+    static int deltat_i = 0;
+    clock_gettime(CLOCK_MONOTONIC_RAW, &tv0);
+#endif
     vector<Rect> objects;
     cascade.detectMultiScale(img, objects);
     int i;
@@ -35,6 +67,21 @@ int recognize(const Mat& img, cv_nxtdrive::HandRect& hr)
         hr.p1.y = objects[i].y * scale;
         hr.p2.y = (objects[i].y + objects[i].height) * scale;
     }
+
+#ifdef PROFILE_RECOGNIZE
+    clock_gettime(CLOCK_MONOTONIC_RAW, &tv_cur);
+    if (deltat_i < deltat_size) {
+        deltat[deltat_i].tv_sec = tv_cur.tv_sec - tv0.tv_sec;
+        deltat[deltat_i].tv_nsec = tv_cur.tv_nsec - tv0.tv_nsec;
+        //cout << deltat[deltat_i].tv_sec << " " << deltat[deltat_i].tv_nsec << endl;
+    } else if (deltat_i == deltat_size) {
+        int mean_us;
+        int std_us;
+        deltat_stat(deltat, deltat_size, mean_us, std_us);
+        cout << "Mean: " << mean_us << " Std: " << std_us << endl;
+    }
+    deltat_i++;
+#endif
     return objects.size();
 }
 
@@ -68,10 +115,14 @@ void recognize(Mat img, cv_nxtdrive::HandRect& hr)
 
 void image_cb(const sensor_msgs::ImageConstPtr& msg)
 {
-    const int RECOG_FRAME_WINDOW = 20;
+    const int RECOG_FRAME_WINDOW = 1;
     cv_bridge::CvImagePtr cv_ptr;
     static int frame_cnt = -1;
     int n_recog;
+    geometry_msgs::Point no_pt;
+    no_pt.x = -1.0;
+    no_pt.y = -1.0;
+    no_pt.z = -1.0;
 
     frame_cnt++;
     if (frame_cnt % RECOG_FRAME_WINDOW != 0)
@@ -84,8 +135,11 @@ void image_cb(const sensor_msgs::ImageConstPtr& msg)
     }
     cv_nxtdrive::HandRect hr;
     n_recog = recognize(cv_ptr->image, hr);
-    if (n_recog > 0)
-        recog_pub.publish(hr);
+    if (n_recog <= 0) {
+        hr.p1 = no_pt;
+        hr.p2 = no_pt;
+    }
+    recog_pub.publish(hr);
 }
 
 void run_node(int argc, char **argv)
