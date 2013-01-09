@@ -111,6 +111,8 @@ class HandTracker():
         p2 = Point(640, 480, 0)
         self.hand_area = (p1, p2)
         self.recog_cnt = 0
+        self.norecog_cnt_min = 5
+        self.norecog_cnt = 0
         self.recog_cnt_min = 5
         self.init_state_max = 5
         self.state_cnt = 0
@@ -477,8 +479,10 @@ class HandTracker():
         self.hand_area = (p1, p2)
         if p1.x == -1.0:
             self.recog_cnt = 0
+            self.norecog_cnt += 1
         else:
             print 'HAND:', p1, p2
+            self.norecog_cnt = 0
             self.recog_cnt += 1
 
     def get_bounding_box(self, img_fore):
