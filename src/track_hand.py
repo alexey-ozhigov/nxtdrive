@@ -10,7 +10,7 @@ from cv_bridge import CvBridge, CvBridgeError
 import sys
 sys.path = ['/home/alex/opencv_lib/lib/python2.7/dist-packages'] + sys.path
 import cv2
-from cv2.cv import RGB
+from cv2.cv import RGB, CV_FOURCC
 import numpy as np
 import os
 from os import errno
@@ -106,6 +106,8 @@ class HandTracker():
     MIN_DIST = 3.0
 
     def __init__(self, topic = DEF_TOPIC_NAME, mode = ThresholdMode.DEPTH_AUTO, use_recognition = False):
+        self.vwriter_result = None
+        self.vwriter_rgb = None
         self.kcurv_stat_cnt = 0
         self.kcurv_stat_cnt_max = 100
         self.kcurv_stat_vals = np.array([])
@@ -117,11 +119,12 @@ class HandTracker():
         p2 = Point(640, 480, 0)
         self.hand_area = (p1, p2)
         self.recog_cnt = 0
-        self.norecog_cnt_min = 5
+        self.norecog_cnt_min = 30
         self.norecog_cnt = 0
         self.recog_cnt_min = 5
         self.init_state_max = 5
         self.state_cnt = 0
+        self.bbox_inited = False
         self.bbox_init = None
         self.turn_angle_init = 0
         self.turn_angle = self.turn_angle_init
@@ -150,12 +153,22 @@ class HandTracker():
         if self.mode == ThresholdMode.DEPTH_MANUAL:
             cv2.createTrackbar('track_depth', 'wnd_prob', self.depth_threshold, 255, self.on_depth_track)
         rospy.Subscriber(topic, Image, self.depth_cb)
-        #rospy.Subscriber('/camera/rgb/image_rect_color', Image, self.rgb_cb)
+        rospy.Subscriber('/camera/rgb/image_rect_color', Image, self.rgb_cb)
         if use_recognition:
             self.use_recognition = True
             rospy.Subscriber('/hand_recognizer/pos', HandRect, self.hand_rect_cb)
         else:
             self.use_recognition = False
+
+    def set_result_video(self, fname):
+        self.vwriter_result = cv2.VideoWriter(fname, \
+                               CV_FOURCC('P', 'I', 'M', '1'), \
+                               30.0, (640, 480), True)
+
+    def set_rgb_video(self, fname):
+        self.vwriter_rgb = cv2.VideoWriter(fname, \
+                               CV_FOURCC('P', 'I', 'M', '1'), \
+                               30.0, (640, 480), True)
 
     def on_orig_mouse(self, event, x, y, i, data):
         self.mouse_x = x
@@ -486,11 +499,14 @@ class HandTracker():
         fnt_size = 2.4
         clr = RGB(255, 0, 0)
         state = 'INIT' if self.state == TrackerState.INIT else 'RUN'
-        cv2.putText(img_fore, 'State: %s' % state, (30, 30) , fnt, fnt_size, clr)
+        cv2.putText(img_fore, 'State:  %s' % state, (30, 30) , fnt, fnt_size, clr)
         bbox_str = 'Speed: %03d' % speed
         cv2.putText(img_fore, bbox_str, (30, 60) , fnt, fnt_size, clr)
         print self.turn_angle_init, angle
-        turn_str = 'Turn:  %03d deg.' % (int((self.turn_angle_init - angle) * 180 / np.pi))
+        if self.state == TrackerState.RUN:
+            turn_str = 'Turn:   %03d deg.' % (int((self.turn_angle_init - angle) * 180 / np.pi))
+        else:
+            turn_str = 'Turn:   %03d deg.' % 0
         cv2.putText(img_fore, turn_str, (30, 90) , fnt, fnt_size, clr)
         bbox_p1 = (bbox[1], bbox[0])
         bbox_p2 = (bbox[1] + bbox[3], bbox[0] + bbox[2])
@@ -579,16 +595,13 @@ class HandTracker():
         cv2.imwrite('img_back_%03d.png' % self.depth_frame_cnt, back_proj)
 
     def rgb_cb(self, msg):
-        '''
         try:
             img = bridge.imgmsg_to_cv(msg)
             img = np.asarray(img)
         except CvBridgeError as e:
             print >> stderr, 'Cannot convert from ROS msg to CV image:', e
-        if self.img_fore != None:
-            hist = self.calc_hist_from_fore(img, self.img_fore)
-        '''
-        pass
+        if self.vwriter_rgb:
+            self.vwriter_rgb.write(img)
 
     def hand_rect_cb(self, hand_rect):
         p1 = hand_rect.p1
@@ -621,6 +634,8 @@ class HandTracker():
         self.state = TrackerState.INIT
         self.bbox_init = None
         self.turn_angle_init = 0
+        self.recog_cnt = 0
+        self.norecog_cnt = 0
 
     def set_state(self, state):
         self.state = state
@@ -631,21 +646,25 @@ class HandTracker():
             self.recog_cnt = 0
             self.norecog_cnt += 1
             if self.norecog_cnt >= self.norecog_cnt_min:
-                self.reset_state()
+                pass
+                #self.reset_state()
         else:#found the hand
             print 'Found the hand'
             self.norecog_cnt = 0
             self.recog_cnt += 1
             if self.recog_cnt == self.recog_cnt_min:
-                self.bbox_init = bbox
+                if not self.bbox_inited:
+                    self.bbox_init = bbox
+                    self.bbox_inited = True
                 self.turn_angle_init = angle
                 self.set_state(TrackerState.RUN)
  
     def depth_cb(self, msg):
         self.depth_frame_cnt += 1
         self.state_cnt += 1
-        #if self.depth_frame_cnt % 3 != 0:
-        #    return
+        if self.depth_frame_cnt % 3 != 0:
+            return
+        print 'recog', self.recog_cnt, 'norecog', self.norecog_cnt
         try:
             img = bridge.imgmsg_to_cv(msg, desired_encoding='32FC1')
             img = np.asarray(img)
@@ -678,9 +697,11 @@ class HandTracker():
             speed = max(0, 100 - int((1.0 * bbox[2] / self.bbox_init[2]) * 100))
         else:
             speed = 0
-        angle = angles[0] if self.state == TrackerState.RUN else 0
-        self.img_fore = self.draw_fore_info(self.img_fore, bbox, self.bbox_init, speed, angle, kcurvs, thumb_n_point, mid_fing_pos)
-        self.update_state(hand_recognized, bbox, angles[0])
+        self.turn_angle = angles[0] if (len(angles) > 0 and self.norecog_cnt == 0) else 0
+        self.img_fore = self.draw_fore_info(self.img_fore, bbox, self.bbox_init, speed, self.turn_angle, kcurvs, thumb_n_point, mid_fing_pos)
+        self.update_state(hand_recognized, bbox, self.turn_angle)
+        if self.vwriter_result:
+            self.vwriter_result.write(self.img_fore)
         cv2.imshow('wnd_prob', self.img_fore)
 
         if ch == 27:
@@ -696,6 +717,8 @@ class HandTracker():
 
 def hand_tracker(topic_name, thr_mode, use_recognition):
     dpdet = HandTracker(topic_name, thr_mode, use_recognition)
+    dpdet.set_rgb_video('rgb_out.avi')
+    dpdet.set_result_video('result_out.avi')
     dpdet.run()
 
 
