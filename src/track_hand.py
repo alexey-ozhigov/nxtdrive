@@ -123,6 +123,8 @@ class HandTracker():
         self.init_state_max = 5
         self.state_cnt = 0
         self.bbox_init = None
+        self.turn_angle_init = 0
+        self.turn_angle = self.turn_angle_init
         self.img_fore = None
         self.MAX_RANGE = 5.0
         self.write_dist_hist = False
@@ -445,11 +447,20 @@ class HandTracker():
         return dmax_i
         
     @classmethod
+    def calc_angle(cls, defc_max, c):
+        p1 = c[defc_max[0][0]][0]
+        p2 = c[defc_max[0][1]][0]
+        dx = p2[0] - p1[0]
+        dy = p2[1] - p1[1]
+        return np.arctan2(dy, dx)
+
+    @classmethod
     def get_convex_hulls(cls, contours, bbox):
         MIN_CONTOUR_LEN = 100
         curv = []
         defects_max = []
         defects = []
+        angles = []
         for c in contours:
             if len(c) > MIN_CONTOUR_LEN:
                 hull = cv2.convexHull(c, returnPoints = True)
@@ -459,7 +470,8 @@ class HandTracker():
                 defects.append(defc)
                 defc_max = defc[cls.get_max_hull_defect_ind(defc, c, bbox)]
                 defects_max.append(defc_max)
-        return curv, defects, defects_max
+                angles.append(cls.calc_angle(defc_max, c))
+        return curv, defects, defects_max, angles
 
     def draw_convex_hulls(self, img, conv):
         for c in conv:
@@ -468,27 +480,30 @@ class HandTracker():
                 cv2.line(img, tuple(prev_p[0]), tuple(p[0]), RGB(0, 255, 0))
                 prev_p = p
 
-    def draw_fore_info(self, img_fore, bbox, bbox_init, kcurvs, thumb_n_point, mid_fing_pos):
+    def draw_fore_info(self, img_fore, bbox, bbox_init, speed, angle, kcurvs, thumb_n_point, mid_fing_pos):
         img_fore = cv2.cvtColor(img_fore, cv2.COLOR_GRAY2BGR)
         fnt = cv2.FONT_HERSHEY_PLAIN
         fnt_size = 2.4
         clr = RGB(255, 0, 0)
         state = 'INIT' if self.state == TrackerState.INIT else 'RUN'
         cv2.putText(img_fore, 'State: %s' % state, (30, 30) , fnt, fnt_size, clr)
-        if bbox_init:
-            bbox_str = 'Bounding box ratio: %.2f' % (1.0 * bbox[2] / bbox_init[2])
-            cv2.putText(img_fore, bbox_str, (30, 60) , fnt, fnt_size, clr)
+        bbox_str = 'Speed: %03d' % speed
+        cv2.putText(img_fore, bbox_str, (30, 60) , fnt, fnt_size, clr)
+        print self.turn_angle_init, angle
+        turn_str = 'Turn:  %03d deg.' % (int((self.turn_angle_init - angle) * 180 / np.pi))
+        cv2.putText(img_fore, turn_str, (30, 90) , fnt, fnt_size, clr)
         bbox_p1 = (bbox[1], bbox[0])
         bbox_p2 = (bbox[1] + bbox[3], bbox[0] + bbox[2])
         cv2.rectangle(img_fore, bbox_p1, bbox_p2, RGB(0, 255, 0), 5) 
         bbox_cx = bbox[1] + bbox[3] / 2
         bbox_cy = bbox[0] + bbox[2] / 2
-        draw_cross(img_fore, (bbox_cx, bbox_cy), 30, RGB(0, 255, 255))
+        #draw_cross(img_fore, (bbox_cx, bbox_cy), 30, RGB(0, 255, 255))
         for i in range(len(kcurvs)):
             kc = kcurvs[i]
             tnp = thumb_n_point[i]
             for j in tnp:
-                draw_cross(img_fore, kc[j][0], 30, RGB(255, 255, 0))
+                pass
+                #draw_cross(img_fore, kc[j][0], 30, RGB(255, 255, 0))
         if bbox_init:    
             bbox_p1 = (bbox_init[1], bbox_init[0])
             bbox_p2 = (bbox_init[1] + bbox_init[3], bbox_init[0] + bbox_init[2])
@@ -515,12 +530,14 @@ class HandTracker():
             p1 = tuple(conts[i][defects_max[i][0][0]][0])
             p2 = tuple(conts[i][defects_max[i][0][1]][0])
             cv2.line(img_contours, p1, p2, RGB(255, 255, 255))
+        '''
         if hand_kcurv_i == -1:
             hand_recog = 'No Hand'
         else:
             hand_recog = 'Hand'
-        draw_debug_messages(img_contours, [self.kcurv_stat_str], (100, 200))
-        draw_debug_messages(img_contours, [hand_recog], (100, 100))
+        '''
+        #draw_debug_messages(img_contours, [self.kcurv_stat_str], (100, 200))
+        #draw_debug_messages(img_contours, [hand_recog], (100, 100))
         cv2.imwrite('out_cont/img_contours_%03d.png' % self.depth_frame_cnt, img_contours)
         for i in range(len(kcurvs)):
             kc = kcurvs[i]
@@ -534,7 +551,7 @@ class HandTracker():
                 cv2.line(img_curv, tuple(pt1[0]), tuple(pt2[0]), RGB(0, 255, 0))
         cv2.imwrite('out_kcurv/img_kcurvs_%03d.png' % self.depth_frame_cnt, img_curv)
 
-        self.draw_fore_info(img_fore, bbox, bbox_init, kcurvs, thumb_n_point, mid_fing_pos)
+        #self.draw_fore_info(img_fore, bbox, bbox_init, speed, kcurvs, thumb_n_point, mid_fing_pos)
         #print thumb_n_point
        
         img_hulls = 255 * np.ones([480, 640, 3], dtype='uint8')
@@ -600,6 +617,30 @@ class HandTracker():
         fore_pts = np.array([[[fore[0][i], fore[1][i]]] for i in range(len(fore[0]))], dtype='int32')
         return cv2.boundingRect(fore_pts)
 
+    def reset_state(self):
+        self.state = TrackerState.INIT
+        self.bbox_init = None
+        self.turn_angle_init = 0
+
+    def set_state(self, state):
+        self.state = state
+
+    def update_state(self, hand_detected, bbox, angle):
+        if not hand_detected:
+            print 'Not Found the hand'
+            self.recog_cnt = 0
+            self.norecog_cnt += 1
+            if self.norecog_cnt >= self.norecog_cnt_min:
+                self.reset_state()
+        else:#found the hand
+            print 'Found the hand'
+            self.norecog_cnt = 0
+            self.recog_cnt += 1
+            if self.recog_cnt == self.recog_cnt_min:
+                self.bbox_init = bbox
+                self.turn_angle_init = angle
+                self.set_state(TrackerState.RUN)
+ 
     def depth_cb(self, msg):
         self.depth_frame_cnt += 1
         self.state_cnt += 1
@@ -620,29 +661,30 @@ class HandTracker():
             self.write_dist_hist_img(img)
         self.img_fore = self.get_foreground_uint8(img)
         bbox = self.get_bounding_box(self.img_fore)
-        if self.state == TrackerState.INIT:
-            if (not self.use_recognition and self.state_cnt >= self.init_state_max) or \
-               (self.use_recognition and self.recog_cnt >= self.recog_cnt_min):
-                self.state = TrackerState.RUN
-                self.bbox_init = bbox
-                self.state_cnt = 0
         contours, img_contours = HandTracker.get_contours(self.img_fore)
         kcurvs, conts = HandTracker.get_kcurvs(contours, 50)
         contours_fingers, finger_tips, thumb_n_point, mid_fing_pos = HandTracker.get_kcurv_fingers(kcurvs, bbox)
         hand_kcurv_i = self.recognize_hand_kcurv(contours_fingers)
         self.get_kcurv_stat(img_contours, contours_fingers[hand_kcurv_i])
         #print 'Contours_fingers', contours_fingers, len(contours_fingers[hand_kcurv_i])
-        hulls, defects, defects_max = HandTracker.get_convex_hulls(conts, bbox)
+        hulls, defects, defects_max,angles = HandTracker.get_convex_hulls(conts, bbox)
         self.draw_debug_info(img, self.img_fore, bbox, self.bbox_init, conts, img_contours, defects, defects_max, finger_tips, thumb_n_point, mid_fing_pos, kcurvs, hand_kcurv_i, hulls)
-        self.img_fore = self.draw_fore_info(self.img_fore, bbox, self.bbox_init, kcurvs, thumb_n_point, mid_fing_pos)
         #cv2.imshow('wnd_orig', (img * 100).astype('uint8'))
-        cv2.imshow('wnd_prob', self.img_fore)
         cv2.imshow('wnd_contours', img_contours)
         ch = cv2.waitKey(10)
+        
+        hand_recognized = False if hand_kcurv_i == -1 else True
+        if self.bbox_init:
+            speed = max(0, 100 - int((1.0 * bbox[2] / self.bbox_init[2]) * 100))
+        else:
+            speed = 0
+        angle = angles[0] if self.state == TrackerState.RUN else 0
+        self.img_fore = self.draw_fore_info(self.img_fore, bbox, self.bbox_init, speed, angle, kcurvs, thumb_n_point, mid_fing_pos)
+        self.update_state(hand_recognized, bbox, angles[0])
+        cv2.imshow('wnd_prob', self.img_fore)
+
         if ch == 27:
             rospy.signal_shutdown('Quit')
-        elif ch == ord(' '):
-            cv2.imwrite('img_prob.png', img_prob)
 
     def run(self):
         rospy.spin()
