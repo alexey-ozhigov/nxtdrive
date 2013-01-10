@@ -7,6 +7,8 @@ from sensor_msgs.msg import Image
 from geometry_msgs.msg import Point
 from cv_nxtdrive.msg import HandRect
 from cv_bridge import CvBridge, CvBridgeError
+import sys
+sys.path = ['/home/alex/opencv_lib/lib/python2.7/dist-packages'] + sys.path
 import cv2
 from cv2.cv import RGB
 import numpy as np
@@ -22,7 +24,7 @@ from time import sleep
 from math import sqrt
 import pickle
 from histogram import Histogram
-from myutils import calc_back_proj
+from myutils import calc_back_proj, draw_debug_messages, draw_cross
 from common_utils import prepare_env
 
 from kcurv import kcurv
@@ -104,6 +106,10 @@ class HandTracker():
     MIN_DIST = 3.0
 
     def __init__(self, topic = DEF_TOPIC_NAME, mode = ThresholdMode.DEPTH_AUTO, use_recognition = False):
+        self.kcurv_stat_cnt = 0
+        self.kcurv_stat_cnt_max = 100
+        self.kcurv_stat_vals = np.array([])
+        self.kcurv_stat_str = ''
         self.mouse_x = 0
         self.mouse_y = 0
         self.state = TrackerState.INIT
@@ -136,7 +142,7 @@ class HandTracker():
         rospy.init_node('track_hand', anonymous=True)
         #cv2.namedWindow('wnd_orig', 0)
         cv2.namedWindow('wnd_prob', 0)
-        #cv2.namedWindow('wnd_contours', 0)
+        cv2.namedWindow('wnd_contours', 0)
         #cv2.setMouseCallback('wnd_orig', self.on_orig_mouse, None)
         self.depth_threshold = 127
         if self.mode == ThresholdMode.DEPTH_MANUAL:
@@ -249,11 +255,12 @@ class HandTracker():
 
     @classmethod
     def get_contours(cls, img_fore):
-        img_ed_canny = cv2.Canny(img_fore, 10, 40)
-        img_ed = img_ed_canny
+        #img_ed_canny = cv2.Canny(img_fore, 10, 40)
+        #img_ed = img_ed_canny
+        img_ed = img_fore.copy()
         #img_ed = max_filter(img_ed_canny)
         cont = cv2.findContours(img_ed, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
-        pickle.dump(cont[0], file('c0', 'w'))
+        #pickle.dump(cont[0], file('c0', 'w'))
         cont = ([ c for c in cont[0] if len(c.shape) == 3 and len(c) > 2 ], cont[1])
         img_contours = np.zeros([480, 640, 3], dtype=np.uint8)
         cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
@@ -359,30 +366,100 @@ class HandTracker():
     def get_kcurvs(cls, contours, delta):
         kcurvs = []
         conts = []
+        kcurv_max_i = -1
+        kcurv_max_len = -1
+        for i in range(len(contours)):
+            c = contours[i]
+            if len(c) > kcurv_max_len:
+                kcurv_max_len = len(c)
+                kcurv_max_i = i
+        '''
         for c in contours:
             kc, cont = kcurv(c, delta)
+            kcurvs.append(kc)
+            conts.append(cont)
+        '''
+        if kcurv_max_i > -1:
+            kc, cont = kcurv(contours[kcurv_max_i], delta)
             kcurvs.append(kc)
             conts.append(cont)
         return (kcurvs, conts)
 
     @classmethod
-    def get_kcurv_fingers(cls, kcurvs):
+    def sort_kcurv_fingers(cls, kcurvs, finger_tips, bbox_c):
+        ftips_sorted = np.zeros(finger_tips.shape, finger_tips.dtype)
+
+    @classmethod
+    def get_kcurv_fingers(cls, kcurvs, bbox):
         KCURV_MAX_ANGLE = 1.32
         fingers = []
+        finger_tips = []
+        middle_finger_pos = (0, 0)
+        middle_finger_height = 480
+        bbox_cx = bbox[1] + bbox[3] / 2
+        bbox_cy = bbox[0] + bbox[2] / 2
         for i in range(len(kcurvs)):
             kc = kcurvs[i]
             fing = np.array([i for i in range(len(kc)) if kc[i][1] < KCURV_MAX_ANGLE])
             fingers.append(fing)
-        return fingers
+            ftips = np.array([i for i in range(len(kc)) if kc[i][1] < KCURV_MAX_ANGLE and dist((bbox_cx, bbox_cy), kc[i][0]) > bbox[2] / 3])
+            #ftips_sorted = self.sort_kcurv_fingers(kc, ftips, (bbox_cx, bbox_cy))
+            finger_tips.append(ftips)
+        #Now find the thumb and little finger. Thumb and little finger tips have maximum distance between them among all pairs of finger tips
+        thumb_n_point = []
+        for i in range(len(kcurvs)):
+            kc = kcurvs[i]
+            ftips = finger_tips[i]
+            max_dist = 1
+            tnp = np.array([0, 1])
+            for k in range(len(ftips)):
+                for l in range(len(ftips)):
+                    if k == l:
+                        continue
+                    d = dist(kc[k][0], kc[l][0])
+                    if d > max_dist:
+                        max_dist = d
+                        tnp = np.array([k, l])
+            thumb_n_point.append(tnp)
+        return (fingers, finger_tips, thumb_n_point, middle_finger_pos)
+
+    def recognize_hand_kcurv(self, kcurvs):
+        for i in range(len(kcurvs)):
+            kc = kcurvs[i]
+            if len(kc) >= 6 and len(kc) < 15:
+                return i
+        return -1
 
     @classmethod
-    def get_convex_hulls(cls, contours):
+    def get_max_hull_defect_ind(cls, defects, cont, bbox):
+        dmax_dist = 0
+        dmax_i = 0
+        for i in range(len(defects)):
+            p1 = cont[defects[i][0][0]][0]
+            p2 = cont[defects[i][0][1]][0]
+            dp = defects[i][0][3]
+            d = dist(p1, p2)
+            if d > dmax_dist and d > 0.6 * bbox[2] and dp / 255.0 > 0.4 * d:
+                dmax_dist = d
+                dmax_i = i
+        return dmax_i
+        
+    @classmethod
+    def get_convex_hulls(cls, contours, bbox):
         MIN_CONTOUR_LEN = 100
         curv = []
+        defects_max = []
+        defects = []
         for c in contours:
             if len(c) > MIN_CONTOUR_LEN:
-                curv.append(cv2.convexHull(c, returnPoints = True))
-        return curv
+                hull = cv2.convexHull(c, returnPoints = True)
+                hull_ind = cv2.convexHull(c, returnPoints = False)
+                curv.append(hull)
+                defc = cv2.convexityDefects(c, hull_ind)
+                defects.append(defc)
+                defc_max = defc[cls.get_max_hull_defect_ind(defc, c, bbox)]
+                defects_max.append(defc_max)
+        return curv, defects, defects_max
 
     def draw_convex_hulls(self, img, conv):
         for c in conv:
@@ -391,7 +468,7 @@ class HandTracker():
                 cv2.line(img, tuple(prev_p[0]), tuple(p[0]), RGB(0, 255, 0))
                 prev_p = p
 
-    def draw_fore_info(self, img_fore, bbox, bbox_init):
+    def draw_fore_info(self, img_fore, bbox, bbox_init, kcurvs, thumb_n_point, mid_fing_pos):
         img_fore = cv2.cvtColor(img_fore, cv2.COLOR_GRAY2BGR)
         fnt = cv2.FONT_HERSHEY_PLAIN
         fnt_size = 2.4
@@ -404,6 +481,14 @@ class HandTracker():
         bbox_p1 = (bbox[1], bbox[0])
         bbox_p2 = (bbox[1] + bbox[3], bbox[0] + bbox[2])
         cv2.rectangle(img_fore, bbox_p1, bbox_p2, RGB(0, 255, 0), 5) 
+        bbox_cx = bbox[1] + bbox[3] / 2
+        bbox_cy = bbox[0] + bbox[2] / 2
+        draw_cross(img_fore, (bbox_cx, bbox_cy), 30, RGB(0, 255, 255))
+        for i in range(len(kcurvs)):
+            kc = kcurvs[i]
+            tnp = thumb_n_point[i]
+            for j in tnp:
+                draw_cross(img_fore, kc[j][0], 30, RGB(255, 255, 0))
         if bbox_init:    
             bbox_p1 = (bbox_init[1], bbox_init[0])
             bbox_p2 = (bbox_init[1] + bbox_init[3], bbox_init[0] + bbox_init[2])
@@ -412,17 +497,31 @@ class HandTracker():
             p1 = (int(self.hand_area[0].x), int(self.hand_area[0].y))
             p2 = (int(self.hand_area[1].x), int(self.hand_area[1].y))
             cv2.rectangle(img_fore, p1, p2, RGB(0, 0, 255), 2) 
-        #cv2.imwrite('out_fore/img_fore_%03d.png' % self.depth_frame_cnt, img_fore_bgr)
+        cv2.imwrite('out_fore/img_fore_%03d.png' % self.depth_frame_cnt, img_fore)
         return img_fore
 
-    def draw_debug_info(self, img_orig, img_fore, bbox, bbox_init, img_contours, contours_fingers, kcurvs, hulls):
+    def draw_debug_info(self, img_orig, img_fore, bbox, bbox_init, conts, img_contours, defects, defects_max, finger_tips, thumb_n_point, mid_fing_pos, kcurvs, hand_kcurv_i, hulls):
+        #print finger_tips
         img_curv = img_contours.copy()
-        for cf_i in range(len(contours_fingers)):
-            f = contours_fingers[cf_i]
+        for cf_i in range(len(finger_tips)):
+            f = finger_tips[cf_i]
             for p in f:
-                pass
-                #cv2.circle(img_contours, tuple(kcurvs[cf_i][p][0]), 10, RGB(0, 255, 0))
-        #cv2.imwrite('out_cont/img_contours_%03d.png' % self.depth_frame_cnt, img_contours)
+                cv2.circle(img_contours, tuple(kcurvs[cf_i][p][0]), 10, RGB(0, 255, 0))
+            for k in range(len(f)):
+                for l in range(len(f)):
+                    pass
+                    #cv2.line(img_contours, tuple(kcurvs[cf_i][f[k]][0]), tuple(kcurvs[cf_i][f[l]][0]), RGB(255,255,255))
+        for i in range(len(hulls)):
+            p1 = tuple(conts[i][defects_max[i][0][0]][0])
+            p2 = tuple(conts[i][defects_max[i][0][1]][0])
+            cv2.line(img_contours, p1, p2, RGB(255, 255, 255))
+        if hand_kcurv_i == -1:
+            hand_recog = 'No Hand'
+        else:
+            hand_recog = 'Hand'
+        draw_debug_messages(img_contours, [self.kcurv_stat_str], (100, 200))
+        draw_debug_messages(img_contours, [hand_recog], (100, 100))
+        cv2.imwrite('out_cont/img_contours_%03d.png' % self.depth_frame_cnt, img_contours)
         for i in range(len(kcurvs)):
             kc = kcurvs[i]
             l = len(kc)
@@ -433,13 +532,14 @@ class HandTracker():
                 cv2.line(img_curv, tuple(pt0[0]), tuple(pt1[0]), RGB(0, 255, 0))
                 cv2.putText(img_curv, '%.3f' % pt1[1], tuple(pt1[0]), cv2.FONT_HERSHEY_PLAIN, 0.7, RGB(0, 255, 0))
                 cv2.line(img_curv, tuple(pt1[0]), tuple(pt2[0]), RGB(0, 255, 0))
-        #cv2.imwrite('out_kcurv/img_kcurvs_%03d.png' % self.depth_frame_cnt, img_curv)
+        cv2.imwrite('out_kcurv/img_kcurvs_%03d.png' % self.depth_frame_cnt, img_curv)
 
-        self.draw_fore_info(img_fore, bbox, bbox_init)
+        self.draw_fore_info(img_fore, bbox, bbox_init, kcurvs, thumb_n_point, mid_fing_pos)
+        #print thumb_n_point
        
         img_hulls = 255 * np.ones([480, 640, 3], dtype='uint8')
         self.draw_convex_hulls(img_hulls, hulls)
-        #cv2.imwrite('out_hull/img_hulls_%03d.png' % self.depth_frame_cnt, img_hulls)
+        cv2.imwrite('out_hull/img_hulls_%03d.png' % self.depth_frame_cnt, img_hulls)
         img_orig_cm = (100 * img_orig * 255 / 200).astype('uint8')
         #cv2.imwrite('out_orig/img_orig_%03d.png' % self.depth_frame_cnt, img_orig_cm)
      
@@ -485,6 +585,16 @@ class HandTracker():
             self.norecog_cnt = 0
             self.recog_cnt += 1
 
+    def get_kcurv_stat(self, img, fingers):
+        if self.kcurv_stat_cnt >= self.kcurv_stat_cnt_max:
+            self.kcurv_stat_str = 'Mean %.2f Std. %.2f' % (np.mean(self.kcurv_stat_vals), np.std(self.kcurv_stat_vals))
+            self.kcurv_stat_vals = np.array([])
+            self.kcurv_stat_cnt = 0
+            print self.kcurv_stat_str
+        else:
+            self.kcurv_stat_vals = np.append(self.kcurv_stat_vals, len(fingers))
+        self.kcurv_stat_cnt += 1
+
     def get_bounding_box(self, img_fore):
         fore = np.where(img_fore == 255)
         fore_pts = np.array([[[fore[0][i], fore[1][i]]] for i in range(len(fore[0]))], dtype='int32')
@@ -493,8 +603,8 @@ class HandTracker():
     def depth_cb(self, msg):
         self.depth_frame_cnt += 1
         self.state_cnt += 1
-        if self.depth_frame_cnt % 1 != 0:
-            return
+        #if self.depth_frame_cnt % 3 != 0:
+        #    return
         try:
             img = bridge.imgmsg_to_cv(msg, desired_encoding='32FC1')
             img = np.asarray(img)
@@ -517,14 +627,17 @@ class HandTracker():
                 self.bbox_init = bbox
                 self.state_cnt = 0
         contours, img_contours = HandTracker.get_contours(self.img_fore)
-        kcurvs, conts = HandTracker.get_kcurvs(contours, 30)
-        contours_fingers = HandTracker.get_kcurv_fingers(kcurvs)
-        hulls = HandTracker.get_convex_hulls(contours)
-        #self.draw_debug_info(img, self.img_fore, bbox, self.bbox_init, img_contours, contours_fingers, kcurvs, hulls)
-        self.img_fore = self.draw_fore_info(self.img_fore, bbox, self.bbox_init)
+        kcurvs, conts = HandTracker.get_kcurvs(contours, 50)
+        contours_fingers, finger_tips, thumb_n_point, mid_fing_pos = HandTracker.get_kcurv_fingers(kcurvs, bbox)
+        hand_kcurv_i = self.recognize_hand_kcurv(contours_fingers)
+        self.get_kcurv_stat(img_contours, contours_fingers[hand_kcurv_i])
+        #print 'Contours_fingers', contours_fingers, len(contours_fingers[hand_kcurv_i])
+        hulls, defects, defects_max = HandTracker.get_convex_hulls(conts, bbox)
+        self.draw_debug_info(img, self.img_fore, bbox, self.bbox_init, conts, img_contours, defects, defects_max, finger_tips, thumb_n_point, mid_fing_pos, kcurvs, hand_kcurv_i, hulls)
+        self.img_fore = self.draw_fore_info(self.img_fore, bbox, self.bbox_init, kcurvs, thumb_n_point, mid_fing_pos)
         #cv2.imshow('wnd_orig', (img * 100).astype('uint8'))
         cv2.imshow('wnd_prob', self.img_fore)
-        #cv2.imshow('wnd_contours', img_contours)
+        cv2.imshow('wnd_contours', img_contours)
         ch = cv2.waitKey(10)
         if ch == 27:
             rospy.signal_shutdown('Quit')
