@@ -10,6 +10,8 @@
     <arg name="video_dir" value="/home/alex/MAS/CV/project/cv_nxtdrive/data/1" />
     <arg name="use_recognition" default="true" />
 
+    <node name="nxt_bluetooth_ctl" type="nxt_driver_client.py" pkg="cv_nxtdrive" output="screen" />
+
     <group if="$(arg use_recognition)">
         <node name="hand_recognizer" type="hand_recognizer" pkg="cv_nxtdrive" output="screen" />
     </group>

@@ -29,11 +29,16 @@ from common_utils import prepare_env
 
 from kcurv import kcurv
 
+NXT_CTL_TOPIC = '/nxt_motor_ctl'
+UNKNOWN_ANGLE = 400
+CTL_TURN_VALUE_MIN = 0.0
+
 depth_hist_file = 'depth_histogram.txt'
 DEF_TOPIC_NAME = '/camera/depth_registered/image_rect'
 bridge = CvBridge()
 
 import cProfile
+import pickle
 
 class Enum(set):
     def __getattr__(self, name):
@@ -48,6 +53,17 @@ def dist(p1, p2):
     d1 = p1[0] - p2[0]
     d2 = p1[1] - p2[1]
     return sqrt(d1 * d1 + d2 * d2)
+
+def tri_square(p1, p2, p3):
+    a = dist(p1, p2)
+    b = dist(p2, p3)
+    c = dist(p1, p3)
+    p = (a + b + c) / 2.0
+    try:
+        s = np.sqrt(p * (p - a) * (p - b) * (p - c))
+    except:
+        print 'ERROR IN tri_square!!!'
+    return s
 
 def build_line(p1, p2, debug_img = False):
     ret_line = np.empty([0, 1, 2], dtype='int32')
@@ -101,11 +117,15 @@ def max_filter(img):
 
     return img_ret
 
+def test_nxt_ctl_pub(pub):
+    for i in range(10):
+        pub.publish(Point(i, i, i))
 
 class HandTracker():
     MIN_DIST = 3.0
 
     def __init__(self, topic = DEF_TOPIC_NAME, mode = ThresholdMode.DEPTH_AUTO, use_recognition = False):
+        self.result_file = file('result.txt', 'w')
         self.vwriter_result = None
         self.vwriter_rgb = None
         self.kcurv_stat_cnt = 0
@@ -159,6 +179,9 @@ class HandTracker():
             rospy.Subscriber('/hand_recognizer/pos', HandRect, self.hand_rect_cb)
         else:
             self.use_recognition = False
+
+        self.nxt_ctl_pub = rospy.Publisher(NXT_CTL_TOPIC, Point)
+        test_nxt_ctl_pub(self.nxt_ctl_pub)
 
     def set_result_video(self, fname):
         self.vwriter_result = cv2.VideoWriter(fname, \
@@ -268,8 +291,7 @@ class HandTracker():
                 for k in range(j + 1, len(c)):
                     pass
 
-    @classmethod
-    def get_contours(cls, img_fore):
+    def get_contours(self, img_fore):
         #img_ed_canny = cv2.Canny(img_fore, 10, 40)
         #img_ed = img_ed_canny
         img_ed = img_fore.copy()
@@ -279,6 +301,8 @@ class HandTracker():
         cont = ([ c for c in cont[0] if len(c.shape) == 3 and len(c) > 2 ], cont[1])
         img_contours = np.zeros([480, 640, 3], dtype=np.uint8)
         cv2.drawContours(img_contours, cont[0], -1, RGB(255, 0, 0))
+        fname = 'conts/%03.dat' % self.depth_frame_cnt
+        #pickle.dump(cont[0], file(fname, 'w'))
         return (cont[0], img_contours)
 
     @classmethod
@@ -333,7 +357,7 @@ class HandTracker():
         if i == -1:
             return (cont, merge_points)
         new_cont = [ cont[k] for k in range(len(cont)) if k != i and k != j ]
-        print 'Merging %d %d' % (i, j)
+        #print 'Merging %d %d' % (i, j)
         merged_pair = cls.merge_two_contours(cont, i, j, i_pos, j_pos)
         merge_points = np.append(merge_points, [cont[i][i_pos][0], cont[j][j_pos][0]], axis=0)
         new_cont.append(merged_pair)
@@ -445,35 +469,57 @@ class HandTracker():
                 return i
         return -1
 
-    @classmethod
-    def get_max_hull_defect_ind(cls, defects, cont, bbox):
+    def get_max_hull_defect_ind(self, defects, cont, bbox):
         dmax_dist = 0
         dmax_i = 0
+        smax = 0
+        smax_i = 0
+        #print '______________'
+        print '%d. ' % self.depth_frame_cnt, 
         for i in range(len(defects)):
             p1 = cont[defects[i][0][0]][0]
             p2 = cont[defects[i][0][1]][0]
+            p3 = cont[defects[i][0][2]][0]
+            s = tri_square(p1, p2, p3)
             dp = defects[i][0][3]
             d = dist(p1, p2)
-            if d > dmax_dist and d > 0.6 * bbox[2] and dp / 255.0 > 0.4 * d:
+            if s > smax and d > 0.4 * bbox[2]:
+                smax = s
+                smax_i = i
+            print 'S %.3f ' % s,
+            if d > 0.6 * bbox[2] and dp / 256.0 > 0.28 * bbox[3]:
                 dmax_dist = d
                 dmax_i = i
-        return dmax_i
+        print '\nChosen %.3f' % smax
+        return smax_i
+        #return dmax_i
         
-    @classmethod
-    def calc_angle(cls, defc_max, c):
+    def calc_angle(self, defc_max, c, bbox):
+        cx = bbox[1] + bbox[3] / 2
+        cy = bbox[0] + bbox[2] / 2
+        bw = bbox[3]
+        bh = bbox[2]
+        #print 'x %d y %d w %d h %d' % (cx, cy, bw, bh)
         p1 = c[defc_max[0][0]][0]
         p2 = c[defc_max[0][1]][0]
-        dx = p2[0] - p1[0]
-        dy = p2[1] - p1[1]
-        return np.arctan2(dy, dx)
+        #print 'DIST', dist(p1, p2)
+        if p1[1] < p2[1]:
+            pt_fing = p1
+        else:
+            pt_fing = p2
+        #dx = p2[0] - p1[0]
+        #dy = p2[1] - p1[1]
+        dx = pt_fing[1] - cx
+        dy = pt_fing[0] - cy
+        return (np.arctan2(dy, dx), pt_fing)
 
-    @classmethod
-    def get_convex_hulls(cls, contours, bbox):
+    def get_convex_hulls(self, contours, bbox):
         MIN_CONTOUR_LEN = 100
         curv = []
         defects_max = []
         defects = []
         angles = []
+        pt_fings = []
         for c in contours:
             if len(c) > MIN_CONTOUR_LEN:
                 hull = cv2.convexHull(c, returnPoints = True)
@@ -481,10 +527,12 @@ class HandTracker():
                 curv.append(hull)
                 defc = cv2.convexityDefects(c, hull_ind)
                 defects.append(defc)
-                defc_max = defc[cls.get_max_hull_defect_ind(defc, c, bbox)]
+                defc_max = defc[self.get_max_hull_defect_ind(defc, c, bbox)]
                 defects_max.append(defc_max)
-                angles.append(cls.calc_angle(defc_max, c))
-        return curv, defects, defects_max, angles
+                angle, pt_fing = self.calc_angle(defc_max, c, bbox)
+                angles.append(angle)
+                pt_fings.append(pt_fing)
+        return curv, defects, defects_max, angles, pt_fings
 
     def draw_convex_hulls(self, img, conv):
         for c in conv:
@@ -502,7 +550,7 @@ class HandTracker():
         cv2.putText(img_fore, 'State:  %s' % state, (30, 30) , fnt, fnt_size, clr)
         bbox_str = 'Speed: %03d' % speed
         cv2.putText(img_fore, bbox_str, (30, 60) , fnt, fnt_size, clr)
-        print self.turn_angle_init, angle
+        #print self.turn_angle_init, angle
         if self.state == TrackerState.RUN:
             turn_str = 'Turn:   %03d deg.' % (int((self.turn_angle_init - angle) * 180 / np.pi))
         else:
@@ -513,7 +561,7 @@ class HandTracker():
         cv2.rectangle(img_fore, bbox_p1, bbox_p2, RGB(0, 255, 0), 5) 
         bbox_cx = bbox[1] + bbox[3] / 2
         bbox_cy = bbox[0] + bbox[2] / 2
-        #draw_cross(img_fore, (bbox_cx, bbox_cy), 30, RGB(0, 255, 255))
+        draw_cross(img_fore, (bbox_cx, bbox_cy), 30, RGB(0, 255, 255))
         for i in range(len(kcurvs)):
             kc = kcurvs[i]
             tnp = thumb_n_point[i]
@@ -531,7 +579,17 @@ class HandTracker():
         cv2.imwrite('out_fore/img_fore_%03d.png' % self.depth_frame_cnt, img_fore)
         return img_fore
 
-    def draw_debug_info(self, img_orig, img_fore, bbox, bbox_init, conts, img_contours, defects, defects_max, finger_tips, thumb_n_point, mid_fing_pos, kcurvs, hand_kcurv_i, hulls):
+    def draw_debug_info(self, img_orig, img_fore, bbox, bbox_init, conts, img_contours, defects, defects_max, finger_tips, pt_fings, thumb_n_point, mid_fing_pos, kcurvs, hand_kcurv_i, hulls):
+        if len(conts) > 0:
+            if len(defects_max) > 0:
+                if len(defects_max[0]) > 0:
+                    p1 = tuple(conts[0][defects_max[0][0][0]][0])
+                    p2 = tuple(conts[0][defects_max[0][0][1]][0])
+                    if bbox_init == None:
+                        bbox_init = (-1, -1, -1, -1)
+                    result_str = 'bi %03d %03d %03d %03d b %03d %03d %03d %03d p1 %03d %03d p2 %03d %03d\n' % (bbox_init + bbox + p1 + p2)
+                    self.result_file.write(result_str)
+
         #print finger_tips
         img_curv = img_contours.copy()
         for cf_i in range(len(finger_tips)):
@@ -545,7 +603,24 @@ class HandTracker():
         for i in range(len(hulls)):
             p1 = tuple(conts[i][defects_max[i][0][0]][0])
             p2 = tuple(conts[i][defects_max[i][0][1]][0])
-            cv2.line(img_contours, p1, p2, RGB(255, 255, 255))
+            cv2.line(img_contours, p1, p2, RGB(0, 255, 255))
+        cx = bbox[1] + bbox[3] / 2
+        cy = bbox[0] + bbox[2] / 2
+        draw_cross(img_contours, (cx, cy), 30, RGB(0, 255, 0))
+        for pt_fing in pt_fings:
+            draw_cross(img_contours, pt_fing, 30, RGB(0, 255, 0))
+        '''
+        for d_i in range(len(defects)):
+            defs = defects[d_i]
+            cont = conts[d_i]
+            for j in range(len(defs)):
+                def_pt = defs[j][0]
+                depth_pt_ind = def_pt[2]
+                depth_pt = cont[depth_pt_ind][0]
+                draw_cross(img_contours, depth_pt, 30, RGB(255, 155, 100))
+            #print 'defs', defs
+            #print 'cont', cont
+        '''
         '''
         if hand_kcurv_i == -1:
             hand_recog = 'No Hand'
@@ -620,7 +695,7 @@ class HandTracker():
             self.kcurv_stat_str = 'Mean %.2f Std. %.2f' % (np.mean(self.kcurv_stat_vals), np.std(self.kcurv_stat_vals))
             self.kcurv_stat_vals = np.array([])
             self.kcurv_stat_cnt = 0
-            print self.kcurv_stat_str
+            #print self.kcurv_stat_str
         else:
             self.kcurv_stat_vals = np.append(self.kcurv_stat_vals, len(fingers))
         self.kcurv_stat_cnt += 1
@@ -642,14 +717,14 @@ class HandTracker():
 
     def update_state(self, hand_detected, bbox, angle):
         if not hand_detected:
-            print 'Not Found the hand'
+            #print 'Not Found the hand'
             self.recog_cnt = 0
             self.norecog_cnt += 1
             if self.norecog_cnt >= self.norecog_cnt_min:
                 pass
                 #self.reset_state()
         else:#found the hand
-            print 'Found the hand'
+            #print 'Found the hand'
             self.norecog_cnt = 0
             self.recog_cnt += 1
             if self.recog_cnt == self.recog_cnt_min:
@@ -664,7 +739,7 @@ class HandTracker():
         self.state_cnt += 1
         if self.depth_frame_cnt % 3 != 0:
             return
-        print 'recog', self.recog_cnt, 'norecog', self.norecog_cnt
+        #print 'recog', self.recog_cnt, 'norecog', self.norecog_cnt
         try:
             img = bridge.imgmsg_to_cv(msg, desired_encoding='32FC1')
             img = np.asarray(img)
@@ -680,14 +755,15 @@ class HandTracker():
             self.write_dist_hist_img(img)
         self.img_fore = self.get_foreground_uint8(img)
         bbox = self.get_bounding_box(self.img_fore)
-        contours, img_contours = HandTracker.get_contours(self.img_fore)
+        contours, img_contours = self.get_contours(self.img_fore)
         kcurvs, conts = HandTracker.get_kcurvs(contours, 50)
         contours_fingers, finger_tips, thumb_n_point, mid_fing_pos = HandTracker.get_kcurv_fingers(kcurvs, bbox)
         hand_kcurv_i = self.recognize_hand_kcurv(contours_fingers)
-        self.get_kcurv_stat(img_contours, contours_fingers[hand_kcurv_i])
+        if len(contours_fingers) > hand_kcurv_i:
+            self.get_kcurv_stat(img_contours, contours_fingers[hand_kcurv_i])
         #print 'Contours_fingers', contours_fingers, len(contours_fingers[hand_kcurv_i])
-        hulls, defects, defects_max,angles = HandTracker.get_convex_hulls(conts, bbox)
-        self.draw_debug_info(img, self.img_fore, bbox, self.bbox_init, conts, img_contours, defects, defects_max, finger_tips, thumb_n_point, mid_fing_pos, kcurvs, hand_kcurv_i, hulls)
+        hulls, defects, defects_max, angles, pt_fings = self.get_convex_hulls(conts, bbox)
+        self.draw_debug_info(img, self.img_fore, bbox, self.bbox_init, conts, img_contours, defects, defects_max, finger_tips, pt_fings, thumb_n_point, mid_fing_pos, kcurvs, hand_kcurv_i, hulls)
         #cv2.imshow('wnd_orig', (img * 100).astype('uint8'))
         cv2.imshow('wnd_contours', img_contours)
         ch = cv2.waitKey(10)
@@ -697,9 +773,21 @@ class HandTracker():
             speed = max(0, 100 - int((1.0 * bbox[2] / self.bbox_init[2]) * 100))
         else:
             speed = 0
-        self.turn_angle = angles[0] if (len(angles) > 0 and self.norecog_cnt == 0) else 0
+        self.turn_angle = angles[0] if (len(angles) > 0 and self.norecog_cnt == 0) else UNKNOWN_ANGLE
         self.img_fore = self.draw_fore_info(self.img_fore, bbox, self.bbox_init, speed, self.turn_angle, kcurvs, thumb_n_point, mid_fing_pos)
+        
         self.update_state(hand_recognized, bbox, self.turn_angle)
+        #Send driving control command to NXT bluetooth driver wrapper
+        ctl_point = Point(UNKNOWN_ANGLE, UNKNOWN_ANGLE, UNKNOWN_ANGLE)
+        if self.state == TrackerState.RUN and \
+           self.norecog_cnt < self.norecog_cnt_min:
+            #print 'iangle %.3f cangle %.3f' % (self.turn_angle_init, self.turn_angle)
+            if self.turn_angle != UNKNOWN_ANGLE:
+                turn_angle = self.turn_angle - self.turn_angle_init
+            else:
+                turn_angle = CTL_TURN_VALUE_MIN
+            ctl_point = Point(speed, turn_angle, 0)
+        self.nxt_ctl_pub.publish(ctl_point)
         if self.vwriter_result:
             self.vwriter_result.write(self.img_fore)
         cv2.imshow('wnd_prob', self.img_fore)
@@ -739,63 +827,12 @@ def do_track_hand():
     hand_tracker(DEF_TOPIC_NAME, thr_mode, use_recognition)
 
 
-def test():
-    img_fore = cv2.imread('data/img_fore.png')
-    img_fore = cv2.cvtColor(img_fore, cv2.COLOR_BGR2GRAY)
-    contours, img = HandTracker.get_contours(img_fore)
-    kcurvs, conts = HandTracker.get_kcurvs(contours, 30)
-    #hulls = HandTracker.get_convex_hulls(contours)
-    contours_fingers = HandTracker.get_kcurv_fingers(kcurvs)
-    for cf_i in range(len(contours_fingers)):
-        f = contours_fingers[cf_i]
-        for p in f:
-            cv2.circle(img, tuple(kcurvs[cf_i][p][0]), 10, RGB(0, 255, 0))
-    cv2.imwrite('d.png', img)
-    '''
-    for h in hulls:
-        print h
-        for p in h:
-            cv2.circle(img, tuple(contours[0][p[0]][0]), 10, RGB(0, 255, 0))
-    cv2.imwrite('d.png', img)
-    cv2.imwrite('d0.png', img_old)
-    '''
-
 def plot_kcurv(kcurv, fname):
     plt.clf()
     kcurv_coef = [x[1] for x in kcurv]
     plt.title(fname)
     plt.plot(kcurv_coef)
     plt.savefig(fname)
-
-def test_kcurv():
-    img_fore = cv2.imread('data/img_fore.png')
-    img_fore = cv2.cvtColor(img_fore, cv2.COLOR_BGR2GRAY)
-    contours, img = HandTracker.get_contours(img_fore)
-    kcurvs, conts = HandTracker.get_kcurvs(contours, 30)
-    cv2.namedWindow('kcurv')
-    img_curv = img.copy()
-    for i in range(len(kcurvs)):
-        kc = kcurvs[i]
-        l = len(kc)
-        for pt_i in range(1, len(kc) - 1):
-            pt0 = kc[pt_i - 1]
-            pt1 = kc[pt_i]
-            pt2 = kc[pt_i + 1]
-            _img = img.copy()
-            cv2.line(_img, tuple(pt0[0]), tuple(pt1[0]), RGB(0, 255, 0))
-            cv2.line(img_curv, tuple(pt0[0]), tuple(pt1[0]), RGB(0, 255, 0))
-            cv2.putText(_img, '%.3f' % pt1[1], tuple(pt1[0]), cv2.FONT_HERSHEY_PLAIN, 1.0, RGB(0, 255, 0))
-            cv2.putText(img_curv, '%.3f' % pt1[1], tuple(pt1[0]), cv2.FONT_HERSHEY_PLAIN, 0.7, RGB(0, 255, 0))
-            cv2.line(_img, tuple(pt1[0]), tuple(pt2[0]), RGB(0, 255, 0))
-            cv2.line(img_curv, tuple(pt1[0]), tuple(pt2[0]), RGB(0, 255, 0))
-            cv2.imshow('kcurv', _img)
-            cv2.waitKey(-1)
-        plot_kcurv(kc, 'kcurv%03d.png' % i)
-    while cv2.waitKey(100) != 27:
-        pass
-    cv2.destroyWindow('kcurv')
-    cv2.waitKey(100)
-    cv2.imwrite('img_curv.png', img_curv)
 
 def test2():
     img = np.zeros([320, 240], dtype='uint8')
