@@ -42,9 +42,9 @@ def nxt_ctl_handler(req):
     if abs(ctl_turn_angle) > CTL_TURN_VALUE_MAX:
         ctl_turn_angle = np.sign(ctl_turn_angle) * CTL_TURN_VALUE_MAX
     if ctl_turn_angle < 0:
-        ctl_turn_dir = 1
-    else:
         ctl_turn_dir = -1
+    else:
+        ctl_turn_dir = 1
     ctl_turn_angle = abs(ctl_turn_angle)
 
     ctl_forw_k = (ctl_speed - CTL_FORWARD_VALUE_MIN) / (CTL_FORWARD_VALUE_MAX - CTL_FORWARD_VALUE_MIN)
